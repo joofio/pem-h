@@ -23,10 +23,19 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="Specifications.html"></a>
+				<a href="Specifications.html">Introdução</a>
 			</li>
 			<li>
-				<a href="artifacts.html">Artifact Index</a>
+				<a href="info-send.html">Envio de informação</a>
+			</li>
+			<li>
+				<a href="info-response.html">Resposta</a>
+			</li>
+			<li>
+				<a href="support-resources.html">Recursos de suporte / genéricos</a>
+			</li>
+			<li>
+				<a href="artifacts.html">Artefactos</a>
 			</li>
 			
 		</ul>
