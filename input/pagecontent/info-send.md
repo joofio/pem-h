@@ -1,3 +1,4 @@
+##  Mensagem de Envio
 A Prescrição de Medicação vem responder à necessidade de maior interoperabilidade entre as diversas aplicações externas/terceiras da SPMS no âmbito da prescrição de medicamentos e produtos farmacêuticos. As operações relacionadas à Prescrição de Medicação são representadas a seguir:
 
 | Operação                       | Código  | Descrição                                   |

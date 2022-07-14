@@ -1,4 +1,4 @@
-## A) Introdução  
+## Introdução  
 
 O presente relatório diz respeito aos fluxos do Gestão de Medicação relativos às as regras de prescrição eletrónica de medicamentos a utentes
 em regime de ambulatório hospitalar e os procedimentos de dispensa pelos/através dos Serviços Farmacêuticos Hospitalares destes
@@ -8,7 +8,7 @@ dia, consulta externa, cirurgia de ambulatório e serviço de urgência. Os flux
 * Consulta de Prescrição - 8210 - (fluxo síncrono).
 * Dispensa de Medicação - 8220 - (fluxo síncrono).
 
-### A1) Prescrição de Medicação  
+### Prescrição de Medicação  
 
 O fluxo de Prescrição de Medicação é representado pelo Evento 10724 - MED_PRESCRIPTION_SYNCHRONIZATION, através das operações:
 * 10911 - MED_PRESCRIPTION_NEW - Prescrever Medicação
@@ -29,7 +29,7 @@ A Aplicação Emissora envia uma mensagem para o PNB, o qual após validar estru
 <img src="fig2.png" width="100%"/>
 <br>
 
-### A2) Configuração dos canais
+### Configuração dos canais
 
 Tabela 1. Caracterização dos fluxos e formato das mensagens trocadas.
 
