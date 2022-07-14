@@ -20,36 +20,66 @@
     }
   ],
   "profiles": {
-    "RequestGroup": [
-      {
-        "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
-        "title": "Example Patient Profile"
-      }
-    ],
     "Bundle": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/example-patient-profile",
-        "title": "Example Patient Profile"
+        "title": "Perfil Bundle de mensagem"
+      }
+    ],
+    "RequestGroup": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
+        "title": "Perfil Conteudo Receita"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
+        "title": "Perfil Coverage"
+      },
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
+        "title": "Perfil Episódio"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/location-pemh-profile",
+        "title": "Perfil Location"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/med-pemh-profile",
+        "title": "Perfil Medicação"
       }
     ],
     "MedicationRequest": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/med-request-profile",
-        "title": "Example Patient Profile"
+        "title": "Perfil informação de receita"
       }
     ],
     "MessageHeader": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/msh-profile",
-        "title": "Example Patient Profile"
+        "title": "Perfil MessageHeader"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile",
+        "title": "Perfil Paciente"
       }
     ]
   },
   "usage": {
     "http://example.com/fhir/example/StructureDefinition/duplicate-order": [
+      "Bundle.entry.resource",
       "RequestGroup"
     ],
     "http://example.com/fhir/example/StructureDefinition/meaning-order": [
+      "Bundle.entry.resource",
       "RequestGroup"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -79,8 +109,14 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

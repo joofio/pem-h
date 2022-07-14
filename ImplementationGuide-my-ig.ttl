@@ -344,7 +344,7 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/content-profile>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/content-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient Profile" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Conteudo Receita" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso representa a receita (Número da receita, local e central, número da linha e a data de validade )." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -355,11 +355,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/msh-profile>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/msh-profile" ]
+         fhir:link <http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/coverage-pemh-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Coverage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -369,11 +369,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/med-request-profile>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/med-request-profile" ]
+         fhir:link <http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/encounter-pemh-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso contém informações da linha da receita." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Episódio" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -383,14 +383,98 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.com/fhir/example/StructureDefinition/example-patient-profile>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/example-patient-profile" ]
+         fhir:link <http://example.com/fhir/example/StructureDefinition/location-pemh-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/location-pemh-profile" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O Bundle da mensagem deve ser do tipo 'message', deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Location" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recurso utilizado para representar informação sobre o local de prescrição da medicação." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/msh-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/msh-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil MessageHeader" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/med-pemh-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/med-pemh-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Medicação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso representa o medicamento que é referenciado pelo recurso MedicationRequest." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/med-request-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/med-request-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil informação de receita" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso contém informações da linha da receita." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/patient-pemh-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-pemh-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Paciente" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Utente a quem diz respeito a prescrição de medicação." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/bundle-response-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/bundle-response-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Bundle de mensagem de resposta" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/StructureDefinition/example-patient-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/example-patient-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Perfil Bundle de mensagem" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O Bundle da mensagem deve ser do tipo 'message', deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -404,7 +488,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The resource has an unspecified relationship with a Condition." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -418,7 +502,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The resource has an unspecified relationship with a Condition." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -431,7 +515,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "EventCodeVS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -444,7 +528,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "EventagsVS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -456,6 +540,37 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MeaningOrderVS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "RequestGroup" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df>;
+         fhir:Reference.reference [ fhir:value "RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploRequestGroup" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - RequestGroup" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.com/fhir/example/StructureDefinition/content-profile";
+         fhir:link <http://example.com/fhir/example/StructureDefinition/content-profile>
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Bundle/7898e419-6983-4afc-8163-a19274a12290>;
+         fhir:Reference.reference [ fhir:value "Bundle/7898e419-6983-4afc-8163-a19274a12290" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

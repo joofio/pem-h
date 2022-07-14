@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "MeaningOrder"];
   fhir:StructureDefinition.title [ fhir:value "Condition related to the current resource"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-14T08:24:07+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-14T09:12:07+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Portugal"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
