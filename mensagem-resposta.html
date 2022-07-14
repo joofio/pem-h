@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>MY-IG\EventCodeVS - FHIR v4.0.1</title>
+    <title>MY-IG\Mensagem Resposta - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.13"}
-    h3,h4,h5,h6{--heading-prefix:"9.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -145,7 +145,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>EventCodeVS</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Mensagem Resposta</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -157,8 +157,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">HL7 PT FHIR Implementation Guide: PEM-H | R4 // STU3 - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Mensagem Resposta</h2>
   
 
 
@@ -168,144 +176,42 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li class="active">
-    <a href="#">Narrative Content</a>
-  </li>
-
-
-  
-    <li>
-      <a href="ValueSet-EventCodeVS.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-EventCodeVS.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-EventCodeVS.ttl.html">TTL</a>
-    </li>
-  
 
 
 
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#b1-bundle-da-mensagem-de-resposta" id="markdown-toc-b1-bundle-da-mensagem-de-resposta">B1) Bundle da mensagem de resposta</a></li>
+  <li><a href="#b11-messageheader" id="markdown-toc-b11-messageheader">B1.1) MessageHeader</a></li>
+  <li><a href="#b12-requestgroup" id="markdown-toc-b12-requestgroup">B1.2) RequestGroup</a></li>
+  <li><a href="#b13-operationoutcome" id="markdown-toc-b13-operationoutcome">B1.3) OperationOutcome</a></li>
 </ul>
 
-  <a name="root"> </a>
-  <h2 id="root">ValueSet: EventCodeVS
+</div>
+<p>O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora.
+Assim que a IOP recebe uma mensagem do cliente emissor com a prescrição de medicação, e após validação estrutural da mesma, envia um
+ACK de transporte para o cliente emissor. Seguidamente envia a mensagem para o cliente destino.
+Caso o cliente destino tenha sido configurado para receber uma resposta deprocessamento síncrono, quando processa a mensagem, a aplicação cliente destino deve enviar para uma mensagem de resposta a indicar o resultado do processamento dessa mensagem.
+Caso o cliente destino tenha sido configurado para receber uma resposta de processamento assíncrono,depois de processar a mensagem, o cliente destino deve enviar um ACK Aplicacional com o resultado do processamento da mensagem.</p>
 
-  </h2>
-  <table class="colsi">
+<h3 id="b1-bundle-da-mensagem-de-resposta">B1) Bundle da mensagem de resposta</h3>
+<p>O Bundle da mensagem de resposta deve ser do tipo “message”, deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso OperationOutcome (MessageHeader.response.details) caso exista algum problema na recepção ou processamento da mensagem.</p>
 
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://example.com/fhir/example/ValueSet/EventCodeVS<button data-clipboard-text="http://example.com/fhir/example/ValueSet/EventCodeVS" title="Click to copy URL" class="btn-copy"></button></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">1.0.0<button data-clipboard-text="http://example.com/fhir/example/ValueSet/EventCodeVS|1.0.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
-      </td>
-    </tr>
+<h3 id="b11-messageheader">B1.1) MessageHeader</h3>
+<p>Este recurso deve ser a primeira entrada no Bundledas mensagens resposta de ACK de transporte e aplicacional, e deve trazer informação sobre o resultadoda recepção ou processamento da mensagem pelo cliente destino.</p>
 
-    <tr>
+<h3 id="b12-requestgroup">B1.2) RequestGroup</h3>
+<p>Este recurso representa o retorno da receita quando ocorre o sucesso na recepção/processamento da mensagem.
+Para além disso, esse recurso contêm elementos que compõem a receita gerados somente no retorno da receita, como o “Número Central da
+Receita” e o “Pin da Receita”.</p>
 
-
-
-
-
-
-
-      <td colspan="4">
-        
-          Active
-          
-            as of 2022-07-14
-          
-        
-      </td>
+<h3 id="b13-operationoutcome">B1.3) OperationOutcome</h3>
+<p>Recurso que representa informação detalhada sobre problemas encontradosna recepção da mensagem pela IOP ou pelos cliente destino, ou no processamento da prescrição de medicação.</p>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">EventCodeVS</span></td>
-    </tr>
-
-
-
-
-  </table>
-
-
-  <p>
-    <b>References</b>
-  </p>
-  
-<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
-
-
-    <!-- insert intro if present -->
-  
-
-
-
-  <a name="definition"> </a>
-
-  <!-- Content Logical Definition heading in the fragment -->
-  <h3>Logical Definition (CLD)</h3>
-<p>No formal definition provided for this ValueSet</p>
-
-
-  <p>&nbsp;</p>
-  <a name="expansion"> </a>
-  <h3 id="expansion">Expansion</h3>
-
-  <div><p>This value set contains 0 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>
-
-  <hr/>
-  <p>
-    Explanation of the columns that may appear on this page:
-  </p>
-  <table class="grid">
-    <tr>
-      <td>Level</td>
-      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
-          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
-    </tr>
-    <tr>
-      <td>System</td>
-      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
-    </tr>
-    <tr>
-      <td>Code</td>
-      <td>The code (used as the code in the resource instance)</td>
-    </tr>
-    <tr>
-      <td>Display</td>
-      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
-    </tr>
-    <tr>
-      <td>Definition</td>
-      <td>An explanation of the meaning of the concept</td>
-    </tr>
-    <tr>
-      <td>Comments</td>
-      <td>Additional notes about how to use the code</td>
-    </tr>
-  </table>
-
-  
-
-    <!-- insert notes if present -->
-  
-
-
-
-  
 
 </div>
         </div>    <!-- /inner-wrapper -->

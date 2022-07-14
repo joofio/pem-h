@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 31, warn = 30, info = 28, 6 -->
+<!-- broken links = errors = 31, warn = 30, info = 28, 180 -->
 <head>
   <title>ExampleIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ExampleIG</h1>
- <p>Generated Thu Jul 14 10:47:44 UTC 2022, FHIR version 4.0.1 for my-ig#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Thu Jul 14 11:00:55 UTC 2022, FHIR version 4.0.1 for my-ig#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.125</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = my-ig, Canonical = http://example.com/fhir/example</td></tr>
@@ -52,16 +52,16 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1657795634210 (Not Found) (content in /tmp/fhir-http-4.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1657796422549 (Not Found) (content in /tmp/fhir-http-4.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 31, warn = 30, info = 28, broken links = 6</td></tr>
+ <tr><td>Summary:</td><td> errors = 31, warn = 30, info = 28, broken links = 180</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>6</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>180</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-7898e419-6983-4afc-8163-a19274a12290"><b>/github/workspace/fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290</b></a></td><td><b>17</b></td><td><b>13</b></td><td><b>13</b></td>
@@ -163,6 +163,27 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/MeaningOrderVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-7898e419-6983-4afc-8163-a19274a12290.change.history.html#l177">output/Bundle-7898e419-6983-4afc-8163-a19274a12290.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-7898e419-6983-4afc-8163-a19274a12290.html#l175">output/Bundle-7898e419-6983-4afc-8163-a19274a12290.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-7898e419-6983-4afc-8163-a19274a12290.json.html#l175">output/Bundle-7898e419-6983-4afc-8163-a19274a12290.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-7898e419-6983-4afc-8163-a19274a12290.ttl.html#l175">output/Bundle-7898e419-6983-4afc-8163-a19274a12290.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-7898e419-6983-4afc-8163-a19274a12290.xml.html#l175">output/Bundle-7898e419-6983-4afc-8163-a19274a12290.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.change.history.html#l177">output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#l175">output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#l359">output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 624</a></b></td><td><b>error</b></td><td><b>The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for &quot;Patient/3616b380-01be-465a-aa29906337c6e7a4&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -172,13 +193,514 @@
      <td><b><a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#l385">output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 1151</a></b></td><td><b>error</b></td><td><b>The link 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for &quot;Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.json.html#l175">output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.ttl.html#l175">output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.xml.html#l175">output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.change.history.html#l177">output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#l175">output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#l376">output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 232, column 769</a></b></td><td><b>error</b></td><td><b>The link 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8' for &quot;Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.json.html#l175">output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.ttl.html#l175">output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.xml.html#l175">output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Intro.html#l175">output/Intro.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.change.history.html#l177">output/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.html#l175">output/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.json.html#l175">output/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.ttl.html#l175">output/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.xml.html#l175">output/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.change.history.html#l177">output/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.html#l175">output/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.json.html#l175">output/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.ttl.html#l175">output/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.xml.html#l175">output/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.change.history.html#l177">output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#l175">output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#l353">output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 453</a></b></td><td><b>error</b></td><td><b>The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for &quot;Medication/a87cddf3-01de-4241-b9b27209f5f2bcab&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#l359">output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 583</a></b></td><td><b>error</b></td><td><b>The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for &quot;Patient/3616b380-01be-465a-aa29906337c6e7a4&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.json.html#l175">output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.ttl.html#l175">output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.xml.html#l175">output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#l177">output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html#l175">output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json.html#l175">output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.ttl.html#l175">output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.xml.html#l175">output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#l177">output/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html#l175">output/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json.html#l175">output/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.ttl.html#l175">output/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.xml.html#l175">output/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.change.history.html#l177">output/Patient-3616b380-01be-465a-aa29-906337c6e7a4.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.html#l175">output/Patient-3616b380-01be-465a-aa29-906337c6e7a4.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.json.html#l175">output/Patient-3616b380-01be-465a-aa29-906337c6e7a4.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.ttl.html#l175">output/Patient-3616b380-01be-465a-aa29-906337c6e7a4.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.xml.html#l175">output/Patient-3616b380-01be-465a-aa29-906337c6e7a4.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.change.history.html#l177">output/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.html#l175">output/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.json.html#l175">output/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.ttl.html#l175">output/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.xml.html#l175">output/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.change.history.html#l177">output/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.html#l175">output/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.json.html#l175">output/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.ttl.html#l175">output/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.xml.html#l175">output/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile-definitions.html#l176">output/StructureDefinition-bundle-response-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile-examples.html#l176">output/StructureDefinition-bundle-response-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile-mappings.html#l176">output/StructureDefinition-bundle-response-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile.html#l176">output/StructureDefinition-bundle-response-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile.profile.history.html#l176">output/StructureDefinition-bundle-response-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile.profile.json.html#l176">output/StructureDefinition-bundle-response-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile.profile.ttl.html#l176">output/StructureDefinition-bundle-response-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-bundle-response-profile.profile.xml.html#l176">output/StructureDefinition-bundle-response-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile-definitions.html#l176">output/StructureDefinition-content-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile-examples.html#l176">output/StructureDefinition-content-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile-mappings.html#l176">output/StructureDefinition-content-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile.html#l176">output/StructureDefinition-content-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile.profile.history.html#l176">output/StructureDefinition-content-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile.profile.json.html#l176">output/StructureDefinition-content-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile.profile.ttl.html#l176">output/StructureDefinition-content-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-content-profile.profile.xml.html#l176">output/StructureDefinition-content-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile-definitions.html#l176">output/StructureDefinition-coverage-pemh-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile-examples.html#l176">output/StructureDefinition-coverage-pemh-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile-mappings.html#l176">output/StructureDefinition-coverage-pemh-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile.html#l176">output/StructureDefinition-coverage-pemh-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile.profile.history.html#l176">output/StructureDefinition-coverage-pemh-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile.profile.json.html#l176">output/StructureDefinition-coverage-pemh-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile.profile.ttl.html#l176">output/StructureDefinition-coverage-pemh-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-coverage-pemh-profile.profile.xml.html#l176">output/StructureDefinition-coverage-pemh-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-duplicate-order-definitions.html#l176">output/StructureDefinition-duplicate-order-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-duplicate-order-mappings.html#l176">output/StructureDefinition-duplicate-order-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-duplicate-order.html#l175">output/StructureDefinition-duplicate-order.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-duplicate-order.profile.history.html#l176">output/StructureDefinition-duplicate-order.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-duplicate-order.profile.json.html#l176">output/StructureDefinition-duplicate-order.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-duplicate-order.profile.ttl.html#l176">output/StructureDefinition-duplicate-order.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-duplicate-order.profile.xml.html#l176">output/StructureDefinition-duplicate-order.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile-definitions.html#l176">output/StructureDefinition-encounter-pemh-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile-examples.html#l176">output/StructureDefinition-encounter-pemh-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile-mappings.html#l176">output/StructureDefinition-encounter-pemh-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile.html#l176">output/StructureDefinition-encounter-pemh-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile.profile.history.html#l176">output/StructureDefinition-encounter-pemh-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile.profile.json.html#l176">output/StructureDefinition-encounter-pemh-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile.profile.ttl.html#l176">output/StructureDefinition-encounter-pemh-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-encounter-pemh-profile.profile.xml.html#l176">output/StructureDefinition-encounter-pemh-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile-definitions.html#l176">output/StructureDefinition-example-patient-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile-examples.html#l176">output/StructureDefinition-example-patient-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile-mappings.html#l176">output/StructureDefinition-example-patient-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile.html#l176">output/StructureDefinition-example-patient-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile.profile.history.html#l176">output/StructureDefinition-example-patient-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile.profile.json.html#l176">output/StructureDefinition-example-patient-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile.profile.ttl.html#l176">output/StructureDefinition-example-patient-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example-patient-profile.profile.xml.html#l176">output/StructureDefinition-example-patient-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile-definitions.html#l176">output/StructureDefinition-location-pemh-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile-examples.html#l176">output/StructureDefinition-location-pemh-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile-mappings.html#l176">output/StructureDefinition-location-pemh-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile.html#l176">output/StructureDefinition-location-pemh-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile.profile.history.html#l176">output/StructureDefinition-location-pemh-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile.profile.json.html#l176">output/StructureDefinition-location-pemh-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile.profile.ttl.html#l176">output/StructureDefinition-location-pemh-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-location-pemh-profile.profile.xml.html#l176">output/StructureDefinition-location-pemh-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-meaning-order-definitions.html#l176">output/StructureDefinition-meaning-order-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-meaning-order-mappings.html#l176">output/StructureDefinition-meaning-order-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-meaning-order.html#l175">output/StructureDefinition-meaning-order.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-meaning-order.profile.history.html#l176">output/StructureDefinition-meaning-order.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-meaning-order.profile.json.html#l176">output/StructureDefinition-meaning-order.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-meaning-order.profile.ttl.html#l176">output/StructureDefinition-meaning-order.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-meaning-order.profile.xml.html#l176">output/StructureDefinition-meaning-order.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile-definitions.html#l176">output/StructureDefinition-med-pemh-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile-examples.html#l176">output/StructureDefinition-med-pemh-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile-mappings.html#l176">output/StructureDefinition-med-pemh-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile.html#l176">output/StructureDefinition-med-pemh-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile.profile.history.html#l176">output/StructureDefinition-med-pemh-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile.profile.json.html#l176">output/StructureDefinition-med-pemh-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile.profile.ttl.html#l176">output/StructureDefinition-med-pemh-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-pemh-profile.profile.xml.html#l176">output/StructureDefinition-med-pemh-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile-definitions.html#l176">output/StructureDefinition-med-request-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile-examples.html#l176">output/StructureDefinition-med-request-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile-mappings.html#l176">output/StructureDefinition-med-request-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile.html#l176">output/StructureDefinition-med-request-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile.profile.history.html#l176">output/StructureDefinition-med-request-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile.profile.json.html#l176">output/StructureDefinition-med-request-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile.profile.ttl.html#l176">output/StructureDefinition-med-request-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-med-request-profile.profile.xml.html#l176">output/StructureDefinition-med-request-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile-definitions.html#l176">output/StructureDefinition-msh-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile-examples.html#l176">output/StructureDefinition-msh-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile-mappings.html#l176">output/StructureDefinition-msh-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile.html#l176">output/StructureDefinition-msh-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile.profile.history.html#l176">output/StructureDefinition-msh-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile.profile.json.html#l176">output/StructureDefinition-msh-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile.profile.ttl.html#l176">output/StructureDefinition-msh-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-msh-profile.profile.xml.html#l176">output/StructureDefinition-msh-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile-definitions.html#l176">output/StructureDefinition-patient-pemh-profile-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile-examples.html#l176">output/StructureDefinition-patient-pemh-profile-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile-mappings.html#l176">output/StructureDefinition-patient-pemh-profile-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile.html#l176">output/StructureDefinition-patient-pemh-profile.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile.profile.history.html#l176">output/StructureDefinition-patient-pemh-profile.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile.profile.json.html#l176">output/StructureDefinition-patient-pemh-profile.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile.profile.ttl.html#l176">output/StructureDefinition-patient-pemh-profile.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-pemh-profile.profile.xml.html#l176">output/StructureDefinition-patient-pemh-profile.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventCodeVS.change.history.html#l177">output/ValueSet-EventCodeVS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventCodeVS.html#l175">output/ValueSet-EventCodeVS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventCodeVS.json.html#l175">output/ValueSet-EventCodeVS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventCodeVS.ttl.html#l175">output/ValueSet-EventCodeVS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventCodeVS.xml.html#l175">output/ValueSet-EventCodeVS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventagsVS.change.history.html#l177">output/ValueSet-EventagsVS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventagsVS.html#l175">output/ValueSet-EventagsVS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventagsVS.json.html#l175">output/ValueSet-EventagsVS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventagsVS.ttl.html#l175">output/ValueSet-EventagsVS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-EventagsVS.xml.html#l175">output/ValueSet-EventagsVS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-MeaningOrderVS.change.history.html#l177">output/ValueSet-MeaningOrderVS.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-MeaningOrderVS.html#l175">output/ValueSet-MeaningOrderVS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-MeaningOrderVS.json.html#l175">output/ValueSet-MeaningOrderVS.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-MeaningOrderVS.ttl.html#l175">output/ValueSet-MeaningOrderVS.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-MeaningOrderVS.xml.html#l175">output/ValueSet-MeaningOrderVS.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l175">output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="background.html#l175">output/background.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#l175">output/changes.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#l175">output/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l175">output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mensagem-envio.html#l175">output/mensagem-envio.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="mensagem-resposta.html#l175">output/mensagem-resposta.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="recursos-suporte.html#l175">output/recursos-suporte.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l175">output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 6</a></b></td><td><b>error</b></td><td><b>The link 'intro.html' for &quot;Introdução&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>

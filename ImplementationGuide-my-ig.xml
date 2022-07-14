@@ -9,9 +9,9 @@
   <url value="http://example.com/fhir/example"/>
   <version value="1.0.0"/>
   <name value="ExampleIG"/>
-  <title value="HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1"/>
+  <title value="HL7 PT FHIR Implementation Guide: PEM-H | R4 // STU3"/>
   <status value="active"/>
-  <date value="2020-02-26"/>
+  <date value="2022-07-14"/>
   <publisher value="HL7 Portugal"/>
   <contact>
     <name value="HL7 Portugal"/>
@@ -533,23 +533,23 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="info-response.html"/>
-        <title value="Info Response"/>
+        <nameUrl value="Intro.html"/>
+        <title value="Intro"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="info-send.html"/>
-        <title value="Info Send"/>
+        <nameUrl value="mensagem-envio.html"/>
+        <title value="Mensagem Envio"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="Specifications.html"/>
-        <title value="Specifications"/>
+        <nameUrl value="mensagem-resposta.html"/>
+        <title value="Mensagem Resposta"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="support-resources.html"/>
-        <title value="Support Resources"/>
+        <nameUrl value="recursos-suporte.html"/>
+        <title value="Recursos Suporte"/>
         <generation value="markdown"/>
       </page>
     </page>

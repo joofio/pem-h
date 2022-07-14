@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>MY-IG\EventCodeVS - FHIR v4.0.1</title>
+    <title>MY-IG\Mensagem Envio - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.13"}
-    h3,h4,h5,h6{--heading-prefix:"9.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -145,7 +145,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>EventCodeVS</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Mensagem Envio</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -157,8 +157,16 @@
         <div class="row">
           <div class="inner-wrapper">
 
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">HL7 PT FHIR Implementation Guide: PEM-H | R4 // STU3 - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Mensagem Envio</h2>
   
 
 
@@ -168,144 +176,115 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li class="active">
-    <a href="#">Narrative Content</a>
-  </li>
-
-
-  
-    <li>
-      <a href="ValueSet-EventCodeVS.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-EventCodeVS.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-EventCodeVS.ttl.html">TTL</a>
-    </li>
-  
 
 
 
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#a-bundle-da-mensagem-de-pedido" id="markdown-toc-a-bundle-da-mensagem-de-pedido">A. Bundle da mensagem de pedido</a></li>
+  <li><a href="#a1-informações-complementares-sobre-a-assinatura" id="markdown-toc-a1-informações-complementares-sobre-a-assinatura">A1) Informações complementares sobre a assinatura</a></li>
+  <li><a href="#a2-messageheader" id="markdown-toc-a2-messageheader">A2) MessageHeader</a></li>
+  <li><a href="#a3-requestgroup" id="markdown-toc-a3-requestgroup">A3) RequestGroup</a></li>
+  <li><a href="#a4-medicationrequest" id="markdown-toc-a4-medicationrequest">A4) MedicationRequest</a></li>
+  <li><a href="#a5-medication" id="markdown-toc-a5-medication">A5) Medication</a></li>
+  <li><a href="#a6-patient" id="markdown-toc-a6-patient">A6) Patient</a></li>
+  <li><a href="#a7-encounter" id="markdown-toc-a7-encounter">A7) Encounter</a></li>
+  <li><a href="#a8-coverage" id="markdown-toc-a8-coverage">A8) Coverage</a></li>
+  <li><a href="#a9-location" id="markdown-toc-a9-location">A9) Location</a></li>
 </ul>
 
-  <a name="root"> </a>
-  <h2 id="root">ValueSet: EventCodeVS
+</div>
+<p>A Prescrição de Medicação vem responder à necessidade de maior interoperabilidade entre as diversas aplicações externas/terceiras da SPMS no âmbito da prescrição de medicamentos e produtos farmacêuticos. As operações relacionadas à Prescrição de Medicação são representadas a seguir:</p>
 
-  </h2>
-  <table class="colsi">
-
+<table>
+  <thead>
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://example.com/fhir/example/ValueSet/EventCodeVS<button data-clipboard-text="http://example.com/fhir/example/ValueSet/EventCodeVS" title="Click to copy URL" class="btn-copy"></button></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">1.0.0<button data-clipboard-text="http://example.com/fhir/example/ValueSet/EventCodeVS|1.0.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
-      </td>
+      <th>Operação</th>
+      <th>Código</th>
+      <th>Descrição</th>
     </tr>
-
+  </thead>
+  <tbody>
     <tr>
-
-
-
-
-
-
-
-      <td colspan="4">
-        
-          Active
-          
-            as of 2022-07-14
-          
-        
-      </td>
-
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">EventCodeVS</span></td>
-    </tr>
-
-
-
-
-  </table>
-
-
-  <p>
-    <b>References</b>
-  </p>
-  
-<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
-
-
-    <!-- insert intro if present -->
-  
-
-
-
-  <a name="definition"> </a>
-
-  <!-- Content Logical Definition heading in the fragment -->
-  <h3>Logical Definition (CLD)</h3>
-<p>No formal definition provided for this ValueSet</p>
-
-
-  <p>&nbsp;</p>
-  <a name="expansion"> </a>
-  <h3 id="expansion">Expansion</h3>
-
-  <div><p>This value set contains 0 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>
-
-  <hr/>
-  <p>
-    Explanation of the columns that may appear on this page:
-  </p>
-  <table class="grid">
-    <tr>
-      <td>Level</td>
-      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
-          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+      <td>MED_PRESCRIPTION_NEW</td>
+      <td>10911</td>
+      <td>Prescrever Medicação</td>
     </tr>
     <tr>
-      <td>System</td>
-      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+      <td>MED_PRESCRIPTION_ACK</td>
+      <td>10917</td>
+      <td>Retorno da Prescrição da Medicação</td>
     </tr>
     <tr>
-      <td>Code</td>
-      <td>The code (used as the code in the resource instance)</td>
+      <td>MED_PRESCRIPTION_CANCEL</td>
+      <td>10912</td>
+      <td>Cancelar Prescrição de Medicação</td>
     </tr>
     <tr>
-      <td>Display</td>
-      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+      <td>MED_PRESCRIPTION_CANCEL_ACK</td>
+      <td>10923</td>
+      <td>Retorno de Cancelar Prescrição da Medicação</td>
     </tr>
-    <tr>
-      <td>Definition</td>
-      <td>An explanation of the meaning of the concept</td>
-    </tr>
-    <tr>
-      <td>Comments</td>
-      <td>Additional notes about how to use the code</td>
-    </tr>
-  </table>
+  </tbody>
+</table>
 
-  
+<p>De forma a cumprir o standard HL7 FHIR, uma Prescrição de Medicação deve ir empacotado num Bundle cujo recurso principal é o recurso RequestGroup.</p>
 
-    <!-- insert notes if present -->
-  
+<p>Os recursos presentes no bundle serão:</p>
+<h3 id="a-bundle-da-mensagem-de-pedido">A. Bundle da mensagem de pedido</h3>
+<p>O Bundle da mensagem deve ser do tipo “message”, deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso.</p>
+
+<h3 id="a1-informações-complementares-sobre-a-assinatura">A1) Informações complementares sobre a assinatura</h3>
+<p>Informaçõo adaptada de: https://www.hl7.org/fhir/stu3/datatypes.html#Signature
+Quando a assinatura é uma XML Digital Signature (contentType = application / signature + xml), as seguintes regras se aplicam:</p>
+<ul>
+  <li>O Signature.blob é uma assinatura XML codificada em base64;</li>
+  <li>A assinatura XML é uma assinatura Detached   (onde o conteúdo que é assinado e separado da própria assinatura);</li>
+  <li>A assinatura DEVE estar em conformidade com XAdES-X-L para dar suporte a assinaturas de longo prazo. A especificação XAdES-X-L adiciona o carimbo de data / hora da assinatura, inclusão do certificado da assinatura e a declaração de revogação;
+Existem três níveis de verificação da assinatura:</li>
+  <li>Verificar se o bloco da assinatura digital em si tem integridade por meio da verificação da assinatura na assinatura XML;</li>
+  <li>Confirmação de que o signatário é autêntico, não revogado e adequado ao propósito da assinatura;</li>
+  <li>Confirmar que o conteúdo de interesse assinado não foi modificado usando o algoritmo de hash.
+Desvios dessas regeas precisam ser expressas e enumeradas no bloco XML-Signature. Por exemplo, alguns ambientes podem escolher um perfil XAdES diferente, algoritmo de hashing, identificador de política ou vocabulário depropósito de assinatura. A assinatura pode ser usada nos seguintes rerursos: Bundle, Contract e Provenance.
+Assinatura, Independente</li>
+</ul>
+
+<p>A assinatura é sobre o conteúdo externo ao elemento de assinatura e pode ser identificada por meio de um URI ou transformação. Consequentemente, a assinatura é “separada” do conteúdo que assina. Essa definição normalmente se aplica a objetos de dados separados, mas também inclui a instância em que a assinatura e o objeto de dados residem no mesmo documento XML, mas são elementos “irmãos”.</p>
+
+<h3 id="a2-messageheader">A2) MessageHeader</h3>
+<p>Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest.</p>
+
+<h3 id="a3-requestgroup">A3) RequestGroup</h3>
+<p>Este recurso representa a receita (Número da receita, local e central, número da linha e a data de validade ).</p>
+
+<h3 id="a4-medicationrequest">A4) MedicationRequest</h3>
+<p>Este recurso contém informações da linha da receita.</p>
+
+<h3 id="a5-medication">A5) Medication</h3>
+<p>Este recurso representa o medicamento que é referenciado pelo recurso MedicationRequest.</p>
+
+<h3 id="a6-patient">A6) Patient</h3>
+<p>Utente a quem diz respeito a prescrição de medicação.</p>
+
+<h4 id="relatedperson">RelatedPerson</h4>
+<p>Este recurso é complementar ao recurso PATIENT para atender a extensão sobre a filiação do utente “patient-parents” (Mother/Father).
+Especificidades do recurso Patient
+Na tabela a seguir são apresentados elementos do recurso Patient (item A6 desta especificação) com especificidades para essa Especificação
+Técnica. Para os demais campos seguem as regras definidas no respectivo perfil.</p>
+
+<h3 id="a7-encounter">A7) Encounter</h3>
+<p>Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada.</p>
+
+<h3 id="a8-coverage">A8) Coverage</h3>
+<p>Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria.</p>
+
+<h3 id="a9-location">A9) Location</h3>
+<p>Recurso utilizado para representar informação sobre o local de prescrição da medicação</p>
 
 
 
-  
 
 </div>
         </div>    <!-- /inner-wrapper -->
