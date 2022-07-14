@@ -39,6 +39,8 @@ Description: "Exemplo 1 - Nova prescrição de medicação"
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5"
 * entry[+].resource = ExemploMedication
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab"
+* entry[+].resource = ExemploPatient
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
 
 
 Instance: ExemploRequestGroup
@@ -97,22 +99,33 @@ InstanceOf: Medication
 Description: "Exemplo 1 - Nova prescrição de medicação - Medication"
 
 * id = "a87cddf3-01de-4241-b9b2-7209f5f2bcab"
-* code.coding.system = "http://infarmed.pt"
-* code.coding.code = #10007274
-* code.coding.display = "Ibuprofeno 600 mg Comp"
-* form.coding.system = "http://www.infarmed.pt"
-* form.coding.code = #10219000
-* form.coding.display = "Comprimido"
+* code = http://infarmed.pt#10007274 "Ibuprofeno 600 mg Comp"
+* form = http://www.infarmed.pt#10219000 "Comprimido"
 
 
 Instance: ExemploPatient
 InstanceOf: Patient
 Description: "Exemplo 1 - Nova prescrição de medicação - Patient"
 
-* id = "a87cddf3-01de-4241-b9b2-7209f5f2bcab"
-* code.coding.system = "http://infarmed.pt"
-* code.coding.code = #10007274
-* code.coding.display = "Ibuprofeno 600 mg Comp"
-* form.coding.system = "http://www.infarmed.pt"
-* form.coding.code = #10219000
-* form.coding.display = "Comprimido"
+* id = "3616b380-01be-465a-aa29-906337c6e7a4"
+* meta.lastUpdated = "2019-01-14T23:10:23+00:00"
+* identifier.type.coding.system =  "http://h17.org/fhir/v2/0203"
+* identifier.type.coding.display =  "Health Card Number"
+* identifier.type.coding.code = #HC
+* identifier.type.text = "NNU"
+* identifier.system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
+* identifier.value = "11920641576"
+* name.text = "Pedro Alvares Cabral"
+* name.given = "Pedro"
+* name.family = "Cabral"
+* gender = #male
+* birthDate = "1979-11-19"
+* telecom.system = #email
+* telecom.value = "PedroAlvaresCabral@dominio.pt"
+
+
+//Instance: ExemploEncounter
+//InstanceOf: Encounter
+//Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
+
+
