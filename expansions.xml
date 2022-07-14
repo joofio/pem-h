@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="62473e40-3301-4d1e-b5af-af1ae3d74a0b"/>
+  <id value="26692d98-d922-4ba8-8ac5-d2c881bb0080"/>
   <meta>
-    <lastUpdated value="2022-07-14T12:15:20.689+00:00"/>
+    <lastUpdated value="2022-07-14T12:28:55.445+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -34,7 +34,7 @@
         <version value="1.0.0"/>
         <name value="EventCodeVS"/>
         <status value="active"/>
-        <date value="2022-07-14T12:15:20+00:00"/>
+        <date value="2022-07-14T12:28:55+00:00"/>
         <publisher value="HL7 Portugal"/>
         <contact>
           <name value="HL7 Portugal"/>
@@ -63,8 +63,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:73ca2b1d-b6af-4bf5-9265-8c65c292d71a"/>
-          <timestamp value="2022-07-14T12:15:42+00:00"/>
+          <identifier value="urn:uuid:06ac5c39-1fd8-405e-bafe-35b3b99e75df"/>
+          <timestamp value="2022-07-14T12:29:17+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -101,7 +101,7 @@
         <version value="1.0.0"/>
         <name value="EventagsVS"/>
         <status value="active"/>
-        <date value="2022-07-14T12:15:20+00:00"/>
+        <date value="2022-07-14T12:28:55+00:00"/>
         <publisher value="HL7 Portugal"/>
         <contact>
           <name value="HL7 Portugal"/>
@@ -130,8 +130,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:383420b9-aeaf-47ed-83fe-7780cc1ad549"/>
-          <timestamp value="2022-07-14T12:15:42+00:00"/>
+          <identifier value="urn:uuid:55d24f1b-9bbb-469e-b388-067b3ffad0e5"/>
+          <timestamp value="2022-07-14T12:29:17+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -168,7 +168,7 @@
         <version value="1.0.0"/>
         <name value="MeaningOrderVS"/>
         <status value="active"/>
-        <date value="2022-07-14T12:15:20+00:00"/>
+        <date value="2022-07-14T12:28:55+00:00"/>
         <publisher value="HL7 Portugal"/>
         <contact>
           <name value="HL7 Portugal"/>
@@ -197,8 +197,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:376f3b29-a8d3-4a1b-bf6e-6f4f82d9ce53"/>
-          <timestamp value="2022-07-14T12:15:42+00:00"/>
+          <identifier value="urn:uuid:3cccaf28-379a-42ea-9898-1e06bbce7d16"/>
+          <timestamp value="2022-07-14T12:29:17+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
