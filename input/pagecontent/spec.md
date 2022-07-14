@@ -22,4 +22,5 @@ de prescrição/cancelamento.
 
 A arquitetura da integração do fluxo que passa pelo PNB, pode ser visualizado na Figura 1.
 
-{% include arch-pnb.png%}
+<img src="arch-pnb.png" width="100%"/>
+<br>
