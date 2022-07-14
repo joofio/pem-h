@@ -23,16 +23,16 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="Specifications.html">Introdução</a>
+				<a href="intro.html">Introdução</a>
 			</li>
 			<li>
-				<a href="info-send.html">Envio de informação</a>
+				<a href="mensagem-envio.html">Envio de informação</a>
 			</li>
 			<li>
-				<a href="info-response.html">Resposta</a>
+				<a href="mensagem-resposta.html">Resposta</a>
 			</li>
 			<li>
-				<a href="support-resources.html">Recursos de suporte / genéricos</a>
+				<a href="recursos Suporte.html">Recursos de suporte / genéricos</a>
 			</li>
 			<li>
 				<a href="artifacts.html">Artefactos</a>

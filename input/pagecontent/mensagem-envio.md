@@ -1,4 +1,3 @@
-##  Mensagem de Envio
 A Prescrição de Medicação vem responder à necessidade de maior interoperabilidade entre as diversas aplicações externas/terceiras da SPMS no âmbito da prescrição de medicamentos e produtos farmacêuticos. As operações relacionadas à Prescrição de Medicação são representadas a seguir:
 
 | Operação                       | Código  | Descrição                                   |
@@ -33,33 +32,32 @@ A assinatura é sobre o conteúdo externo ao elemento de assinatura e pode ser i
 ### A2) MessageHeader
 Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest.
 
-A3) RequestGroup
+### A3) RequestGroup
 Este recurso representa a receita (Número da receita, local e central, número da linha e a data de validade ).
 
-A4) MedicationRequest
+### A4) MedicationRequest
 Este recurso contém informações da linha da receita.
 
-A5) Medication
+### A5) Medication
 Este recurso representa o medicamento que é referenciado pelo recurso MedicationRequest.
 
-A6) Patient
+### A6) Patient
 Utente a quem diz respeito a prescrição de medicação.
 
-RelatedPerson
+#### RelatedPerson
 Este recurso é complementar ao recurso PATIENT para atender a extensão sobre a filiação do utente "patient-parents" (Mother/Father).
 Especificidades do recurso Patient
 Na tabela a seguir são apresentados elementos do recurso Patient (item A6 desta especificação) com especificidades para essa Especificação
-Técnica.
-Para os demais campos seguem as regras definidas no respectivo perfil.
+Técnica. Para os demais campos seguem as regras definidas no respectivo perfil.
 
 
-A7) Encounter
+### A7) Encounter
 Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada.
 
-A8) Coverage
+### A8) Coverage
 Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria.
 
-A9) Location 
+### A9) Location 
 Recurso utilizado para representar informação sobre o local de prescrição da medicação
 
 

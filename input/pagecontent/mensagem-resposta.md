@@ -1,4 +1,3 @@
-## B) Mensagem de Resposta
 O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora.
 Assim que a IOP recebe uma mensagem do cliente emissor com a prescrição de medicação, e após validação estrutural da mesma, envia um
 ACK de transporte para o cliente emissor. Seguidamente envia a mensagem para o cliente destino.
@@ -12,12 +11,10 @@ O Bundle da mensagem de resposta deve ser do tipo "message", deve ter como prime
 ### B1.1) MessageHeader
 Este recurso deve ser a primeira entrada no Bundledas mensagens resposta de ACK de transporte e aplicacional, e deve trazer informação sobre o resultadoda recepção ou processamento da mensagem pelo cliente destino.
 
-B1.2) RequestGroup
+### B1.2) RequestGroup
 Este recurso representa o retorno da receita quando ocorre o sucesso na recepção/processamento da mensagem.
 Para além disso, esse recurso contêm elementos que compõem a receita gerados somente no retorno da receita, como o "Número Central da
 Receita" e o "Pin da Receita".
 
-B1.3) OperationOutcome
-positiveInt
-string
- Recurso que representa informação detalhada sobre problemas encontradosna recepção da mensagem pela IOP ou pelos cliente destino, ou no processamento da prescrição de medicação.
+### B1.3) OperationOutcome
+Recurso que representa informação detalhada sobre problemas encontradosna recepção da mensagem pela IOP ou pelos cliente destino, ou no processamento da prescrição de medicação.
