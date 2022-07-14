@@ -124,8 +124,15 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Patient"
 * telecom.value = "PedroAlvaresCabral@dominio.pt"
 
 
-//Instance: ExemploEncounter
-//InstanceOf: Encounter
-//Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
+Instance: ExemploEncounter
+InstanceOf: Encounter
+Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 
-
+* id = "2d3f8e19-205e-40c6-aeec7b17cbef8045"
+* identifier.system = "http://spms.min-saude.pt/iop/identifiers/encounter"
+* identifier.value = "1243546"
+* status = #in-progress
+* class = http://hl7.org/fhir/v3/ActCode#EMER "Emergency"
+* subject.reference = "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+* participant.individual.reference = "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"
+* period.end = "2019-01-27"
