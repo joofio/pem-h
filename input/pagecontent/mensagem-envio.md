@@ -8,6 +8,13 @@ A Prescrição de Medicação vem responder à necessidade de maior interoperabi
 | MED_PRESCRIPTION_CANCEL_ACK    | 10923   | Retorno de Cancelar Prescrição da Medicação |
 
 
+**caracterização dos pedidos**
+| Evento                                  | Protocolo de Comunicação | Método | URL do endpoint                                                       | Accept-Charset | Header                                                                                                                             |
+|-----------------------------------------|--------------------------|--------|-----------------------------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------------------------------------|
+| 10724 MED_PRESCRIPTION_SYNCHRO NIZATION | HTTP REST                | Post   | http://<hostname\>:<porta\>/fhirServerDstu3$process-message?async=true | UTF-8          | **Content-Type:** application/json   **Authorization.Type:** Basic  **Authorization.Username:** <requisitar\>  **Authorization.Password:** <requisitar\> |
+
+
+
 De forma a cumprir o standard HL7 FHIR, uma Prescrição de Medicação deve ir empacotado num Bundle cujo recurso principal é o recurso RequestGroup.
 
 Os recursos presentes no bundle serão:
