@@ -3,7 +3,7 @@
 
 err = 31, warn = 30, info = 28
 IG Publisher Version: 1.1.125
-Generated Thu Jul 14 10:28:31 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+Generated Thu Jul 14 10:47:44 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 6 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 17 / 14 / 26
  /github/workspace/fsh-generated/resources/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 3 / 0 / 5
@@ -38,12 +38,12 @@ WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventCodeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventagsVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/MeaningOrderVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 223, column 624: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 223, column 790: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 223, column 1151: The link 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
-ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 223, column 769: The link 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8' for "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
-ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 223, column 453: The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" cannot be resolved
-ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 223, column 583: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 624: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 790: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 1151: The link 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
+ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 232, column 769: The link 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8' for "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 453: The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 583: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
 == fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290.json ==
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Rule 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Failed
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader): MessageHeader.event[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MessageHeader)

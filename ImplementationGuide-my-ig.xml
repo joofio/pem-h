@@ -533,8 +533,23 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="info-response.html"/>
+        <title value="Info Response"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="info-send.html"/>
+        <title value="Info Send"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="Specifications.html"/>
         <title value="Specifications"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="support-resources.html"/>
+        <title value="Support Resources"/>
         <generation value="markdown"/>
       </page>
     </page>
