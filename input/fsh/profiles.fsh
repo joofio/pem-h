@@ -46,7 +46,7 @@ Id:        duplicate-order
 Title:    "Condition related to the current resource"
 Description: "The resource has an unspecified relationship with a Condition."
 * value[x] only positiveInt
-//^url = "http://spms.min-saude.pt/iop/extensions/prescription-duplicate"
+* ^url = "http://spms.min-saude.pt/iop/extensions/prescription-duplicate"
 
 
 Extension: MeaningOrder
@@ -55,7 +55,7 @@ Title:    "Condition related to the current resource"
 Description: "The resource has an unspecified relationship with a Condition."
 * value[x] only CodeableConcept
 * value[x] from MeaningOrderVS (required)
-//^url = "http://spms.min-saude.pt/iop/extensions/prescription-duplicate"
+* ^url = "http://spms.min-saude/pe/top/extensions/med-request-modality"
 
 
 
@@ -78,8 +78,6 @@ Description: "Este recurso representa a receita (Número da receita, local e cen
 
 * extension contains duplicate-order named duplicateOrder 0..1 
 * extension contains meaning-order named MeaningOrder 0..1
-//* extension[duplicate-order].url = "http://spms.min-saude.pt/iop/extensions/prescription-duplicate"
-* extension[MeaningOrder].valueCodeableConcept.coding.system = "http://spms.min-saude/pe/top/extensions/med-request-modality"
 
 Profile:     PEMHMedicationRequest
 Id:          med-request-profile
