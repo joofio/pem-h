@@ -466,5 +466,20 @@
         }
       }
     }
-  ]
+  ],
+  "signature": {
+    "type": [
+      {
+        "system": "urn:iso-astm:E1762-95:2013",
+        "code": "1.2.840.10065.1.12.1.1",
+        "display": "Author's Signature"
+      }
+    ],
+    "when": "2019-10-10T23:10:23+00:00",
+    "who": {
+      "reference": "Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8"
+    },
+    "sigFormat": "application/signature+xml",
+    "data": "dGhpcyBibG9iIGlzIHNuaXBwZWQ="
+  }
 }
