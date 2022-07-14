@@ -37,6 +37,9 @@ Description: "Exemplo 1 - Nova prescrição de medicação"
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"
 * entry[+].resource = ExemploMedicationRequest
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5"
+* entry[+].resource = ExemploMedication
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab"
+
 
 Instance: ExemploRequestGroup
 InstanceOf: PEMHContent
@@ -68,13 +71,48 @@ Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
 * subject.reference = "Patient/3616b380-01be-465a-aa29906337c6e7a4"
 //* context.reference = "Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045"
 * authoredOn = "2019-07-14T23:10:23+00:00"
-* requester.agent.reference = "Practitioner/f644ab44-7e32-4e05972c-1f14bebf27a8"
-* requester.agent.reference = "Dr. António da Cruz"
-* onBehalfof.reference = "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
+//* requester.agent.reference = "Practitioner/f644ab44-7e32-4e05972c-1f14bebf27a8"
+//* requester.agent.display = "Dr. António da Cruz"
+//* onBehalfof.reference = "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
 * note.text = "Informação sobre a prescrição"
 * dosageInstruction
   * text = "500 mg daily for 5 days"
   * timing.repeat.boundsPeriod.start =  "2019-07-16"
   * timing.repeat.boundsPeriod.end = "2019-07-30"
-  * timing.timeofDay = "09:00:00"
+  * timing.repeat.timeOfDay = "09:00:00"
+  * route.coding.system = "http://www.infarmed.pt"
+  * route.coding.code = #255560000
+  * route.coding.display = "Intravenous"
+  * doseAndRate.doseQuantity.value = 400
+  * doseAndRate.doseQuantity.unit = "mg"
+  * doseAndRate.doseQuantity.system = "https://www.infarmed.pt"
+  * doseAndRate.doseQuantity.code = #mg
+* dispenseRequest.quantity.value = 30
+* dispenseRequest.quantity.unit = "TAB"
+* dispenseRequest.quantity.code = #TAB
+* dispenseRequest.quantity.system = "https://www.infarmed.pt"
 
+Instance: ExemploMedication
+InstanceOf: Medication
+Description: "Exemplo 1 - Nova prescrição de medicação - Medication"
+
+* id = "a87cddf3-01de-4241-b9b2-7209f5f2bcab"
+* code.coding.system = "http://infarmed.pt"
+* code.coding.code = #10007274
+* code.coding.display = "Ibuprofeno 600 mg Comp"
+* form.coding.system = "http://www.infarmed.pt"
+* form.coding.code = #10219000
+* form.coding.display = "Comprimido"
+
+
+Instance: ExemploPatient
+InstanceOf: Patient
+Description: "Exemplo 1 - Nova prescrição de medicação - Patient"
+
+* id = "a87cddf3-01de-4241-b9b2-7209f5f2bcab"
+* code.coding.system = "http://infarmed.pt"
+* code.coding.code = #10007274
+* code.coding.display = "Ibuprofeno 600 mg Comp"
+* form.coding.system = "http://www.infarmed.pt"
+* form.coding.code = #10219000
+* form.coding.display = "Comprimido"
