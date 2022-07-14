@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "2d3f8e19-205e-40c6-aeec7b17cbef8045"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"2d3f8e19-205e-40c6-aeec7b17cbef8045\" </p></div><p><b>identifier</b>: id: 1243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'EMER', stated as 'Emergency')</p><p><b>subject</b>: <a href=\"Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a> \" CABRAL\"</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8\">Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p></div>"
+  ];
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/iop/identifiers/encounter" ];
+     fhir:Identifier.value [ fhir:value "1243546" ]
+  ];
+  fhir:Encounter.status [ fhir:value "in-progress"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ActCode" ];
+     fhir:Coding.code [ fhir:value "EMER" ];
+     fhir:Coding.display [ fhir:value "Emergency" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://example.com/fhir/example/Patient/3616b380-01be-465a-aa29-906337c6e7a4>;
+     fhir:Reference.reference [ fhir:value "Patient/3616b380-01be-465a-aa29-906337c6e7a4" ]
+  ];
+  fhir:Encounter.participant [
+     fhir:index 0;
+     fhir:Encounter.participant.individual [
+       fhir:link <http://example.com/fhir/example/Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8>;
+       fhir:Reference.reference [ fhir:value "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" ]
+     ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.end [ fhir:value "2019-01-27"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

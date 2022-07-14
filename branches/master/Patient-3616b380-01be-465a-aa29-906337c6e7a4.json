@@ -1,0 +1,44 @@
+{
+  "resourceType": "Patient",
+  "id": "3616b380-01be-465a-aa29-906337c6e7a4",
+  "meta": {
+    "lastUpdated": "2019-01-14T23:10:23+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Pedro Alvares Cabral</b> male, DoB: 1979-11-19 ( NNU: 11920641576)</p></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://h17.org/fhir/v2/0203",
+            "code": "HC",
+            "display": "Health Card Number"
+          }
+        ],
+        "text": "NNU"
+      },
+      "system": "http://spms.min-saude.pt/rnu/identifiers/patient-id",
+      "value": "11920641576"
+    }
+  ],
+  "name": [
+    {
+      "text": "Pedro Alvares Cabral",
+      "family": "Cabral",
+      "given": [
+        "Pedro"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "PedroAlvaresCabral@dominio.pt"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1979-11-19"
+}
