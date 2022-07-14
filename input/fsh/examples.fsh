@@ -59,7 +59,11 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
 
 * entry[+].resource = ExemploEncounter
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
-
+* signature.type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 "Author's Signature"
+* signature.when = "2019-10-10T23:10:23+00:00"
+* signature.who = Reference(Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8) //difference stu3 <-> R4
+* signature.sigFormat = #application/signature+xml
+* signature.data = "dGhpcyBibG9iIGlzIHNuaXBwZWQ=" //difference stu3 <-> R4
 
 Instance: ExemploRequestGroup
 InstanceOf: PEMHContent
@@ -220,6 +224,3 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Organization2"
 * identifier.system = "https://www.ordemdosmedicos.pt"
 * identifier.value = "33421535"
 * name.text = "Dr. António da Cruz"
-//* signature.type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 "Author's Signature"
-//* when = "2019-10-10T23:10:23+00:00"
-//* whoReference = Reference(Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8)
