@@ -22,11 +22,11 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/duplicate-order" ];
+     fhir:Extension.url [ fhir:value "http://spms.min-saude.pt/iop/extensions/prescription-duplicate" ];
      fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/meaning-order" ];
+     fhir:Extension.url [ fhir:value "http://spms.min-saude/pe/top/extensions/med-request-modality" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;

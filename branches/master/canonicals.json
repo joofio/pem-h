@@ -28,13 +28,6 @@
     "name": "PEMHCoverage"
   },
   {
-    "id": "duplicate-order",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/duplicate-order",
-    "version": "1.0.0",
-    "name": "PrescriptionDuplicate"
-  },
-  {
     "id": "encounter-pemh-profile",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
@@ -54,13 +47,6 @@
     "url": "http://example.com/fhir/example/StructureDefinition/location-pemh-profile",
     "version": "1.0.0",
     "name": "PEMHLocation"
-  },
-  {
-    "id": "meaning-order",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/meaning-order",
-    "version": "1.0.0",
-    "name": "MeaningOrder"
   },
   {
     "id": "med-pemh-profile",
@@ -110,5 +96,19 @@
     "url": "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
     "version": "1.0.0",
     "name": "MeaningOrderVS"
+  },
+  {
+    "id": "duplicate-order",
+    "type": "StructureDefinition",
+    "url": "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
+    "version": "1.0.0",
+    "name": "PrescriptionDuplicate"
+  },
+  {
+    "id": "meaning-order",
+    "type": "StructureDefinition",
+    "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
+    "version": "1.0.0",
+    "name": "MeaningOrder"
   }
 ]

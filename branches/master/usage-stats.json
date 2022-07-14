@@ -5,14 +5,14 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://example.com/fhir/example/StructureDefinition/duplicate-order",
+      "url": "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
       "title": "Condition related to the current resource",
       "types": [
         "positiveInt"
       ]
     },
     {
-      "url": "http://example.com/fhir/example/StructureDefinition/meaning-order",
+      "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
       "title": "Condition related to the current resource",
       "types": [
         "CodeableConcept"
@@ -74,14 +74,6 @@
     ]
   },
   "usage": {
-    "http://example.com/fhir/example/StructureDefinition/duplicate-order": [
-      "Bundle.entry.resource",
-      "RequestGroup"
-    ],
-    "http://example.com/fhir/example/StructureDefinition/meaning-order": [
-      "Bundle.entry.resource",
-      "RequestGroup"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -96,9 +88,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
@@ -123,6 +112,14 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://spms.min-saude.pt/iop/extensions/prescription-duplicate": [
+      "Bundle.entry.resource",
+      "RequestGroup"
+    ],
+    "http://spms.min-saude/pe/top/extensions/med-request-modality": [
+      "Bundle.entry.resource",
+      "RequestGroup"
     ]
   }
 }
