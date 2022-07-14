@@ -388,4 +388,17 @@
       </Encounter>
     </resource>
   </entry>
+  <signature>
+    <type>
+      <system value="urn:iso-astm:E1762-95:2013"/>
+      <code value="1.2.840.10065.1.12.1.1"/>
+      <display value="Author's Signature"/>
+    </type>
+    <when value="2019-10-10T23:10:23+00:00"/>
+    <who>
+      <reference value="Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8"/>
+    </who>
+    <sigFormat value="application/signature+xml"/>
+    <data value="dGhpcyBibG9iIGlzIHNuaXBwZWQ="/>
+  </signature>
 </Bundle>

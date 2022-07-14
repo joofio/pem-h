@@ -61,6 +61,21 @@
      fhir:index 10;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4" ];
      fhir:Bundle.entry.resource <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4>
+  ];
+  fhir:Bundle.signature [
+     fhir:Signature.type [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso-astm:E1762-95:2013" ];
+       fhir:Coding.code [ fhir:value "1.2.840.10065.1.12.1.1" ];
+       fhir:Coding.display [ fhir:value "Author's Signature" ]
+     ];
+     fhir:Signature.when [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ];
+     fhir:Signature.who [
+       fhir:link <http://example.com/fhir/example/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8>;
+       fhir:Reference.reference [ fhir:value "Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8" ]
+     ];
+     fhir:Signature.sigFormat [ fhir:value "application/signature+xml" ];
+     fhir:Signature.data [ fhir:value "dGhpcyBibG9iIGlzIHNuaXBwZWQ="^^xsd:base64Binary ]
   ] .
 
 <http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1> a fhir:MessageHeader;
