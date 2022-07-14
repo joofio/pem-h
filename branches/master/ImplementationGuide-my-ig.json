@@ -563,6 +563,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0"
+        },
+        "name": "ExemploLocation",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Location",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f"
+        },
+        "name": "ExemploCoverage",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Coverage",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "RequestGroup"
           }
         ],
@@ -611,8 +639,8 @@
         "reference": {
           "reference": "Bundle/7898e419-6983-4afc-8163-a19274a12290"
         },
-        "name": "Exemplo",
-        "description": "Exemplo 1 - Nova prescrição de medicação",
+        "name": "ExemploMessage",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Bundle",
         "exampleBoolean": true
       },
       {
@@ -633,6 +661,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+        },
+        "name": "ExemploOrganization1",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Organization1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationRequest"
           }
         ],
@@ -641,6 +683,34 @@
         },
         "name": "ExemploMedicationRequest",
         "description": "Exemplo 1 - Nova prescrição de medicação - MedicationRequest",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8"
+        },
+        "name": "ExemploPractitioner",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Organization2",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+        },
+        "name": "ExemploOrganization2",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Organization2",
         "exampleBoolean": true
       }
     ],

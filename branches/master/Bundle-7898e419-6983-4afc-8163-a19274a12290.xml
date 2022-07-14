@@ -22,7 +22,7 @@
           </tag>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "db6428bf-1e58-48d4-9102-b85d6c716bb1" Updated "2019-10-10 11:10:23+0000" </p><p style="margin-bottom: 0px">Profile: <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style="margin-bottom: 0px">Tag: <span title="{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>PEMH</td><td><code>SPMS/PEMH</code></td><td><a href="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem</a></td></tr></table><p><b>sender</b>: <a href="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href="RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df">RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "db6428bf-1e58-48d4-9102-b85d6c716bb1" Updated "2019-10-10 11:10:23+0000" </p><p style="margin-bottom: 0px">Profile: <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style="margin-bottom: 0px">Tag: <span title="{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>PEMH</td><td><code>SPMS/PEMH</code></td><td><a href="#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></td></tr></table><p><b>sender</b>: <a href="#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href="RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df">RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df</a></p></div>
         </text>
         <destination>
           <name value="PEMH"/>
@@ -208,6 +208,184 @@
         <gender value="male"/>
         <birthDate value="1979-11-19"/>
       </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8"/>
+    <resource>
+      <Practitioner>
+        <id value="f644ab44-7e32-4e05-972c-1f14bebf27a8"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "f644ab44-7e32-4e05-972c-1f14bebf27a8" </p></div><p><b>identifier</b>: Medical License number: 33421535</p><p><b>name</b>: Dr. António da Cruz</p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://h17.org/fhir/v2/0203"/>
+              <code value="MD"/>
+              <display value="Medical License number"/>
+            </coding>
+          </type>
+          <system value="https://www.ordemdosmedicos.pt"/>
+          <value value="33421535"/>
+        </identifier>
+        <name>
+          <text value="Dr. António da Cruz"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
+    <resource>
+      <Organization>
+        <id value="fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" </p></div><p><b>identifier</b>: id: 3113408</p><p><b>name</b>: Provedor de Serviços de Cardiologia</p><p><b>telecom</b>: <a href="mailto:PedroAlvaresCabral@dominio.pt">PedroAlvaresCabral@dominio.pt</a></p><p><b>partOf</b>: <a href="#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>
+        </text>
+        <identifier>
+          <system value="http://spms.min-saude.pt/sges/identifiers/entity-id"/>
+          <value value="3113408"/>
+        </identifier>
+        <name value="Provedor de Serviços de Cardiologia"/>
+        <telecom>
+          <system value="email"/>
+          <value value="PedroAlvaresCabral@dominio.pt"/>
+        </telecom>
+        <partOf>
+          <reference value="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+        </partOf>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
+    <resource>
+      <Organization>
+        <id value="dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" </p></div><p><b>identifier</b>: id: 3113408</p><p><b>name</b>: Sclinico Hospitalar</p></div>
+        </text>
+        <identifier>
+          <system value="http://spms.min-saude.pt/sges/identifiers/entity-id"/>
+          <value value="3113408"/>
+        </identifier>
+        <name value="Sclinico Hospitalar"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
+    <resource>
+      <Location>
+        <id value="04f1ea48-e0ef-405e-86fc-498ae907f6d0"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "04f1ea48-e0ef-405e-86fc-498ae907f6d0" </p></div><p><b>identifier</b>: id: 2412341-3</p><p><b>name</b>: Hospital São João</p><p><b>alias</b>: Centro Hospitalar Universitário de São João</p><p><b>type</b>: Urgência <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (location-type#urgencia)</span></p><p><b>managingOrganization</b>: <a href="#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>
+        </text>
+        <identifier>
+          <system value="http://spms.min-saude.pt/sges/identifiers/entity-id"/>
+          <value value="2412341-3"/>
+        </identifier>
+        <name value="Hospital São João"/>
+        <alias value="Centro Hospitalar Universitário de São João"/>
+        <type>
+          <coding>
+            <system value="http://spms.min-saude.pt/prvr/valueset/location-type"/>
+            <code value="urgencia"/>
+            <display value="Urgência"/>
+          </coding>
+        </type>
+        <managingOrganization>
+          <reference value="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+        </managingOrganization>
+      </Location>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
+    <resource>
+      <Coverage>
+        <id value="219eb473-8ee3-4e3d-b785-b204b71de77f"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "219eb473-8ee3-4e3d-b785-b204b71de77f" </p></div><p><b>identifier</b>: Descrição do número de Beneficiário do Utente na Entidade: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ActCode#EHCPOL)</span></p><p><b>subscriber</b>: <a href="Patient/3616b380-01be-465a-aa29906337c6e7a4">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href="Patient/3616b380-01be-465a-aa29906337c6e7a4">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href="Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://spms.min-saude.pt/iop/identifiers/coverage"/>
+              <code value="NBU"/>
+              <display value="Número do Beneficiário na Entidade"/>
+            </coding>
+            <text value="Descrição do número de Beneficiário do Utente na Entidade"/>
+          </type>
+          <system value="http://spms.min-saude.pt/rnu/identifiers/nbu"/>
+          <value value="131255890"/>
+        </identifier>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://h17.org/fhir/v3/ActCode"/>
+            <code value="EHCPOL"/>
+            <display value="Extended healthcare"/>
+          </coding>
+        </type>
+        <subscriber>
+          <reference value="Patient/3616b380-01be-465a-aa29906337c6e7a4"/>
+        </subscriber>
+        <subscriberId value="874207420C"/>
+        <beneficiary>
+          <reference value="Patient/3616b380-01be-465a-aa29906337c6e7a4"/>
+        </beneficiary>
+        <relationship>
+          <coding>
+            <system value="http://h17.org/fhir/policyholder-relationship"/>
+            <code value="self"/>
+            <display value="The Beneficiary is the Policyholder"/>
+          </coding>
+        </relationship>
+        <period>
+          <start value="2019-01-14"/>
+          <end value="2022-01-27"/>
+        </period>
+        <payor>
+          <reference value="Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"/>
+        </payor>
+      </Coverage>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
+    <resource>
+      <Encounter>
+        <id value="2d3f8e19-205e-40c6-aeec7b17cbef8045"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "2d3f8e19-205e-40c6-aeec7b17cbef8045" </p></div><p><b>identifier</b>: id: 1243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'EMER', stated as 'Emergency')</p><p><b>subject</b>: <a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href="Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8">Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href="#Organization_fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>
+        </text>
+        <identifier>
+          <system value="http://spms.min-saude.pt/iop/identifiers/encounter"/>
+          <value value="1243546"/>
+        </identifier>
+        <status value="in-progress"/>
+        <class>
+          <system value="http://hl7.org/fhir/v3/ActCode"/>
+          <code value="EMER"/>
+          <display value="Emergency"/>
+        </class>
+        <subject>
+          <reference value="Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
+        </subject>
+        <participant>
+          <individual>
+            <reference value="Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"/>
+          </individual>
+        </participant>
+        <period>
+          <end value="2019-01-27"/>
+        </period>
+        <serviceProvider>
+          <reference value="Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+        </serviceProvider>
+      </Encounter>
     </resource>
   </entry>
 </Bundle>

@@ -389,6 +389,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0"/>
+      </reference>
+      <name value="ExemploLocation"/>
+      <description value="Exemplo 1 - Nova prescrição de medicação - Location"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f"/>
+      </reference>
+      <name value="ExemploCoverage"/>
+      <description value="Exemplo 1 - Nova prescrição de medicação - Coverage"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="RequestGroup"/>
       </extension>
       <reference>
@@ -427,8 +449,8 @@
       <reference>
         <reference value="Bundle/7898e419-6983-4afc-8163-a19274a12290"/>
       </reference>
-      <name value="Exemplo"/>
-      <description value="Exemplo 1 - Nova prescrição de medicação"/>
+      <name value="ExemploMessage"/>
+      <description value="Exemplo 1 - Nova prescrição de medicação - Bundle"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -444,6 +466,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+      </reference>
+      <name value="ExemploOrganization1"/>
+      <description value="Exemplo 1 - Nova prescrição de medicação - Organization1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
@@ -451,6 +484,28 @@
       </reference>
       <name value="ExemploMedicationRequest"/>
       <description value="Exemplo 1 - Nova prescrição de medicação - MedicationRequest"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8"/>
+      </reference>
+      <name value="ExemploPractitioner"/>
+      <description value="Exemplo 1 - Nova prescrição de medicação - Organization2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+      </reference>
+      <name value="ExemploOrganization2"/>
+      <description value="Exemplo 1 - Nova prescrição de medicação - Organization2"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>
