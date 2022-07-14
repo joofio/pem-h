@@ -7,11 +7,25 @@
     "name": "ExampleIG"
   },
   {
+    "id": "bundle-response-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/bundle-response-profile",
+    "version": "1.0.0",
+    "name": "PEMHbundleResponse"
+  },
+  {
     "id": "content-profile",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
     "version": "1.0.0",
     "name": "PEMHContent"
+  },
+  {
+    "id": "coverage-pemh-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
+    "version": "1.0.0",
+    "name": "PEMHCoverage"
   },
   {
     "id": "duplicate-order",
@@ -21,11 +35,25 @@
     "name": "PrescriptionDuplicate"
   },
   {
+    "id": "encounter-pemh-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
+    "version": "1.0.0",
+    "name": "PEMHEncounter"
+  },
+  {
     "id": "example-patient-profile",
     "type": "StructureDefinition",
     "url": "http://example.com/fhir/example/StructureDefinition/example-patient-profile",
     "version": "1.0.0",
-    "name": "PEMHbundle"
+    "name": "PEMHbundleRquest"
+  },
+  {
+    "id": "location-pemh-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/location-pemh-profile",
+    "version": "1.0.0",
+    "name": "PEMHLocation"
   },
   {
     "id": "meaning-order",
@@ -33,6 +61,13 @@
     "url": "http://example.com/fhir/example/StructureDefinition/meaning-order",
     "version": "1.0.0",
     "name": "MeaningOrder"
+  },
+  {
+    "id": "med-pemh-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/med-pemh-profile",
+    "version": "1.0.0",
+    "name": "PEMHMedication"
   },
   {
     "id": "med-request-profile",
@@ -47,6 +82,13 @@
     "url": "http://example.com/fhir/example/StructureDefinition/msh-profile",
     "version": "1.0.0",
     "name": "PEMHMSH"
+  },
+  {
+    "id": "patient-pemh-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile",
+    "version": "1.0.0",
+    "name": "PEMHPatient"
   },
   {
     "id": "EventCodeVS",

@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Bundle/7898e419-6983-4afc-8163-a19274a12290> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "7898e419-6983-4afc-8163-a19274a12290"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3";
+       fhir:index 0;
+       fhir:link <http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3>
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "message"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df" ];
+     fhir:Bundle.entry.resource <http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.resource [
+       a fhir:RequestGroup;
+       fhir:Resource.id [ fhir:value "25f1ea48-e0ef-405e-86fc-498ae907f6df" ];
+       fhir:Resource.meta [
+         fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ];
+         fhir:Meta.profile [
+           fhir:value "http://example.com/fhir/example/StructureDefinition/content-profile";
+           fhir:index 0;
+           fhir:link <http://example.com/fhir/example/StructureDefinition/content-profile>
+         ]
+       ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "extensions" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"25f1ea48-e0ef-405e-86fc-498ae907f6df\" Updated \"2019-10-10 11:10:23+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-content-profile.html\">Perfil Conteudo Receita</a></p></div><p><b>Condition related to the current resource</b>: 1</p><p><b>Condition related to the current resource</b>: Receita sem Papel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#RSP)</span></p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>"
+       ];
+       fhir:DomainResource.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/duplicate-order" ];
+         fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/meaning-order" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "RSP" ];
+             fhir:Coding.display [ fhir:value "Receita sem Papel" ]
+           ]
+         ]
+       ];
+       fhir:RequestGroup.groupIdentifier [
+         fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/his/<id-rnu-entidade>/identifiers/local-prescription-id" ];
+         fhir:Identifier.value [ fhir:value "6789342" ]
+       ];
+       fhir:RequestGroup.status [ fhir:value "active" ];
+       fhir:RequestGroup.intent [ fhir:value "order" ];
+       fhir:RequestGroup.action [
+         fhir:index 0;
+         fhir:RequestGroup.action.timingPeriod [
+           fhir:Period.end [ fhir:value "2019-01-27"^^xsd:date ]
+         ]
+       ]
+     ]
+  ] .
+
+<http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> a fhir:MessageHeader;
+  fhir:Resource.id [ fhir:value "db6428bf-1e58-48d4-9102-b85d6c716bb1"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3";
+       fhir:index 0;
+       fhir:link <http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spms.min-saude.pt/iop/event-meta-tags" ];
+       fhir:Coding.code [ fhir:value "10911" ];
+       fhir:Coding.display [ fhir:value "MED PRESCRIPTION NEW" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"db6428bf-1e58-48d4-9102-b85d6c716bb1\" Updated \"2019-10-10 11:10:23+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}\">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>PEMH</td><td><code>SPMS/PEMH</code></td><td><a href=\"Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem</a></td></tr></table><p><b>sender</b>: <a href=\"Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href=\"RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df\">RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df</a></p></div>"
+  ];
+  fhir:MessageHeader.destination [
+     fhir:index 0;
+     fhir:MessageHeader.destination.name [ fhir:value "PEMH" ];
+     fhir:MessageHeader.destination.endpoint [ fhir:value "SPMS/PEMH" ];
+     fhir:MessageHeader.destination.receiver [
+       fhir:link <http://example.com/fhir/example/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace>;
+       fhir:Reference.reference [ fhir:value "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ];
+       fhir:Reference.display [ fhir:value "Organização Origem" ]
+     ]
+  ];
+  fhir:MessageHeader.sender [
+     fhir:link <http://example.com/fhir/example/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace>;
+     fhir:Reference.reference [ fhir:value "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ];
+     fhir:Reference.display [ fhir:value "Organização Origem" ]
+  ];
+  fhir:MessageHeader.source [
+     fhir:MessageHeader.source.name [ fhir:value "Aplicação Origem" ];
+     fhir:MessageHeader.source.endpoint [ fhir:value "Endpont_Aplicação_Origem" ]
+  ];
+  fhir:MessageHeader.focus [
+     fhir:index 0;
+     fhir:link <http://example.com/fhir/example/RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df>;
+     fhir:Reference.reference [ fhir:value "RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/Bundle/7898e419-6983-4afc-8163-a19274a12290.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

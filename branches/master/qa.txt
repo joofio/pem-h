@@ -1,17 +1,25 @@
 ﻿ExampleIG : Validation Results
 =========================================
 
-err = 3, warn = 13, info = 3
+err = 14, warn = 20, info = 4
 IG Publisher Version: 1.1.125
-Generated Thu Jul 14 08:24:39 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+Generated Thu Jul 14 09:12:41 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 8 / 3 / 5
  /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-content-profile : 0 / 2 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-duplicate-order : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-bundle-response-profile : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-content-profile : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-coverage-pemh-profile : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-duplicate-order : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-encounter-pemh-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-example-patient-profile : 0 / 2 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-meaning-order : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-location-pemh-profile : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-meaning-order : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-med-pemh-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-med-request-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-msh-profile : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-patient-pemh-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-EventCodeVS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-EventagsVS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-MeaningOrderVS : 0 / 0 / 1
@@ -21,28 +29,55 @@ WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventCodeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventagsVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/MeaningOrderVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290.json ==
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader): MessageHeader.event[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MessageHeader)
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).meta.tag[0]: Code System URI 'http://spms.min-saude.pt/iop/event-meta-tags' is unknown so the code cannot be validated
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).destination[0].receiver: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).sender: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Unable to resolve resource with reference 'RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df'
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).meta.profile[0]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'MeaningOrderVS' (http://example.com/fhir/example/ValueSet/MeaningOrderVS), and a coding from this value set is required) (codes = null#RSP)
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).action[0]: rqg-1: 'Must have resource or action but not both' Rule 'Must have resource or action but not both' Failed
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).meta.profile[0]: Value is 'http://example.com/fhir/example/StructureDefinition/content-profile' but must be 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescriptionsynchronization-msh/v1-0-3'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.meta.profile[0]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/ImplementationGuide-my-ig.json ==
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://example.com/fhir/example
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example
+== fsh-generated/resources/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.json ==
+ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.meta.profile[0]: Value is 'http://example.com/fhir/example/StructureDefinition/content-profile' but must be 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescriptionsynchronization-msh/v1-0-3'
+ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'MeaningOrderVS' (http://example.com/fhir/example/ValueSet/MeaningOrderVS), and a coding from this value set is required) (codes = null#RSP)
+WARNING: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.action[0]: rqg-1: 'Must have resource or action but not both' Rule 'Must have resource or action but not both' Failed
+== fsh-generated/resources/StructureDefinition-bundle-response-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/bundle-response-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-content-profile.json ==
 INFORMATION: StructureDefinition/content-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 WARNING: StructureDefinition/content-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error 
-WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/content-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-coverage-pemh-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-duplicate-order.json ==
-WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/duplicate-order'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-encounter-pemh-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-example-patient-profile.json ==
 INFORMATION: StructureDefinition/example-patient-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 WARNING: StructureDefinition/example-patient-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error 
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/example-patient-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-location-pemh-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/location-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-meaning-order.json ==
-WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/meaning-order'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-med-pemh-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/med-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-med-request-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/med-request-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-msh-profile.json ==
 INFORMATION: StructureDefinition/msh-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 WARNING: StructureDefinition/msh-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error 
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/msh-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-patient-pemh-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/patient-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-EventCodeVS.json ==
 == fsh-generated/resources/ValueSet-EventagsVS.json ==
 == fsh-generated/resources/ValueSet-MeaningOrderVS.json ==

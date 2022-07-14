@@ -362,8 +362,50 @@
         "reference": {
           "reference": "StructureDefinition/content-profile"
         },
-        "name": "Example Patient Profile",
+        "name": "Perfil Conteudo Receita",
         "description": "Este recurso representa a receita (Número da receita, local e central, número da linha e a data de validade ).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/coverage-pemh-profile"
+        },
+        "name": "Perfil Coverage",
+        "description": "Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/encounter-pemh-profile"
+        },
+        "name": "Perfil Episódio",
+        "description": "Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/location-pemh-profile"
+        },
+        "name": "Perfil Location",
+        "description": "Recurso utilizado para representar informação sobre o local de prescrição da medicação.",
         "exampleBoolean": false
       },
       {
@@ -376,8 +418,22 @@
         "reference": {
           "reference": "StructureDefinition/msh-profile"
         },
-        "name": "Example Patient Profile",
+        "name": "Perfil MessageHeader",
         "description": "Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/med-pemh-profile"
+        },
+        "name": "Perfil Medicação",
+        "description": "Este recurso representa o medicamento que é referenciado pelo recurso MedicationRequest.",
         "exampleBoolean": false
       },
       {
@@ -390,8 +446,36 @@
         "reference": {
           "reference": "StructureDefinition/med-request-profile"
         },
-        "name": "Example Patient Profile",
+        "name": "Perfil informação de receita",
         "description": "Este recurso contém informações da linha da receita.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-pemh-profile"
+        },
+        "name": "Perfil Paciente",
+        "description": "Utente a quem diz respeito a prescrição de medicação.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/bundle-response-profile"
+        },
+        "name": "Perfil Bundle de mensagem de resposta",
+        "description": "O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora.",
         "exampleBoolean": false
       },
       {
@@ -404,7 +488,7 @@
         "reference": {
           "reference": "StructureDefinition/example-patient-profile"
         },
-        "name": "Example Patient Profile",
+        "name": "Perfil Bundle de mensagem",
         "description": "O Bundle da mensagem deve ser do tipo 'message', deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso.",
         "exampleBoolean": false
       },
@@ -474,6 +558,34 @@
         },
         "name": "MeaningOrderVS",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RequestGroup"
+          }
+        ],
+        "reference": {
+          "reference": "RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"
+        },
+        "name": "ExemploRequestGroup",
+        "description": "Exemplo 1 - Nova prescrição de medicação - RequestGroup",
+        "exampleCanonical": "http://example.com/fhir/example/StructureDefinition/content-profile"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/7898e419-6983-4afc-8163-a19274a12290"
+        },
+        "name": "Exemplo",
+        "description": "Exemplo 1 - Nova prescrição de medicação",
+        "exampleBoolean": true
       }
     ],
     "page": {

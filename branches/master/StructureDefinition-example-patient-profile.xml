@@ -26,10 +26,10 @@
   </extension>
   <url value="http://example.com/fhir/example/StructureDefinition/example-patient-profile"/>
   <version value="1.0.0"/>
-  <name value="PEMHbundle"/>
-  <title value="Example Patient Profile"/>
+  <name value="PEMHbundleRquest"/>
+  <title value="Perfil Bundle de mensagem"/>
   <status value="active"/>
-  <date value="2022-07-14T08:24:07+00:00"/>
+  <date value="2022-07-14T09:12:07+00:00"/>
   <publisher value="HL7 Portugal"/>
   <contact>
     <name value="HL7 Portugal"/>

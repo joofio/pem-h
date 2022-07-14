@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="7898e419-6983-4afc-8163-a19274a12290"/>
+  <meta>
+    <lastUpdated value="2019-10-10T23:10:23+00:00"/>
+    <profile value="http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3"/>
+  </meta>
+  <type value="message"/>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"/>
+    <resource>
+      <MessageHeader>
+        <id value="db6428bf-1e58-48d4-9102-b85d6c716bb1"/>
+        <meta>
+          <lastUpdated value="2019-10-10T23:10:23+00:00"/>
+          <profile value="http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3"/>
+          <tag>
+            <system value="http://spms.min-saude.pt/iop/event-meta-tags"/>
+            <code value="10911"/>
+            <display value="MED PRESCRIPTION NEW"/>
+          </tag>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "db6428bf-1e58-48d4-9102-b85d6c716bb1" Updated "2019-10-10 11:10:23+0000" </p><p style="margin-bottom: 0px">Profile: <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style="margin-bottom: 0px">Tag: <span title="{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>PEMH</td><td><code>SPMS/PEMH</code></td><td><a href="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem</a></td></tr></table><p><b>sender</b>: <a href="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href="RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df">RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df</a></p></div>
+        </text>
+        <destination>
+          <name value="PEMH"/>
+          <endpoint value="SPMS/PEMH"/>
+          <receiver>
+            <reference value="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+            <display value="Organização Origem"/>
+          </receiver>
+        </destination>
+        <sender>
+          <reference value="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
+          <display value="Organização Origem"/>
+        </sender>
+        <source>
+          <name value="Aplicação Origem"/>
+          <endpoint value="Endpont_Aplicação_Origem"/>
+        </source>
+        <focus>
+          <reference value="RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <RequestGroup>
+        <id value="25f1ea48-e0ef-405e-86fc-498ae907f6df"/>
+        <meta>
+          <lastUpdated value="2019-10-10T23:10:23+00:00"/>
+          <profile value="http://example.com/fhir/example/StructureDefinition/content-profile"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "25f1ea48-e0ef-405e-86fc-498ae907f6df" Updated "2019-10-10 11:10:23+0000" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-content-profile.html">Perfil Conteudo Receita</a></p></div><p><b>Condition related to the current resource</b>: 1</p><p><b>Condition related to the current resource</b>: Receita sem Papel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#RSP)</span></p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class="grid"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>
+        </text>
+        <extension url="http://example.com/fhir/example/StructureDefinition/duplicate-order">
+          <valuePositiveInt value="1"/>
+        </extension>
+        <extension url="http://example.com/fhir/example/StructureDefinition/meaning-order">
+          <valueCodeableConcept>
+            <coding>
+              <code value="RSP"/>
+              <display value="Receita sem Papel"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <groupIdentifier>
+          <system value="http://spms.min-saude.pt/his/&lt;id-rnu-entidade&gt;/identifiers/local-prescription-id"/>
+          <value value="6789342"/>
+        </groupIdentifier>
+        <status value="active"/>
+        <intent value="order"/>
+        <action>
+          <timingPeriod>
+            <end value="2019-01-27"/>
+          </timingPeriod>
+        </action>
+      </RequestGroup>
+    </resource>
+  </entry>
+</Bundle>
