@@ -25,14 +25,15 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
    // * event.display = "MED PRESCRIPTION SYNCHRONIZATION"
     * destination.name = "PEMH"
     * destination.endpoint = "SPMS/PEMH"
-    * destination.receiver.reference = "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+    * destination.receiver = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
     * destination.receiver.display = "Organização Origem"
-    * sender.reference = "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+    * sender = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
     * sender.display = "Organização Origem"
     // * timestamp = "2019-07-14T23:10:23+00:00"
     * source.name = "Aplicação Origem"
     * source.endpoint = "Endpont_Aplicação_Origem"
-    * focus.reference = "RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df"
+    * focus = Reference(RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df)
+
 * entry[+].resource = ExemploRequestGroup
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"
 * entry[+].resource = ExemploMedicationRequest
@@ -59,10 +60,11 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
 
 * entry[+].resource = ExemploEncounter
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+
 * signature.type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 "Author's Signature"
 * signature.when = "2019-10-10T23:10:23+00:00"
 * signature.who = Reference(Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8) //difference stu3 <-> R4
-* signature.sigFormat = #application/signature+xml
+* signature.sigFormat = #application/signature+xml //difference stu3 <-> R4
 * signature.data = "dGhpcyBibG9iIGlzIHNuaXBwZWQ=" //difference stu3 <-> R4
 
 Instance: ExemploRequestGroup
@@ -76,8 +78,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - RequestGroup"
 * status = #active
 * intent = #order
 * extension[duplicateOrder].valuePositiveInt = 1
-* extension[MeaningOrder].valueCodeableConcept.coding.code = #RSP
-* extension[MeaningOrder].valueCodeableConcept.coding.display  =  "Receita sem Papel"
+* extension[MeaningOrder].valueCodeableConcept.coding = http://spms.min-saude.pt/bdnp/codesystem/med-request-modality#RSP "Receita sem Papel"
 //* action.label = 1
 * action.timingPeriod.end = "2019-01-27"
 
@@ -91,8 +92,8 @@ Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
 * groupIdentifier.value = "6789342"
 * status = #active
 * intent = #order
-* medicationReference.reference = "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab"
-* subject.reference = "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+* medicationReference = Reference(Medication/a87cddf3-01de-4241-b9b27209f5f2bcab)
+* subject = Reference(Patient/3616b380-01be-465a-aa29906337c6e7a4)
 //* context.reference = "Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045"
 * authoredOn = "2019-07-14T23:10:23+00:00"
 //* requester.agent.reference = "Practitioner/f644ab44-7e32-4e05972c-1f14bebf27a8"
@@ -104,9 +105,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
   * timing.repeat.boundsPeriod.start =  "2019-07-16"
   * timing.repeat.boundsPeriod.end = "2019-07-30"
   * timing.repeat.timeOfDay = "09:00:00"
-  * route.coding.system = "http://www.infarmed.pt"
-  * route.coding.code = #255560000
-  * route.coding.display = "Intravenous"
+  * route.coding = http://www.infarmed.pt#255560000 "Intravenous"
   * doseAndRate.doseQuantity.value = 400
   * doseAndRate.doseQuantity.unit = "mg"
   * doseAndRate.doseQuantity.system = "https://www.infarmed.pt"
@@ -131,9 +130,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Patient"
 
 * id = "3616b380-01be-465a-aa29-906337c6e7a4"
 * meta.lastUpdated = "2019-01-14T23:10:23+00:00"
-* identifier.type.coding.system =  "http://h17.org/fhir/v2/0203"
-* identifier.type.coding.display =  "Health Card Number"
-* identifier.type.coding.code = #HC
+* identifier.type.coding =  http://h17.org/fhir/v2/0203#HC "Health Card Number"
 * identifier.type.text = "NNU"
 * identifier.system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
 * identifier.value = "11920641576"
@@ -155,10 +152,12 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * identifier.value = "1243546"
 * status = #in-progress
 * class = http://hl7.org/fhir/v3/ActCode#EMER "Emergency"
-* subject.reference = "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
-* participant.individual.reference = "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"
+
+* subject = Reference(Patient/3616b380-01be-465a-aa29-906337c6e7a4)
+* participant.individual = Reference(Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8)
+
 * period.end = "2019-01-27"
-* serviceProvider.reference = "Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+* serviceProvider = Reference(Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 
 Instance: ExemploCoverage
 InstanceOf: Coverage
@@ -171,10 +170,13 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 * identifier.value = "131255890"
 * type = http://h17.org/fhir/v3/ActCode#EHCPOL "Extended healthcare"
 * subscriberId = "874207420C"
-* subscriber.reference = "Patient/3616b380-01be-465a-aa29906337c6e7a4"
-* beneficiary.reference = "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+
+* subscriber = Reference(Patient/3616b380-01be-465a-aa29906337c6e7a4)
+
+* beneficiary = Reference(Patient/3616b380-01be-465a-aa29906337c6e7a4)
+
 * relationship =  http://h17.org/fhir/policyholder-relationship#self "The Beneficiary is the Policyholder"
-* payor.reference = "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
+* payor = Reference(Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace)
 * period.start = "2019-01-14"
 * period.end = "2022-01-27"
 * status = #active
@@ -190,7 +192,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Location"
 * name = "Hospital São João"
 * alias = "Centro Hospitalar Universitário de São João"
 * type = http://spms.min-saude.pt/prvr/valueset/location-type#urgencia "Urgência"
-* managingOrganization.reference = "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+* managingOrganization = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 
 Instance: ExemploOrganization1
 InstanceOf: Organization
@@ -211,7 +213,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Organization2"
 * name = "Provedor de Serviços de Cardiologia"
 * telecom.system = #email
 * telecom.value = "PedroAlvaresCabral@dominio.pt"
-* partOf.reference = "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+* partOf = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 
 
 
