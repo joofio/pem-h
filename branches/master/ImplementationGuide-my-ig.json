@@ -740,8 +740,23 @@
           "generation": "html"
         },
         {
+          "nameUrl": "info-response.html",
+          "title": "Info Response",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "info-send.html",
+          "title": "Info Send",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "Specifications.html",
           "title": "Specifications",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "support-resources.html",
+          "title": "Support Resources",
           "generation": "markdown"
         }
       ]

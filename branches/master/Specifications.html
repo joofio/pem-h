@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -113,10 +113,19 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="Specifications.html"></a>
+				<a href="Specifications.html">Introdução</a>
 			</li>
 			<li>
-				<a href="artifacts.html">Artifact Index</a>
+				<a href="info-send.html">Envio de informação</a>
+			</li>
+			<li>
+				<a href="info-response.html">Resposta</a>
+			</li>
+			<li>
+				<a href="support-resources.html">Recursos de suporte / genéricos</a>
+			</li>
+			<li>
+				<a href="artifacts.html">Artefactos</a>
 			</li>
 			
 		</ul>
@@ -175,11 +184,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introdução" id="markdown-toc-introdução">Introdução</a>    <ul>
+      <li><a href="#prescrição-de-medicação" id="markdown-toc-prescrição-de-medicação">Prescrição de Medicação</a></li>
+      <li><a href="#configuração-dos-canais" id="markdown-toc-configuração-dos-canais">Configuração dos canais</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
-<h3 id="especificação">Especificação</h3>
-<p>A) Introdução</p>
+<h2 id="introdução">Introdução</h2>
 
 <p>O presente relatório diz respeito aos fluxos do Gestão de Medicação relativos às as regras de prescrição eletrónica de medicamentos a utentes
 em regime de ambulatório hospitalar e os procedimentos de dispensa pelos/através dos Serviços Farmacêuticos Hospitalares destes
@@ -191,7 +206,7 @@ dia, consulta externa, cirurgia de ambulatório e serviço de urgência. Os flux
   <li>Dispensa de Medicação - 8220 - (fluxo síncrono).</li>
 </ul>
 
-<p>A1) Prescrição de Medicação</p>
+<h3 id="prescrição-de-medicação">Prescrição de Medicação</h3>
 
 <p>O fluxo de Prescrição de Medicação é representado pelo Evento 10724 - MED_PRESCRIPTION_SYNCHRONIZATION, através das operações:</p>
 <ul>
@@ -206,8 +221,70 @@ de prescrição/cancelamento.</p>
 
 <p>A arquitetura da integração do fluxo que passa pelo PNB, pode ser visualizado na Figura 1.</p>
 
-<p><img src="arch-pnb.png" width="100%" />
+<p><img src="arch-pnb.png" width="80%" />
 <br /></p>
+
+<p>A Aplicação Emissora envia uma mensagem para o PNB, o qual após validar estruturalmente a mensagem envia à PEMH. A resposta da mensagem será emitida pela PEMH, validada estruturalmente pela PNB, que encaminha a mensagem para a aplicação correspondente. Esse fluxo pode ser visualizado na Figura 2.</p>
+
+<p><img src="fig2.png" width="100%" />
+<br /></p>
+
+<h3 id="configuração-dos-canais">Configuração dos canais</h3>
+
+<p>Tabela 1. Caracterização dos fluxos e formato das mensagens trocadas.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AUC</td>
+      <td>The distributed approach provides similar prediction capabilities when compared to its centralised counterparts</td>
+    </tr>
+    <tr>
+      <td>F1</td>
+      <td>The distributed approach is not signifincatly inferior to any local model when compared to AUC</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tabela 2. Operações possíveis para os fluxos de prescrição</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operação</th>
+      <th>Código</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MED_PRESCRIPTION_NEW</td>
+      <td>10911</td>
+      <td>Prescrever Medicação</td>
+    </tr>
+    <tr>
+      <td>MED_PRESCRIPTION_ACK</td>
+      <td>10917</td>
+      <td>Retorno da Prescrição da Medicação</td>
+    </tr>
+    <tr>
+      <td>MED_PRESCRIPTION_CANCEL</td>
+      <td>10912</td>
+      <td>Cancelar Prescrição de Medicação</td>
+    </tr>
+    <tr>
+      <td>MED_PRESCRIPTION_CANCEL_ACK</td>
+      <td>10923</td>
+      <td>Retorno de Cancelar Prescrição da Medicação</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -233,7 +310,7 @@ de prescrição/cancelamento.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 14, 2022 10:27+0000">2022-07-14</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 14, 2022 10:47+0000">2022-07-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
