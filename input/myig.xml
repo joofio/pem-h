@@ -44,16 +44,16 @@
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
-      <title value="Table of Contents"/>
+      <title value="ìndice"/>
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Home Page"/>
         <generation value="html"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
+        <title value="Downloads"/>
         <generation value="html"/>
       </page>
     <!-- change history page -->

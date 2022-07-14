@@ -4,7 +4,7 @@
 		<a href="index.html">IG Home</a>
 	</li>
 	<li>
-		<a href="toc.html">Table of Contents</a>
+		<a href="toc.html">Índice</a>
 	</li>
 <!--
 	<li class="dropdown">
@@ -19,16 +19,20 @@
 	</li>
 -->
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
 			<li>
+				<a href="Specifications.html"></a>
+			</li>
+			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>
+			
 		</ul>
 	</li>
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementação<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
