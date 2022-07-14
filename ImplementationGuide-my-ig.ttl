@@ -562,6 +562,34 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045>;
+         fhir:Reference.reference [ fhir:value "Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploEncounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Encounter" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Patient/3616b380-01be-465a-aa29-906337c6e7a4>;
+         fhir:Reference.reference [ fhir:value "Patient/3616b380-01be-465a-aa29-906337c6e7a4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploPatient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -570,6 +598,34 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab>;
+         fhir:Reference.reference [ fhir:value "Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploMedication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Medication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploMedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - MedicationRequest" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -598,8 +654,8 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 4;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "spec.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Spec" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Specifications.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Specifications" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

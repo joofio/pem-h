@@ -8,7 +8,7 @@
   </meta>
   <type value="message"/>
   <entry>
-    <fullUrl value="http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"/>
+    <fullUrl value="http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1"/>
     <resource>
       <MessageHeader>
         <id value="db6428bf-1e58-48d4-9102-b85d6c716bb1"/>
@@ -47,6 +47,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"/>
     <resource>
       <RequestGroup>
         <id value="25f1ea48-e0ef-405e-86fc-498ae907f6df"/>
@@ -80,6 +81,133 @@
           </timingPeriod>
         </action>
       </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5"/>
+    <resource>
+      <MedicationRequest>
+        <id value="e22942f3-a461-40b9-8449-30f7a7e9d0d5"/>
+        <meta>
+          <lastUpdated value="2019-10-10T23:10:23+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "e22942f3-a461-40b9-8449-30f7a7e9d0d5" Updated "2019-10-10 11:10:23+0000" </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="Medication/a87cddf3-01de-4241-b9b27209f5f2bcab">Medication/a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href="Patient/3616b380-01be-465a-aa29906337c6e7a4">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 11:10:23+0000</p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style="background: LightGoldenRodYellow"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <intent value="order"/>
+        <medicationReference>
+          <reference value="Medication/a87cddf3-01de-4241-b9b27209f5f2bcab"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/3616b380-01be-465a-aa29906337c6e7a4"/>
+        </subject>
+        <authoredOn value="2019-07-14T23:10:23+00:00"/>
+        <groupIdentifier>
+          <system value="http://spms.min-saude.pt/his/&lt;id-rnuentidade&gt;/identifiers/local-prescription-id"/>
+          <value value="6789342"/>
+        </groupIdentifier>
+        <note>
+          <text value="Informação sobre a prescrição"/>
+        </note>
+        <dosageInstruction>
+          <text value="500 mg daily for 5 days"/>
+          <timing>
+            <repeat>
+              <boundsPeriod>
+                <start value="2019-07-16"/>
+                <end value="2019-07-30"/>
+              </boundsPeriod>
+              <timeOfDay value="09:00:00"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://www.infarmed.pt"/>
+              <code value="255560000"/>
+              <display value="Intravenous"/>
+            </coding>
+          </route>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="400"/>
+              <unit value="mg"/>
+              <system value="https://www.infarmed.pt"/>
+              <code value="mg"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+        <dispenseRequest>
+          <quantity>
+            <value value="30"/>
+            <unit value="TAB"/>
+            <system value="https://www.infarmed.pt"/>
+            <code value="TAB"/>
+          </quantity>
+        </dispenseRequest>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab"/>
+    <resource>
+      <Medication>
+        <id value="a87cddf3-01de-4241-b9b2-7209f5f2bcab"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "a87cddf3-01de-4241-b9b2-7209f5f2bcab" </p></div><p><b>code</b>: Ibuprofeno 600 mg Comp <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (infarmed.pt#10007274)</span></p><p><b>form</b>: Comprimido <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (www.infarmed.pt#10219000)</span></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://infarmed.pt"/>
+            <code value="10007274"/>
+            <display value="Ibuprofeno 600 mg Comp"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://www.infarmed.pt"/>
+            <code value="10219000"/>
+            <display value="Comprimido"/>
+          </coding>
+        </form>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
+    <resource>
+      <Patient>
+        <id value="3616b380-01be-465a-aa29-906337c6e7a4"/>
+        <meta>
+          <lastUpdated value="2019-01-14T23:10:23+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "3616b380-01be-465a-aa29-906337c6e7a4" Updated "2019-01-14 11:10:23+0000" </p></div><p><b>identifier</b>: NNU: 11920641576</p><p><b>name</b>: Pedro Alvares Cabral</p><p><b>telecom</b>: <a href="mailto:PedroAlvaresCabral@dominio.pt">PedroAlvaresCabral@dominio.pt</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1979-11-19</p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://h17.org/fhir/v2/0203"/>
+              <code value="HC"/>
+              <display value="Health Card Number"/>
+            </coding>
+            <text value="NNU"/>
+          </type>
+          <system value="http://spms.min-saude.pt/rnu/identifiers/patient-id"/>
+          <value value="11920641576"/>
+        </identifier>
+        <name>
+          <text value="Pedro Alvares Cabral"/>
+          <family value="Cabral"/>
+          <given value="Pedro"/>
+        </name>
+        <telecom>
+          <system value="email"/>
+          <value value="PedroAlvaresCabral@dominio.pt"/>
+        </telecom>
+        <gender value="male"/>
+        <birthDate value="1979-11-19"/>
+      </Patient>
     </resource>
   </entry>
 </Bundle>

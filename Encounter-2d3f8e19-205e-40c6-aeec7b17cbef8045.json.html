@@ -1,9 +1,11 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MY-IG\Spec - FHIR v4.0.1</title>
+    <title>MY-IG\ExemploEncounter - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.17"}
+    h3,h4,h5,h6{--heading-prefix:"6.17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -135,7 +137,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Spec</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ExemploEncounter</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -147,63 +149,112 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1 - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Spec</h2>
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1 - Local Development build (v1.0.0). See the <a href="http://example.com/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.ttl.html">TTL</a>
+    </li>
   
 
 
 
-
-
-
-
-
-
-
-
-
-    <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="especificação">Especificação</h3>
-<p>A) Introdução</p>
-
-<p>O presente relatório diz respeito aos fluxos do Gestão de Medicação relativos às as regras de prescrição eletrónica de medicamentos a utentes
-em regime de ambulatório hospitalar e os procedimentos de dispensa pelos/através dos Serviços Farmacêuticos Hospitalares destes
-medicamentos, incluindo os que se destinam a ser administrados por profissionais de saúde nos serviços de ambulatório do hospital: hospital de
-dia, consulta externa, cirurgia de ambulatório e serviço de urgência. Os fluxos do Gestão de Medicação são controlados pela interoperabilidade através do grupo de canais “82XX”. Mais especificamente, a comunicação no âmbito da gestão de medicação é mediada pelo PNB, através dos seguintes fluxos:</p>
-<ul>
-  <li>Prescrição de medicação - 8200 - (fluxo síncrono).</li>
-  <li>Consulta de Prescrição - 8210 - (fluxo síncrono).</li>
-  <li>Dispensa de Medicação - 8220 - (fluxo síncrono).</li>
 </ul>
 
-<p>A1) Prescrição de Medicação</p>
 
-<p>O fluxo de Prescrição de Medicação é representado pelo Evento 10724 - MED_PRESCRIPTION_SYNCHRONIZATION, através das operações:</p>
-<ul>
-  <li>10911 - MED_PRESCRIPTION_NEW - Prescrever Medicação</li>
-  <li>10912 - MED_PRESCRIPTION_CANCEL - Cancelar Prescrição de Medicação</li>
-</ul>
+<a name="root"> </a>
 
-<p>Sempre que é efetuada uma nova prescrição/cancelamento pelas aplicações de origem, é enviado um pedido diretamente para o PNB, por
-parte da aplicação emissora, quer se trate de uma aplicação interno ou de um player externo.
-Sendo um fluxo síncrono, a aplicação emissora deve ficar a aguardar a resposta da PEMH pelo mesmo canal em que foi enviada a mensagem
-de prescrição/cancelamento.</p>
 
-<p>A arquitetura da integração do fluxo que passa pelo PNB, pode ser visualizado na Figura 1.</p>
+<h2 id="root">: ExemploEncounter - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
 
-<p><img src="arch-pnb.png" width="100%" />
-<br /></p>
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.json" no-download="true">Raw json</a> | <a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resourceType</a>" : "Encounter",
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "2d3f8e19-205e-40c6-aeec7b17cbef8045",
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;2d3f8e19-205e-40c6-aeec7b17cbef8045\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1243546&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: in-progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'EMER', stated as 'Emergency')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\&quot;&gt;Patient/3616b380-01be-465a-aa29-906337c6e7a4&lt;/a&gt; \&quot; CABRAL\&quot;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8\&quot;&gt;Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: ?? --&amp;gt; 2019-01-27&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://spms.min-saude.pt/iop/identifiers/encounter",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1243546"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "in-progress",
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ActCode",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "EMER",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Emergency"
+  },
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+  },
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2019-01-27"
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
 
 
 
@@ -229,7 +280,7 @@ de prescrição/cancelamento.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 14, 2022 09:12+0000">2022-07-14</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package my-ig#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 14, 2022 09:51+0000">2022-07-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

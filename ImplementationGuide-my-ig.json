@@ -577,6 +577,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045"
+        },
+        "name": "ExemploEncounter",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+        },
+        "name": "ExemploPatient",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Patient",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -585,6 +613,34 @@
         },
         "name": "Exemplo",
         "description": "Exemplo 1 - Nova prescrição de medicação",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Medication"
+          }
+        ],
+        "reference": {
+          "reference": "Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab"
+        },
+        "name": "ExemploMedication",
+        "description": "Exemplo 1 - Nova prescrição de medicação - Medication",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5"
+        },
+        "name": "ExemploMedicationRequest",
+        "description": "Exemplo 1 - Nova prescrição de medicação - MedicationRequest",
         "exampleBoolean": true
       }
     ],
@@ -614,8 +670,8 @@
           "generation": "html"
         },
         {
-          "nameUrl": "spec.html",
-          "title": "Spec",
+          "nameUrl": "Specifications.html",
+          "title": "Specifications",
           "generation": "markdown"
         }
       ]

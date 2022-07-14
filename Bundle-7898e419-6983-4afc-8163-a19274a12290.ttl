@@ -19,56 +19,27 @@
   fhir:Bundle.type [ fhir:value "message"];
   fhir:Bundle.entry [
      fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1" ];
+     fhir:Bundle.entry.resource <http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1>
+  ], [
+     fhir:index 1;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df" ];
      fhir:Bundle.entry.resource <http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df>
   ], [
-     fhir:index 1;
-     fhir:Bundle.entry.resource [
-       a fhir:RequestGroup;
-       fhir:Resource.id [ fhir:value "25f1ea48-e0ef-405e-86fc-498ae907f6df" ];
-       fhir:Resource.meta [
-         fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ];
-         fhir:Meta.profile [
-           fhir:value "http://example.com/fhir/example/StructureDefinition/content-profile";
-           fhir:index 0;
-           fhir:link <http://example.com/fhir/example/StructureDefinition/content-profile>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "extensions" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"25f1ea48-e0ef-405e-86fc-498ae907f6df\" Updated \"2019-10-10 11:10:23+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-content-profile.html\">Perfil Conteudo Receita</a></p></div><p><b>Condition related to the current resource</b>: 1</p><p><b>Condition related to the current resource</b>: Receita sem Papel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#RSP)</span></p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>"
-       ];
-       fhir:DomainResource.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/duplicate-order" ];
-         fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/meaning-order" ];
-         fhir:Extension.valueCodeableConcept [
-           fhir:CodeableConcept.coding [
-             fhir:index 0;
-             fhir:Coding.code [ fhir:value "RSP" ];
-             fhir:Coding.display [ fhir:value "Receita sem Papel" ]
-           ]
-         ]
-       ];
-       fhir:RequestGroup.groupIdentifier [
-         fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/his/<id-rnu-entidade>/identifiers/local-prescription-id" ];
-         fhir:Identifier.value [ fhir:value "6789342" ]
-       ];
-       fhir:RequestGroup.status [ fhir:value "active" ];
-       fhir:RequestGroup.intent [ fhir:value "order" ];
-       fhir:RequestGroup.action [
-         fhir:index 0;
-         fhir:RequestGroup.action.timingPeriod [
-           fhir:Period.end [ fhir:value "2019-01-27"^^xsd:date ]
-         ]
-       ]
-     ]
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5" ];
+     fhir:Bundle.entry.resource <http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab" ];
+     fhir:Bundle.entry.resource <http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4" ];
+     fhir:Bundle.entry.resource <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4>
   ] .
 
-<http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> a fhir:MessageHeader;
+<http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1> a fhir:MessageHeader;
   fhir:Resource.id [ fhir:value "db6428bf-1e58-48d4-9102-b85d6c716bb1"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ];
@@ -112,6 +83,181 @@
      fhir:link <http://example.com/fhir/example/RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df>;
      fhir:Reference.reference [ fhir:value "RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df" ]
   ] .
+
+<http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> a fhir:RequestGroup;
+  fhir:Resource.id [ fhir:value "25f1ea48-e0ef-405e-86fc-498ae907f6df"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://example.com/fhir/example/StructureDefinition/content-profile";
+       fhir:index 0;
+       fhir:link <http://example.com/fhir/example/StructureDefinition/content-profile>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"25f1ea48-e0ef-405e-86fc-498ae907f6df\" Updated \"2019-10-10 11:10:23+0000\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-content-profile.html\">Perfil Conteudo Receita</a></p></div><p><b>Condition related to the current resource</b>: 1</p><p><b>Condition related to the current resource</b>: Receita sem Papel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#RSP)</span></p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/duplicate-order" ];
+     fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/meaning-order" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "RSP" ];
+         fhir:Coding.display [ fhir:value "Receita sem Papel" ]
+       ]
+     ]
+  ];
+  fhir:RequestGroup.groupIdentifier [
+     fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/his/<id-rnu-entidade>/identifiers/local-prescription-id" ];
+     fhir:Identifier.value [ fhir:value "6789342" ]
+  ];
+  fhir:RequestGroup.status [ fhir:value "active"];
+  fhir:RequestGroup.intent [ fhir:value "order"];
+  fhir:RequestGroup.action [
+     fhir:index 0;
+     fhir:RequestGroup.action.timingPeriod [
+       fhir:Period.end [ fhir:value "2019-01-27"^^xsd:date ]
+     ]
+  ] .
+
+<http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5> a fhir:MedicationRequest;
+  fhir:Resource.id [ fhir:value "e22942f3-a461-40b9-8449-30f7a7e9d0d5"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"e22942f3-a461-40b9-8449-30f7a7e9d0d5\" Updated \"2019-10-10 11:10:23+0000\" </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication/a87cddf3-01de-4241-b9b27209f5f2bcab\">Medication/a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 11:10:23+0000</p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style=\"background: LightGoldenRodYellow\"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>"
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.medicationReference [
+     fhir:link <http://example.com/fhir/example/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab>;
+     fhir:Reference.reference [ fhir:value "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <http://example.com/fhir/example/Patient/3616b380-01be-465a-aa29906337c6e7a4>;
+     fhir:Reference.reference [ fhir:value "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2019-07-14T23:10:23+00:00"^^xsd:dateTime];
+  fhir:MedicationRequest.groupIdentifier [
+     fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/his/<id-rnuentidade>/identifiers/local-prescription-id" ];
+     fhir:Identifier.value [ fhir:value "6789342" ]
+  ];
+  fhir:MedicationRequest.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Informação sobre a prescrição" ]
+  ];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "500 mg daily for 5 days" ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsPeriod [
+           fhir:Period.start [ fhir:value "2019-07-16"^^xsd:date ];
+           fhir:Period.end [ fhir:value "2019-07-30"^^xsd:date ]
+         ];
+         fhir:Timing.repeat.timeOfDay [
+           fhir:value "09:00:00"^^xsd:time;
+           fhir:index 0
+         ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.infarmed.pt" ];
+         fhir:Coding.code [ fhir:value "255560000" ];
+         fhir:Coding.display [ fhir:value "Intravenous" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "400"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg" ];
+         fhir:Quantity.system [ fhir:value "https://www.infarmed.pt" ];
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ]
+     ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "TAB" ];
+       fhir:Quantity.system [ fhir:value "https://www.infarmed.pt" ];
+       fhir:Quantity.code [ fhir:value "TAB" ]
+     ]
+  ] .
+
+<http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab> a fhir:Medication;
+  fhir:Resource.id [ fhir:value "a87cddf3-01de-4241-b9b2-7209f5f2bcab"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"a87cddf3-01de-4241-b9b2-7209f5f2bcab\" </p></div><p><b>code</b>: Ibuprofeno 600 mg Comp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (infarmed.pt#10007274)</span></p><p><b>form</b>: Comprimido <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#10219000)</span></p></div>"
+  ];
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://infarmed.pt" ];
+       fhir:Coding.code [ fhir:value "10007274" ];
+       fhir:Coding.display [ fhir:value "Ibuprofeno 600 mg Comp" ]
+     ]
+  ];
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.infarmed.pt" ];
+       fhir:Coding.code [ fhir:value "10219000" ];
+       fhir:Coding.display [ fhir:value "Comprimido" ]
+     ]
+  ] .
+
+<http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "3616b380-01be-465a-aa29-906337c6e7a4"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2019-01-14T23:10:23+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"3616b380-01be-465a-aa29-906337c6e7a4\" Updated \"2019-01-14 11:10:23+0000\" </p></div><p><b>identifier</b>: NNU: 11920641576</p><p><b>name</b>: Pedro Alvares Cabral</p><p><b>telecom</b>: <a href=\"mailto:PedroAlvaresCabral@dominio.pt\">PedroAlvaresCabral@dominio.pt</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1979-11-19</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://h17.org/fhir/v2/0203" ];
+         fhir:Coding.code [ fhir:value "HC" ];
+         fhir:Coding.display [ fhir:value "Health Card Number" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "NNU" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/rnu/identifiers/patient-id" ];
+     fhir:Identifier.value [ fhir:value "11920641576" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Pedro Alvares Cabral" ];
+     fhir:HumanName.family [ fhir:value "Cabral" ];
+     fhir:HumanName.given [
+       fhir:value "Pedro";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "PedroAlvaresCabral@dominio.pt" ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1979-11-19"^^xsd:date] .
 
 # - ontology header ------------------------------------------------------------
 
