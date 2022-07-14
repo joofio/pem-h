@@ -2,9 +2,9 @@
 // @Name: Instance Example
 // @Description: An example of an instance of a Patient resource
 
-Instance: Exemplo
+Instance: ExemploMessage
 InstanceOf: Bundle
-Description: "Exemplo 1 - Nova prescrição de medicação"
+Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
 
 * id = "7898e419-6983-4afc-8163-a19274a12290"
 * meta.lastUpdated =  "2019-10-10T23:10:23+00:00"
@@ -40,6 +40,24 @@ Description: "Exemplo 1 - Nova prescrição de medicação"
 * entry[+].resource = ExemploMedication
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab"
 * entry[+].resource = ExemploPatient
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+
+* entry[+].resource = ExemploPractitioner
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8"
+
+* entry[+].resource = ExemploOrganization2
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+
+* entry[+].resource = ExemploOrganization1
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+
+* entry[+].resource = ExemploLocation
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+
+* entry[+].resource = ExemploCoverage
+* entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+
+* entry[+].resource = ExemploEncounter
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"
 
 
@@ -136,3 +154,72 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * subject.reference = "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
 * participant.individual.reference = "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"
 * period.end = "2019-01-27"
+* serviceProvider.reference = "Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+
+Instance: ExemploCoverage
+InstanceOf: Coverage
+Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
+
+* id = "219eb473-8ee3-4e3d-b785-b204b71de77f"
+* identifier.type = http://spms.min-saude.pt/iop/identifiers/coverage#NBU "Número do Beneficiário na Entidade"
+* identifier.type.text = "Descrição do número de Beneficiário do Utente na Entidade"
+* identifier.system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
+* identifier.value = "131255890"
+* type = http://h17.org/fhir/v3/ActCode#EHCPOL "Extended healthcare"
+* subscriberId = "874207420C"
+* subscriber.reference = "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+* beneficiary.reference = "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+* relationship =  http://h17.org/fhir/policyholder-relationship#self "The Beneficiary is the Policyholder"
+* payor.reference = "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
+* period.start = "2019-01-14"
+* period.end = "2022-01-27"
+* status = #active
+
+
+Instance: ExemploLocation
+InstanceOf: Location
+Description: "Exemplo 1 - Nova prescrição de medicação - Location"
+
+* id = "04f1ea48-e0ef-405e-86fc-498ae907f6d0"
+* identifier.system = "http://spms.min-saude.pt/sges/identifiers/entity-id"
+* identifier.value = "2412341-3"
+* name = "Hospital São João"
+* alias = "Centro Hospitalar Universitário de São João"
+* type = http://spms.min-saude.pt/prvr/valueset/location-type#urgencia "Urgência"
+* managingOrganization.reference = "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+
+Instance: ExemploOrganization1
+InstanceOf: Organization
+Description: "Exemplo 1 - Nova prescrição de medicação - Organization1"
+
+* id = "dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+* identifier.system = "http://spms.min-saude.pt/sges/identifiers/entity-id"
+* identifier.value = "3113408"
+* name = "Sclinico Hospitalar"
+
+Instance: ExemploOrganization2
+InstanceOf: Organization
+Description: "Exemplo 1 - Nova prescrição de medicação - Organization2"
+
+* id = "fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+* identifier.system = "http://spms.min-saude.pt/sges/identifiers/entity-id"
+* identifier.value = "3113408"
+* name = "Provedor de Serviços de Cardiologia"
+* telecom.system = #email
+* telecom.value = "PedroAlvaresCabral@dominio.pt"
+* partOf.reference = "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+
+
+
+Instance: ExemploPractitioner
+InstanceOf: Practitioner
+Description: "Exemplo 1 - Nova prescrição de medicação - Organization2"
+
+* id = "f644ab44-7e32-4e05-972c-1f14bebf27a8"
+* identifier.type = http://h17.org/fhir/v2/0203#MD "Medical License number"
+* identifier.system = "https://www.ordemdosmedicos.pt"
+* identifier.value = "33421535"
+* name.text = "Dr. António da Cruz"
+//* signature.type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 "Author's Signature"
+//* when = "2019-10-10T23:10:23+00:00"
+//* whoReference = Reference(Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8)
