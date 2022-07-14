@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="10603b52-6f06-4051-befb-47c84808b6f4"/>
+  <meta>
+    <lastUpdated value="2022-07-14T08:24:07.536+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/EventCodeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="EventCodeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/EventCodeVS"/>
+        <version value="1.0.0"/>
+        <name value="EventCodeVS"/>
+        <status value="active"/>
+        <date value="2022-07-14T08:24:07+00:00"/>
+        <publisher value="HL7 Portugal"/>
+        <contact>
+          <name value="HL7 Portugal"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.pt"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@hl7.pt"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:22e9d48b-bd62-4e5b-8e0f-113b3fad91ef"/>
+          <timestamp value="2022-07-14T08:24:29+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/EventagsVS"/>
+    <resource>
+      <ValueSet>
+        <id value="EventagsVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/EventagsVS"/>
+        <version value="1.0.0"/>
+        <name value="EventagsVS"/>
+        <status value="active"/>
+        <date value="2022-07-14T08:24:07+00:00"/>
+        <publisher value="HL7 Portugal"/>
+        <contact>
+          <name value="HL7 Portugal"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.pt"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@hl7.pt"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8c389253-bf1e-4fb7-87be-645837c4f3ab"/>
+          <timestamp value="2022-07-14T08:24:29+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MeaningOrderVS"/>
+    <resource>
+      <ValueSet>
+        <id value="MeaningOrderVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MeaningOrderVS"/>
+        <version value="1.0.0"/>
+        <name value="MeaningOrderVS"/>
+        <status value="active"/>
+        <date value="2022-07-14T08:24:07+00:00"/>
+        <publisher value="HL7 Portugal"/>
+        <contact>
+          <name value="HL7 Portugal"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7.pt"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@hl7.pt"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Bob Smith"/>
+          <telecom>
+            <system value="email"/>
+            <value value="bobsmith@example.com"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8574b1e2-2376-4252-87c7-3ce013f4f9e5"/>
+          <timestamp value="2022-07-14T08:24:29+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
