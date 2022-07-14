@@ -8,9 +8,9 @@
   "url": "http://example.com/fhir/example",
   "version": "1.0.0",
   "name": "ExampleIG",
-  "title": "HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1",
+  "title": "HL7 PT FHIR Implementation Guide: PEM-H | R4 // STU3",
   "status": "active",
-  "date": "2020-02-26",
+  "date": "2022-07-14",
   "publisher": "HL7 Portugal",
   "contact": [
     {
@@ -740,23 +740,23 @@
           "generation": "html"
         },
         {
-          "nameUrl": "info-response.html",
-          "title": "Info Response",
+          "nameUrl": "Intro.html",
+          "title": "Intro",
           "generation": "markdown"
         },
         {
-          "nameUrl": "info-send.html",
-          "title": "Info Send",
+          "nameUrl": "mensagem-envio.html",
+          "title": "Mensagem Envio",
           "generation": "markdown"
         },
         {
-          "nameUrl": "Specifications.html",
-          "title": "Specifications",
+          "nameUrl": "mensagem-resposta.html",
+          "title": "Mensagem Resposta",
           "generation": "markdown"
         },
         {
-          "nameUrl": "support-resources.html",
-          "title": "Support Resources",
+          "nameUrl": "recursos-suporte.html",
+          "title": "Recursos Suporte",
           "generation": "markdown"
         }
       ]
