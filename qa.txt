@@ -1,16 +1,21 @@
 ﻿ExampleIG : Validation Results
 =========================================
 
-err = 21, warn = 24, info = 16
+err = 31, warn = 30, info = 28
 IG Publisher Version: 1.1.125
-Generated Thu Jul 14 09:51:42 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
- Build Errors : 3 / 4 / 0
- /github/workspace/fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 10 / 7 / 14
+Generated Thu Jul 14 10:13:58 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 6 / 4 / 0
+ /github/workspace/fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 17 / 14 / 26
+ /github/workspace/fsh-generated/resources/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 3 / 0 / 5
  /github/workspace/fsh-generated/resources/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045 : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5 : 2 / 0 / 4
+ /github/workspace/fsh-generated/resources/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-3616b380-01be-465a-aa29-906337c6e7a4 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bundle-response-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-content-profile : 0 / 1 / 2
@@ -33,14 +38,18 @@ WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventCodeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventagsVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/MeaningOrderVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 624: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 790: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 1151: The link 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
 ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 219, column 769: The link 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8' for "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 453: The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 583: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
 == fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290.json ==
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Rule 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Failed
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader): MessageHeader.event[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MessageHeader)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).meta.tag[0]: Code System URI 'http://spms.min-saude.pt/iop/event-meta-tags' is unknown so the code cannot be validated
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).destination[0].receiver: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace'
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).sender: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace'
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).destination[0].receiver: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).sender: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Unable to resolve resource with reference 'RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df'
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).meta.profile[0]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'MeaningOrderVS' (http://example.com/fhir/example/ValueSet/MeaningOrderVS), and a coding from this value set is required) (codes = null#RSP)
@@ -55,12 +64,38 @@ INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[2].resour
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[3].resource.ofType(Medication).code.coding[0]: Code System URI 'http://infarmed.pt' is unknown so the code cannot be validated
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[3].resource.ofType(Medication).form.coding[0]: Code System URI 'http://www.infarmed.pt' is unknown so the code cannot be validated
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[4].resource.ofType(Patient).identifier[0].type.coding[0]: Code System URI 'http://h17.org/fhir/v2/0203' is unknown so the code cannot be validated
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[5].resource.ofType(Practitioner).identifier[0].type.coding[0]: Code System URI 'http://h17.org/fhir/v2/0203' is unknown so the code cannot be validated
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[6].resource.ofType(Organization).partOf: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[8].resource.ofType(Location).type[0].coding[0]: Code System URI 'http://spms.min-saude.pt/prvr/valueset/location-type' is unknown so the code cannot be validated
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[8].resource.ofType(Location).managingOrganization: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource.ofType(Coverage).identifier[0].type.coding[0]: Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource.ofType(Coverage).type: None of the codings provided are in the value set 'Coverage Type and Self-Pay Codes' (http://hl7.org/fhir/ValueSet/coverage-type), and a coding is recommended to come from this value set) (codes = http://h17.org/fhir/v3/ActCode#EHCPOL)
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource.ofType(Coverage).type.coding[0]: Code System URI 'http://h17.org/fhir/v3/ActCode' is unknown so the code cannot be validated
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource.ofType(Coverage).subscriber: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource.ofType(Coverage).beneficiary: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource.ofType(Coverage).relationship.coding[0]: Code System URI 'http://h17.org/fhir/policyholder-relationship' is unknown so the code cannot be validated
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource.ofType(Coverage).payor[0]: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource.ofType(Encounter).class: Unknown Code System 'http://hl7.org/fhir/v3/ActCode'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource.ofType(Encounter).class.system: URL value 'http://hl7.org/fhir/v3/ActCode' does not resolve
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource.ofType(Encounter).subject: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource.ofType(Encounter).subject: Invalid Resource target type. Found Encounter, but expected one of ([Group, Patient])
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource.ofType(Encounter).participant[0].individual: Unable to resolve resource with reference 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8'
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource.ofType(Encounter).serviceProvider: Entry 6 matches the reference Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.focus[0].reference: Can't find 'RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df' in the bundle (MessageHeader Data)
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[12]: Entry 'http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[2]: Entry 'http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[3]: Entry 'http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[4]: Entry 'http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[5]: Entry 'http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[6]: Entry 'http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.meta.profile[0]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.json ==
+INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.identifier[0].type.coding[0]: Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
+INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.type: None of the codings provided are in the value set 'Coverage Type and Self-Pay Codes' (http://hl7.org/fhir/ValueSet/coverage-type), and a coding is recommended to come from this value set) (codes = http://h17.org/fhir/v3/ActCode#EHCPOL)
+INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.type.coding[0]: Code System URI 'http://h17.org/fhir/v3/ActCode' is unknown so the code cannot be validated
+ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.subscriber: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
+ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.beneficiary: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
+INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.relationship.coding[0]: Code System URI 'http://h17.org/fhir/policyholder-relationship' is unknown so the code cannot be validated
+ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.payor[0]: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
 == fsh-generated/resources/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.json ==
 ERROR: Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045: Encounter.class: Unknown Code System 'http://hl7.org/fhir/v3/ActCode'
 ERROR: Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045: Encounter.class.system: URL value 'http://hl7.org/fhir/v3/ActCode' does not resolve
@@ -69,6 +104,8 @@ ERROR: Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045: Encounter.participant[0].i
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://example.com/fhir/example
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example
+== fsh-generated/resources/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.json ==
+INFORMATION: Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0: Location.type[0].coding[0]: Code System URI 'http://spms.min-saude.pt/prvr/valueset/location-type' is unknown so the code cannot be validated
 == fsh-generated/resources/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.json ==
 INFORMATION: Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab: Medication.code.coding[0]: Code System URI 'http://infarmed.pt' is unknown so the code cannot be validated
 INFORMATION: Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab: Medication.form.coding[0]: Code System URI 'http://www.infarmed.pt' is unknown so the code cannot be validated
@@ -78,8 +115,12 @@ ERROR: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest
 INFORMATION: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://www.infarmed.pt' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'https://www.infarmed.pt' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest.dispenseRequest.quantity: Code System URI 'https://www.infarmed.pt' is unknown so the code cannot be validated
+== fsh-generated/resources/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json ==
+== fsh-generated/resources/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json ==
 == fsh-generated/resources/Patient-3616b380-01be-465a-aa29-906337c6e7a4.json ==
 INFORMATION: Patient/3616b380-01be-465a-aa29-906337c6e7a4: Patient.identifier[0].type.coding[0]: Code System URI 'http://h17.org/fhir/v2/0203' is unknown so the code cannot be validated
+== fsh-generated/resources/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.json ==
+INFORMATION: Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8: Practitioner.identifier[0].type.coding[0]: Code System URI 'http://h17.org/fhir/v2/0203' is unknown so the code cannot be validated
 == fsh-generated/resources/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.json ==
 ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.meta.profile[0]: Value is 'http://example.com/fhir/example/StructureDefinition/content-profile' but must be 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescriptionsynchronization-msh/v1-0-3'
 ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'MeaningOrderVS' (http://example.com/fhir/example/ValueSet/MeaningOrderVS), and a coding from this value set is required) (codes = null#RSP)

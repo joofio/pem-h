@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/example/Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f> a fhir:Coverage;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "219eb473-8ee3-4e3d-b785-b204b71de77f"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"219eb473-8ee3-4e3d-b785-b204b71de77f\" </p></div><p><b>identifier</b>: Descrição do número de Beneficiário do Utente na Entidade: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ActCode#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace\">Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>"
+  ];
+  fhir:Coverage.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spms.min-saude.pt/iop/identifiers/coverage" ];
+         fhir:Coding.code [ fhir:value "NBU" ];
+         fhir:Coding.display [ fhir:value "Número do Beneficiário na Entidade" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Descrição do número de Beneficiário do Utente na Entidade" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/rnu/identifiers/nbu" ];
+     fhir:Identifier.value [ fhir:value "131255890" ]
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://h17.org/fhir/v3/ActCode" ];
+       fhir:Coding.code [ fhir:value "EHCPOL" ];
+       fhir:Coding.display [ fhir:value "Extended healthcare" ]
+     ]
+  ];
+  fhir:Coverage.subscriber [
+     fhir:link <http://example.com/fhir/example/Patient/3616b380-01be-465a-aa29906337c6e7a4>;
+     fhir:Reference.reference [ fhir:value "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
+  ];
+  fhir:Coverage.subscriberId [ fhir:value "874207420C"];
+  fhir:Coverage.beneficiary [
+     fhir:link <http://example.com/fhir/example/Patient/3616b380-01be-465a-aa29906337c6e7a4>;
+     fhir:Reference.reference [ fhir:value "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
+  ];
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://h17.org/fhir/policyholder-relationship" ];
+       fhir:Coding.code [ fhir:value "self" ];
+       fhir:Coding.display [ fhir:value "The Beneficiary is the Policyholder" ]
+     ]
+  ];
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2019-01-14"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2022-01-27"^^xsd:date ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:link <http://example.com/fhir/example/Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace>;
+     fhir:Reference.reference [ fhir:value "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.com/fhir/example/Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

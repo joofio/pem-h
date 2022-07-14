@@ -545,6 +545,34 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0>;
+         fhir:Reference.reference [ fhir:value "Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploLocation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f>;
+         fhir:Reference.reference [ fhir:value "Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploCoverage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Coverage" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "RequestGroup" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -558,7 +586,7 @@
          fhir:link <http://example.com/fhir/example/StructureDefinition/content-profile>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -572,7 +600,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Encounter" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -586,7 +614,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -596,11 +624,11 @@
          fhir:link <http://example.com/fhir/example/Bundle/7898e419-6983-4afc-8163-a19274a12290>;
          fhir:Reference.reference [ fhir:value "Bundle/7898e419-6983-4afc-8163-a19274a12290" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploMessage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Bundle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -614,7 +642,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Medication" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace>;
+         fhir:Reference.reference [ fhir:value "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploOrganization1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Organization1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -626,6 +668,34 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploMedicationRequest" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - MedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8>;
+         fhir:Reference.reference [ fhir:value "Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploPractitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Organization2" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.com/fhir/example/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace>;
+         fhir:Reference.reference [ fhir:value "Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExemploOrganization2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo 1 - Nova prescrição de medicação - Organization2" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
