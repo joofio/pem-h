@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "MeaningOrderVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url": "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
+  "version": "1.0.0",
+  "name": "MeaningOrderVS",
+  "status": "active",
+  "date": "2022-07-14T08:24:07+00:00",
+  "publisher": "HL7 Portugal",
+  "contact": [
+    {
+      "name": "HL7 Portugal",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.pt"
+        },
+        {
+          "system": "email",
+          "value": "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "name": "Bob Smith",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "bobsmith@example.com",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ]
+}

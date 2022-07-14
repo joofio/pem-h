@@ -1,0 +1,72 @@
+[
+  {
+    "id": "my-ig",
+    "type": "ImplementationGuide",
+    "url": "http://example.com/fhir/example",
+    "version": "1.0.0",
+    "name": "ExampleIG"
+  },
+  {
+    "id": "content-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
+    "version": "1.0.0",
+    "name": "PEMHContent"
+  },
+  {
+    "id": "duplicate-order",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/duplicate-order",
+    "version": "1.0.0",
+    "name": "PrescriptionDuplicate"
+  },
+  {
+    "id": "example-patient-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/example-patient-profile",
+    "version": "1.0.0",
+    "name": "PEMHbundle"
+  },
+  {
+    "id": "meaning-order",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/meaning-order",
+    "version": "1.0.0",
+    "name": "MeaningOrder"
+  },
+  {
+    "id": "med-request-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/med-request-profile",
+    "version": "1.0.0",
+    "name": "PEMHMedicationRequest"
+  },
+  {
+    "id": "msh-profile",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/msh-profile",
+    "version": "1.0.0",
+    "name": "PEMHMSH"
+  },
+  {
+    "id": "EventCodeVS",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/EventCodeVS",
+    "version": "1.0.0",
+    "name": "EventCodeVS"
+  },
+  {
+    "id": "EventagsVS",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/EventagsVS",
+    "version": "1.0.0",
+    "name": "EventagsVS"
+  },
+  {
+    "id": "MeaningOrderVS",
+    "type": "ValueSet",
+    "url": "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
+    "version": "1.0.0",
+    "name": "MeaningOrderVS"
+  }
+]

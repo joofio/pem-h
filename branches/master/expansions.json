@@ -1,0 +1,161 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "10603b52-6f06-4051-befb-47c84808b6f4",
+  "meta" : {
+    "lastUpdated" : "2022-07-14T08:24:07.536+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/EventCodeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "EventCodeVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/EventCodeVS",
+      "version" : "1.0.0",
+      "name" : "EventCodeVS",
+      "status" : "active",
+      "date" : "2022-07-14T08:24:07+00:00",
+      "publisher" : "HL7 Portugal",
+      "contact" : [{
+        "name" : "HL7 Portugal",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.pt"
+        },
+        {
+          "system" : "email",
+          "value" : "info@hl7.pt"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:22e9d48b-bd62-4e5b-8e0f-113b3fad91ef",
+        "timestamp" : "2022-07-14T08:24:29+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/EventagsVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "EventagsVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/EventagsVS",
+      "version" : "1.0.0",
+      "name" : "EventagsVS",
+      "status" : "active",
+      "date" : "2022-07-14T08:24:07+00:00",
+      "publisher" : "HL7 Portugal",
+      "contact" : [{
+        "name" : "HL7 Portugal",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.pt"
+        },
+        {
+          "system" : "email",
+          "value" : "info@hl7.pt"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8c389253-bf1e-4fb7-87be-645837c4f3ab",
+        "timestamp" : "2022-07-14T08:24:29+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "MeaningOrderVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
+      "version" : "1.0.0",
+      "name" : "MeaningOrderVS",
+      "status" : "active",
+      "date" : "2022-07-14T08:24:07+00:00",
+      "publisher" : "HL7 Portugal",
+      "contact" : [{
+        "name" : "HL7 Portugal",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://hl7.pt"
+        },
+        {
+          "system" : "email",
+          "value" : "info@hl7.pt"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8574b1e2-2376-4252-87c7-3ce013f4f9e5",
+        "timestamp" : "2022-07-14T08:24:29+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  }]
+}

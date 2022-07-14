@@ -1,0 +1,48 @@
+﻿ExampleIG : Validation Results
+=========================================
+
+err = 3, warn = 13, info = 3
+IG Publisher Version: 1.1.125
+Generated Thu Jul 14 08:24:39 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+ Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-content-profile : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-duplicate-order : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-example-patient-profile : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-meaning-order : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-med-request-profile : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-msh-profile : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-EventCodeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-EventagsVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-MeaningOrderVS : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventCodeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventagsVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/MeaningOrderVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated/resources/ImplementationGuide-my-ig.json ==
+ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/my-ig) does not match the URL (http://example.com/fhir/example)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: my-ig/http://example.com/fhir/example
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig: URL Mismatch http://example.com/fhir/example/ImplementationGuide/my-ig vs http://example.com/fhir/example
+== fsh-generated/resources/StructureDefinition-content-profile.json ==
+INFORMATION: StructureDefinition/content-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+WARNING: StructureDefinition/content-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error 
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/content-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-duplicate-order.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/duplicate-order'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-example-patient-profile.json ==
+INFORMATION: StructureDefinition/example-patient-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+WARNING: StructureDefinition/example-patient-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error 
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/example-patient-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-meaning-order.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/meaning-order'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-med-request-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/med-request-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-msh-profile.json ==
+INFORMATION: StructureDefinition/msh-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
+WARNING: StructureDefinition/msh-profile: StructureDefinition.snapshot.element[8].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error 
+WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/msh-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-EventCodeVS.json ==
+== fsh-generated/resources/ValueSet-EventagsVS.json ==
+== fsh-generated/resources/ValueSet-MeaningOrderVS.json ==
