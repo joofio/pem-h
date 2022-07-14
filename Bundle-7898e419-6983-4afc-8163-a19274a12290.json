@@ -73,11 +73,11 @@
         },
         "extension": [
           {
-            "url": "http://example.com/fhir/example/StructureDefinition/duplicate-order",
+            "url": "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
             "valuePositiveInt": 1
           },
           {
-            "url": "http://example.com/fhir/example/StructureDefinition/meaning-order",
+            "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
             "valueCodeableConcept": {
               "coding": [
                 {
