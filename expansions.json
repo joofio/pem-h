@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "bcf4c8b0-6dfe-4128-89f1-96186747413d",
+  "id" : "62473e40-3301-4d1e-b5af-af1ae3d74a0b",
   "meta" : {
-    "lastUpdated" : "2022-07-14T12:13:58.403+00:00"
+    "lastUpdated" : "2022-07-14T12:15:20.689+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "version" : "1.0.0",
       "name" : "EventCodeVS",
       "status" : "active",
-      "date" : "2022-07-14T12:13:58+00:00",
+      "date" : "2022-07-14T12:15:20+00:00",
       "publisher" : "HL7 Portugal",
       "contact" : [{
         "name" : "HL7 Portugal",
@@ -47,8 +47,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1a6c9690-573d-47bd-b374-6a9ff8ff4b85",
-        "timestamp" : "2022-07-14T12:14:16+00:00",
+        "identifier" : "urn:uuid:73ca2b1d-b6af-4bf5-9265-8c65c292d71a",
+        "timestamp" : "2022-07-14T12:15:42+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -69,7 +69,7 @@
       "version" : "1.0.0",
       "name" : "EventagsVS",
       "status" : "active",
-      "date" : "2022-07-14T12:13:58+00:00",
+      "date" : "2022-07-14T12:15:20+00:00",
       "publisher" : "HL7 Portugal",
       "contact" : [{
         "name" : "HL7 Portugal",
@@ -98,8 +98,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5f0dcc6c-27ab-48d7-9115-0fedd7088011",
-        "timestamp" : "2022-07-14T12:14:17+00:00",
+        "identifier" : "urn:uuid:383420b9-aeaf-47ed-83fe-7780cc1ad549",
+        "timestamp" : "2022-07-14T12:15:42+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -120,7 +120,7 @@
       "version" : "1.0.0",
       "name" : "MeaningOrderVS",
       "status" : "active",
-      "date" : "2022-07-14T12:13:58+00:00",
+      "date" : "2022-07-14T12:15:20+00:00",
       "publisher" : "HL7 Portugal",
       "contact" : [{
         "name" : "HL7 Portugal",
@@ -149,8 +149,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1bce8573-9404-4e0c-a667-a47882dda800",
-        "timestamp" : "2022-07-14T12:14:17+00:00",
+        "identifier" : "urn:uuid:376f3b29-a8d3-4a1b-bf6e-6f4f82d9ce53",
+        "timestamp" : "2022-07-14T12:15:42+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
