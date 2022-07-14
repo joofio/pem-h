@@ -33,10 +33,10 @@ A Aplicação Emissora envia uma mensagem para o PNB, o qual após validar estru
 
 **Tabela 1. Caracterização dos fluxos e formato das mensagens trocadas.**
 
-| Diagrama de deployment           | Nome do canal                              |               | Source connector                               |               |                                |                              | Destination connector |             |                                |                              |         |   |
-|----------------------------------|--------------------------------------------|---------------|------------------------------------------------|---------------|--------------------------------|------------------------------|-----------------------|-------------|--------------------------------|------------------------------|---------|---|
-|                                  |                                            | Tipo de fluxo | Emissor                                        | Tipo          | Formato de mensagem de entrada | Formato de mensagem de saida | Nome                  | Tipo        | Formato de mensagem de entrada | Formato de mensagem de saida | Recetor |   |
-| Figura 1 Prescrição de medicação | 8200_Router _FHIR_Pres cription_Syn c_PEMH | Síncrono      | Aplicação Emissora (envio pedido 10911 /10912) | HTTP Listener | JSON                           | JSON                         | PEMH                  | HTTP Sender | JSON                           | JSON                         | PEMH    |   |
+| Diagrama de deployment           | Nome do canal                           |               | Source connector                               |               |                                |                              | Destination connector |             |                                |                              |         |
+|----------------------------------|-----------------------------------------|---------------|------------------------------------------------|---------------|--------------------------------|------------------------------|-----------------------|-------------|--------------------------------|------------------------------|---------|
+|                                  |                                         | Tipo de fluxo | Emissor                                        | Tipo          | Formato de mensagem de entrada | Formato de mensagem de saida | Nome                  | Tipo        | Formato de mensagem de entrada | Formato de mensagem de saida | Recetor |
+| Figura 1 Prescrição de medicação | 8200_Router_FHIR_Prescription_Sync_PEMH | Síncrono      | Aplicação Emissora (envio pedido 10911 /10912) | HTTP Listener | JSON                           | JSON                         | PEMH                  | HTTP Sender | JSON                           | JSON                         | PEMH    |
 
 
 **Tabela 2. Operações possíveis para os fluxos de prescrição**
