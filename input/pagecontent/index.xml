@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope">  </a>
 	<p>
-    Este documento é um  FHIR Implementation Guide. Contem especificações desenvolvidas pela comunidade HL7 para o uso de FHIR.
+    Este documento é um  FHIR Implementation Guide. Contem especificações desenvolvidas pela comunidade HL7 e pela SPMS para o uso de FHIR.
    </p>
 	<blockquote class="stu-note">
 	<strong> Este documento e artefactos estão sob desenvolvimento.</strong>
@@ -11,7 +11,7 @@
   <h3>Conteúdo</h3> <a name="content"> </a>
 	<p/>
 
-<p>Esta publicação contém as especificações Especificações técnicas Gestão de Medicação PEMH</p>
+<p>Esta publicação contém as especificações técnicas sobre a Gestão de Medicação PEMH</p>
 <p></p>
 <p>Existe também uma introdução e motivação para esta especificação.</p>
 <p></p>
