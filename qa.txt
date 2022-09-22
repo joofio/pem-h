@@ -1,9 +1,9 @@
 ﻿ExampleIG : Validation Results
 =========================================
 
-err = 31, warn = 28, info = 30
-IG Publisher Version: 1.1.125
-Generated Thu Jul 14 12:29:29 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
+err = 35, warn = 37, info = 30
+IG Publisher Version: 1.2.3
+Generated Thu Sep 22 18:18:11 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 6 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 17 / 13 / 27
  /github/workspace/fsh-generated/resources/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 3 / 0 / 5
@@ -20,32 +20,32 @@ Generated Thu Jul 14 12:29:29 UTC 2022. FHIR version 4.0.1 for my-ig#1.0.0 (cano
  /github/workspace/fsh-generated/resources/StructureDefinition-bundle-response-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-content-profile : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-coverage-pemh-profile : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-duplicate-order : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-duplicate-order : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-encounter-pemh-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-example-patient-profile : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-location-pemh-profile : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-meaning-order : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-meaning-order : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-med-pemh-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-med-request-profile : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-msh-profile : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-patient-pemh-profile : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-EventCodeVS : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-EventagsVS : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-MeaningOrderVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-EventCodeVS : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-EventagsVS : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-MeaningOrderVS : 0 / 3 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventCodeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/EventagsVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/MeaningOrderVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 624: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 790: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 1151: The link 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
-ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 232, column 769: The link 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8' for "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
-ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 453: The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" cannot be resolved
-ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 583: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 695: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 861: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 1222: The link 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
+ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 232, column 841: The link 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8' for "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 542: The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 232, column 672: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
 == fsh-generated/resources/Bundle-7898e419-6983-4afc-8163-a19274a12290.json ==
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Rule 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Failed
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle: Rule bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Failed
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader): MessageHeader.event[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MessageHeader)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).meta.tag[0]: Code System URI 'http://spms.min-saude.pt/iop/event-meta-tags' is unknown so the code cannot be validated
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).destination[0].receiver: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
@@ -54,7 +54,7 @@ ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofT
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource.ofType(MessageHeader).meta.profile[0]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'MeaningOrderVS' (http://example.com/fhir/example/ValueSet/MeaningOrderVS), and a coding from this value set is required) (codes = http://spms.min-saude.pt/bdnp/codesystem/med-request-modality#RSP)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://spms.min-saude.pt/bdnp/codesystem/med-request-modality' is unknown so the code cannot be validated
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).action[0]: rqg-1: 'Must have resource or action but not both' Rule 'Must have resource or action but not both' Failed
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).action[0]: Rule rqg-1: 'Must have resource or action but not both' Failed
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource.ofType(RequestGroup).meta.profile[0]: Value is 'http://example.com/fhir/example/StructureDefinition/content-profile' but must be 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescriptionsynchronization-msh/v1-0-3'
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[2].resource.ofType(MedicationRequest).medication.ofType(Reference): Unable to resolve resource with reference 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab'
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[2].resource.ofType(MedicationRequest).subject: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
@@ -125,7 +125,7 @@ INFORMATION: Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8: Practitioner.ide
 ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.meta.profile[0]: Value is 'http://example.com/fhir/example/StructureDefinition/content-profile' but must be 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescriptionsynchronization-msh/v1-0-3'
 ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'MeaningOrderVS' (http://example.com/fhir/example/ValueSet/MeaningOrderVS), and a coding from this value set is required) (codes = http://spms.min-saude.pt/bdnp/codesystem/med-request-modality#RSP)
 INFORMATION: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://spms.min-saude.pt/bdnp/codesystem/med-request-modality' is unknown so the code cannot be validated
-ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.action[0]: rqg-1: 'Must have resource or action but not both' Rule 'Must have resource or action but not both' Failed
+ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.action[0]: Rule rqg-1: 'Must have resource or action but not both' Failed
 == fsh-generated/resources/StructureDefinition-bundle-response-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/bundle-response-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-content-profile.json ==
@@ -134,6 +134,8 @@ WARNING: StructureDefinition/content-profile: StructureDefinition.snapshot.eleme
 == fsh-generated/resources/StructureDefinition-coverage-pemh-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-duplicate-order.json ==
+ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/prescription-duplicate'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-duplicate-order.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/duplicate-order) does not match the URL (http://spms.min-saude.pt/iop/extensions/prescription-duplicate)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-duplicate-order: URL Mismatch http://example.com/fhir/example/StructureDefinition/duplicate-order vs http://spms.min-saude.pt/iop/extensions/prescription-duplicate
 == fsh-generated/resources/StructureDefinition-encounter-pemh-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-example-patient-profile.json ==
@@ -143,6 +145,8 @@ WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/Struct
 == fsh-generated/resources/StructureDefinition-location-pemh-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/location-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-meaning-order.json ==
+ERROR: StructureDefinition.where(url = 'http://spms.min-saude/pe/top/extensions/med-request-modality'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-meaning-order.json - the canonical URL (http://example.com/fhir/example/StructureDefinition/meaning-order) does not match the URL (http://spms.min-saude/pe/top/extensions/med-request-modality)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-meaning-order: URL Mismatch http://example.com/fhir/example/StructureDefinition/meaning-order vs http://spms.min-saude/pe/top/extensions/med-request-modality
 == fsh-generated/resources/StructureDefinition-med-pemh-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/med-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-med-request-profile.json ==
@@ -154,5 +158,14 @@ WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/Struct
 == fsh-generated/resources/StructureDefinition-patient-pemh-profile.json ==
 WARNING: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/patient-pemh-profile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-EventCodeVS.json ==
+WARNING: ValueSet/EventCodeVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/EventCodeVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/EventCodeVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-EventagsVS.json ==
+WARNING: ValueSet/EventagsVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/EventagsVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/EventagsVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-MeaningOrderVS.json ==
+WARNING: ValueSet/MeaningOrderVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/MeaningOrderVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/MeaningOrderVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

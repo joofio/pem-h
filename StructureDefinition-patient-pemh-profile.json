@@ -20,7 +20,7 @@
   "name": "PEMHPatient",
   "title": "Perfil Paciente",
   "status": "active",
-  "date": "2022-07-14T12:28:55+00:00",
+  "date": "2022-09-22T18:17:38+00:00",
   "publisher": "HL7 Portugal",
   "contact": [
     {
@@ -196,7 +196,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"
