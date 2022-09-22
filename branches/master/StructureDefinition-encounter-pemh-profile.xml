@@ -17,7 +17,7 @@
   <name value="PEMHEncounter"/>
   <title value="Perfil Episódio"/>
   <status value="active"/>
-  <date value="2022-07-14T12:28:55+00:00"/>
+  <date value="2022-09-22T18:17:38+00:00"/>
   <publisher value="HL7 Portugal"/>
   <contact>
     <name value="HL7 Portugal"/>
@@ -160,7 +160,7 @@
       </base>
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
+          <valueUrl value="id"/>
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
