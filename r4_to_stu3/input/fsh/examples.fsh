@@ -68,7 +68,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
 * signature.data = "dGhpcyBibG9iIGlzIHNuaXBwZWQ=" //difference stu3 <-> R4
 
 Instance: ExemploRequestGroup
-InstanceOf: PEMHContent
+InstanceOf: PEMHRequestGroup
 Description: "Exemplo 1 - Nova prescrição de medicação - RequestGroup"
 
 * id = "25f1ea48-e0ef-405e-86fc-498ae907f6df"
