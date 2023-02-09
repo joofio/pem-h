@@ -9,7 +9,11 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "3616b380-01be-465a-aa29-906337c6e7a4"]; # 
   fhir:Resource.meta [
-     fhir:Meta.lastUpdated [ fhir:value "2019-01-14T23:10:23+00:00"^^xsd:dateTime ]
+     fhir:Meta.lastUpdated [ fhir:value "2019-01-14T23:10:23+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile";
+       fhir:index 0
+     ]
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
@@ -18,12 +22,6 @@
   fhir:Patient.identifier [
      fhir:index 0;
      fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://h17.org/fhir/v2/0203" ];
-         fhir:Coding.code [ fhir:value "HC" ];
-         fhir:Coding.display [ fhir:value "Health Card Number" ]
-       ];
        fhir:CodeableConcept.text [ fhir:value "NNU" ]
      ];
      fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/rnu/identifiers/patient-id" ];
