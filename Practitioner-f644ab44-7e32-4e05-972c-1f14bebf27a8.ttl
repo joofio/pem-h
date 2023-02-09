@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "f644ab44-7e32-4e05-972c-1f14bebf27a8"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"f644ab44-7e32-4e05-972c-1f14bebf27a8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;f644ab44-7e32-4e05-972c-1f14bebf27a8&quot; </p></div><p><b>identifier</b>: Medical License number: 33421535</p><p><b>name</b>: Dr. António da Cruz</p></div>"
+  ]; # 
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://h17.org/fhir/v2/0203" ];
+         fhir:Coding.code [ fhir:value "MD" ];
+         fhir:Coding.display [ fhir:value "Medical License number" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.ordemdosmedicos.pt" ];
+     fhir:Identifier.value [ fhir:value "33421535" ]
+  ]; # 
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Dr. António da Cruz" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

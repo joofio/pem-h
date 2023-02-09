@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:RequestGroup</sch:title>
     <sch:rule context="f:RequestGroup">
-      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/prescription-duplicate']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/prescription-duplicate': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://spms.min-saude/pe/top/extensions/med-request-modality']) &lt;= 1">extension with URL = 'http://spms.min-saude/pe/top/extensions/med-request-modality': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:groupIdentifier) &gt;= 1">groupIdentifier: minimum cardinality of 'groupIdentifier' is 1</sch:assert>

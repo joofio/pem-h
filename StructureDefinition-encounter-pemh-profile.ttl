@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ]; # 
-  fhir:StructureDefinition.url [ fhir:value "http://example.org/StructureDefinition/encounter-pemh-profile"]; # 
+  fhir:StructureDefinition.url [ fhir:value "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile"]; # 
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"]; # 
   fhir:StructureDefinition.name [ fhir:value "PEMHEncounter"]; # 
   fhir:StructureDefinition.title [ fhir:value "Perfil Episódio"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-09T14:33:47+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-09T20:39:01+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "HL7 TC"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
