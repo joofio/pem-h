@@ -15,7 +15,7 @@ Description: "O Bundle da mensagem deve ser do tipo 'message', deve ter como pri
 * signature ^short = "Assinatura da receita"
 * signature.type 1..* MS
 * signature.when 1..1 MS
-//* signature.who[x]   Reference(PEMHPractitioner) MS
+* signature.who only Reference(Practitioner)  //who -> whoReference
 * entry 3..* MS
 * entry ^short = "Deverá existir obrigatoriamente uma entrada para cada um dos seguintes recursos, e pela ordem indicada: MessageHeader, RequestGroup."
 * entry ^slicing.discriminator.type = #value
@@ -33,7 +33,7 @@ Title:       "Perfil MessageHeader"
 Description: "Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest."
 
 * id 1..1
-* meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/med-prescriptionsynchronization-msh/v1-0-3"
+* meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3"
 * meta.tag from EventagsVS (required)
 * meta.tag 1..1 MS
 * source.name 1..1 MS
@@ -42,15 +42,16 @@ Description: "Este recurso deve ser a primeira entrada no Bundle e deve referenc
 * source.endpoint ^short = "URL da aplicação que enviou a mensagem. <URL_origem>"
 * destination.name ^short = "PEMH"
 * destination.endpoint = "SPMS/PEMH"
-//* receiver ^short = "<fornecedor_aplicação/aplicação_origem>"
-//* event.system = "http://spms.min-saude.pt/iop/events"
-//* event.code from EventCodeVS (required)
-//* timestamp 1..1 
+* destination.receiver only Reference(Organization) //destination.receiver -> receiver
+* destination.receiver ^short = "<fornecedor_aplicação/aplicação_origem>" //destination.receiver -> receiver
+* eventCoding.system = "http://spms.min-saude.pt/iop/events" //eventCoding -> event
+* eventCoding.code from EventCodeVS (required) //eventCoding -> event
+* eventCoding.display = "MED_PRESCRIPTION_SYNCHRONIZATION" //eventCoding -> event
+//* timestamp 1..1 does not exist R4
 * author ^short = "Profissional que fez a prescrição de medicação para o utente."
 * focus 1..* MS
 * focus only Reference(PEMHRequestGroup)
-* focus ^short = "Corresponde à receita. Enviar somente um recurso RequestGroup por
-mensagem" //fazer invariant???
+* focus ^short = "Corresponde à receita. Enviar somente um recurso RequestGroup por mensagem" //fazer invariant???
 
 
 
@@ -107,12 +108,12 @@ Description: "Este recurso contém informações da linha da receita."
 * subject only Reference(PEMHPatient)
 * subject 1..1 MS
 * subject ^short = "Referência para um resource que contém informações so utente a quem diz respeito a medicação"
-//* context only Reference(PEMHEncounter)
-//* context ^short = "Referência para um resource que contém informações do episódio no contexto em que ocorreu a prescrição"
+* encounter only Reference(PEMHEncounter) //encounter -> context
+* encounter ^short = "Referência para um resource que contém informações do episódio no contexto em que ocorreu a prescrição" //encounter -> context
 * authoredOn 1..1
 * authoredOn ^short = "Data e hora em que a prescrição foi emitida. Apenas preenchido no primeiro momento em que é feita a prescrição, i.e., se status = ACTIVE e não deve ser mais alterada em toda a vida do recurso."
-//* requester.agent only Reference(PEMHPractitioner)
-//* requester.agent ^short = "Referência para um resource que contém informações do profissional que inicialmente adicionou a prescrição. Este elemento não pode ser mais alterado em toda a vida do recurso."
+* requester only Reference(Practitioner) //requester -> requester.agent
+* requester ^short = "Referência para um resource que contém informações do profissional que inicialmente adicionou a prescrição. Este elemento não pode ser mais alterado em toda a vida do recurso."
 //* requester.onBehalfOf ^short = "Referência para um resource que contém informações da instituição em que foi efetuada a prescrição"
 //* requester.onBehalfOf only Reference(PEMHOrganization)
 * note ^short = "Informação adicionais sobre a prescrição [OBSERVAÇÕES GERAIS]"
@@ -132,8 +133,8 @@ e.g.: 'wk'"
 
 //extension TODO
 
-//* dosageInstruction.doseQuantity ^short = "DOSE - VALOR E UNIDADE"
-//* dosageInstruction.quantity ^short = "Quantidade prescrita do medicamento (valor e unidade)"
+* dosageInstruction.doseAndRate.doseQuantity ^short = "Valor e unidade do valor da dose da posologia [DOSE - VALOR E UNIDADE]" //dosageInstruction.doseAndRate.doseQuantity -> dosageInstruction.doseQuantity
+* dispenseRequest.quantity ^short = "Quantidade prescrita do medicamento (valor e unidade)"
  //extension 2
 
  
@@ -201,12 +202,9 @@ Description: "Utente a quem diz respeito a prescrição de medicação."
 * name.family ^short = "Apelidos do utente"
 * telecom ^short = "Informações de contacto do utente"
 
-* address.id ^description = "As extensões apresentadas suportam a normalização para o formato de morada em Portugal assim como para moradas estrangeiras de uma forma sistémica. Opcionalmente os elementos "address.text" e "address.line" poderão ser utilizados para uma representação não normalizada.
-Para informar a morada de cada tipo de address abaixo, além de preencher os elementos consistidos pelas extensions, deverão ser utilizados os elementos do datatype address (como country, district, etc) com os valores preenchidos nos elementos display das extensions correspondentes em seus valueCodeableConcept (e.g.; caso address[0]. extension[0].extension[0].valueCodeableConcept. coding[0].display seja igual a "Portugal", address[0]. country também deverá ser igual a "Portugal").
-Caso a morada seja preferencial (campo <Preferenci al>), deve ser usado o tipo de endereço \"MA\" (Main Address)
-Podem ser enviadas quantas moradas forem necessárias."
-* address.id ^short = "As extensões apresentadas suportam a normalização para o formato de morada em Portugal assim como para moradas estrangeiras de uma forma sistémica. Opcionalmente os elementos "address.text" e "address.line" poderão ser utilizados para uma representação não normalizada.
-Para informar a morada de cada tipo de address abaixo, além de preencher os elementos consistidos pelas extensions, deverão ser utilizados os elementos do datatype address (como country, district, etc) com os valores preenchidos nos elementos display das extensions correspondentes em seus valueCodeableConcept (e.g.; caso address[0]. extension[0].extension[0].valueCodeableConcept. coding[0].display seja igual a "Portugal", address[0]. country também deverá ser igual a "Portugal").
+
+* address.id ^short = "As extensões apresentadas suportam a normalização para o formato de morada em Portugal assim como para moradas estrangeiras de uma forma sistémica. Opcionalmente os elementos \"address.text\" e \"address.line\" poderão ser utilizados para uma representação não normalizada.
+Para informar a morada de cada tipo de address abaixo, além de preencher os elementos consistidos pelas extensions, deverão ser utilizados os elementos do datatype address (como country, district, etc) com os valores preenchidos nos elementos display das extensions correspondentes em seus valueCodeableConcept (e.g.; caso address[0]. extension[0].extension[0].valueCodeableConcept. coding[0].display seja igual a \"Portugal\", address[0]. country também deverá ser igual a \"Portugal\").
 Caso a morada seja preferencial (campo <Preferenci al>), deve ser usado o tipo de endereço \"MA\" (Main Address)
 Podem ser enviadas quantas moradas forem necessárias."
 //extensions TODO
@@ -223,7 +221,7 @@ Description: "Recurso que caracteriza o episódio a partir do qual a prescriçã
 
 Profile:     PEMHCoverage
 Id:          coverage-pemh-profile
-Parent:      Encounter
+Parent:      Coverage
 Title:       "Perfil Coverage"
 Description: "Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria."
 

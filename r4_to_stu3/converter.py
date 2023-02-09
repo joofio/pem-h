@@ -1,6 +1,81 @@
 import json
 from os import listdir
 
+
+def transform_bundle(data):
+
+    json_string = json.dumps(data)
+
+    newdata = json_string.replace(
+        "Bundle.signature.who", "Bundle.signature.whoReference"
+    )  # print(newdata)
+    return json.loads(newdata)
+
+
+def transform_med_req(data):
+    data["differential"]["element"].append(
+        {
+            "id": "MedicationRequest.requester.onBehalfOf",
+            "path": "MedicationRequest.requester.onBehalfOf",
+            "short": "Refer\u00eancia para um resource que cont\u00e9m informa\u00e7\u00f5es do profissional que inicialmente adicionou a prescri\u00e7\u00e3o. Este elemento n\u00e3o pode ser mais alterado em toda a vida do recurso.",
+            "type": [
+                {
+                    "code": "Reference",
+                    "targetProfile": [
+                        "http://hl7.org/fhir/StructureDefinition/Organization"
+                    ],
+                }
+            ],
+        },
+    )
+    json_string = json.dumps(data)
+
+    newdata = json_string.replace(
+        "MedicationRequest.encounter", "MedicationRequest.context"
+    ).replace("MedicationRequest.requester", "MedicationRequest.requester.agent").replace("dosageInstruction.doseAndRate.doseQuantity","dosageInstruction.doseQuantity")
+    return json.loads(newdata)
+
+
+def transform_msh(data):
+
+    data["differential"]["element"].append(
+        {
+            "id": "MessageHeader.timestamp",
+            "path": "MessageHeader.timestamp",
+            "short": "Time that the message was sent",
+            "definition": "The time that the message was sent.",
+            "requirements": "Allows limited detection of out-of-order and delayed transmission.  Also supports audit.",
+            "min": 1,
+            "max": "1",
+            "type": [{"code": "instant"}],
+            "isSummary": True,
+            "mapping": [
+                {"identity": "v2", "map": "MSH-7"},
+                {"identity": "rim", "map": "./creationTime[isNormalDatatype()]"},
+                {"identity": "w5", "map": "when.init"},
+            ],
+        }
+    )
+    json_string = json.dumps(data)
+
+    newdata = json_string.replace(
+        "MessageHeader.eventCoding", "MessageHeader.event"
+    ).replace("destination.receiver", "receiver")
+    # print(newdata)
+    return json.loads(newdata)
+
+
+def transform_to_stu3(data, resourcetype):
+    print(resourcetype)
+    if resourcetype == "MessageHeader":
+        return transform_msh(data)
+    if resourcetype == "MedicationRequest":
+        return transform_med_req(data)
+    if resourcetype == "Bundle":
+        return transform_bundle(data)
+    return data
+
+
 OUTPUT_FOLDER = "../input/profiles/"
 INPUT_FOLDER = "fsh-generated/resources/"
 EXTENSION_FOLDER = "../input/extensions/"
@@ -9,21 +84,24 @@ VOCAB_FOLDER = "../input/vocabulary/"
 
 # multiple elementsa
 for file in listdir(INPUT_FOLDER):
-    print(file)
+    # print(file)
     # n_file = file.split(".")[0]
     with open(INPUT_FOLDER + file) as jsonFile:
         data = json.load(jsonFile)
     if data.get("fhirVersion") is not None:
         data["fhirVersion"] = "3.0.2"
     restype = data.get("resourceType")
-    print(restype)
+    # print(restype)
+    type_ = data.get("type")
+    # print(type_)
     if restype == "StructureDefinition":
-        type_ = data.get("type")
+        ndata = transform_to_stu3(data, type_)
+
         if type_ == "Extension":
             pass
         else:
             with open(OUTPUT_FOLDER + file, "w") as file:
-                json.dump(data, file)
+                json.dump(ndata, file)
 
     #  with open(EXTENSION_FOLDER + file, "w") as file:
     #      json.dump(data, file)

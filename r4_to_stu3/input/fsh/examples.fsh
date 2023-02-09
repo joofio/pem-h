@@ -3,36 +3,15 @@
 // @Description: An example of an instance of a Patient resource
 
 Instance: ExemploMessage
-InstanceOf: Bundle
+InstanceOf: PEMHbundleRquest
 Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
 
 * id = "7898e419-6983-4afc-8163-a19274a12290"
 * meta.lastUpdated =  "2019-10-10T23:10:23+00:00"
 * meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3"
 * type = #message
-* entry[0]
-  * fullUrl = "http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1"
-  * resource
-    * resourceType = "MessageHeader" 
-    * id = "db6428bf-1e58-48d4-9102-b85d6c716bb1"
-    * meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3"
-    * meta.lastUpdated = "2019-10-10T23:10:23+00:00"
-    * meta.tag.system = "http://spms.min-saude.pt/iop/event-meta-tags"
-    * meta.tag.code = #10911
-    * meta.tag.display = "MED PRESCRIPTION NEW"
-   // * event.system =  "http://spms.min-saude.pt/iop/events" #stu3 is not supported by SUSHI
-   // * event.code = #10724
-   // * event.display = "MED PRESCRIPTION SYNCHRONIZATION"
-    * destination.name = "PEMH"
-    * destination.endpoint = "SPMS/PEMH"
-    * destination.receiver = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
-    * destination.receiver.display = "Organização Origem"
-    * sender = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
-    * sender.display = "Organização Origem"
-    // * timestamp = "2019-07-14T23:10:23+00:00"
-    * source.name = "Aplicação Origem"
-    * source.endpoint = "Endpont_Aplicação_Origem"
-    * focus = Reference(RequestGroup/25f1ea48-e0ef-405e86fc-498ae907f6df)
+* entry[0].resource = ExemploMSH
+* entry[0].fullUrl = "http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1"
 
 * entry[+].resource = ExemploRequestGroup
 * entry[=].fullUrl =  "http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"
@@ -63,9 +42,38 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
 
 * signature.type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 "Author's Signature"
 * signature.when = "2019-10-10T23:10:23+00:00"
-* signature.who = Reference(Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8) //difference stu3 <-> R4
+* signature.who = Reference(ExemploPractitioner) //difference stu3 <-> R4
 * signature.sigFormat = #application/signature+xml //difference stu3 <-> R4
 * signature.data = "dGhpcyBibG9iIGlzIHNuaXBwZWQ=" //difference stu3 <-> R4
+
+
+Instance: ExemploMSH
+InstanceOf: PEMHMSH
+Description: "ttt"
+
+
+* id = "db6428bf-1e58-48d4-9102-b85d6c716bb1"
+* meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3"
+* meta.lastUpdated = "2019-10-10T23:10:23+00:00"
+* meta.tag.system = "http://spms.min-saude.pt/iop/event-meta-tags"
+* meta.tag.code = #10911
+* meta.tag.display = "MED PRESCRIPTION NEW"
+* eventCoding.system =  "http://spms.min-saude.pt/iop/events" //#stu3 is not supported by SUSHI
+* eventCoding.code = #10724
+//* eventCoding.display = "MED PRESCRIPTION SYNCHRONIZATION"
+* destination.name = "PEMH"
+* destination.endpoint = "SPMS/PEMH"
+* destination.receiver = Reference(ExemploOrganization1)
+* destination.receiver.display = "Organização Origem"
+* sender = Reference(ExemploOrganization1)
+* sender.display = "Organização Origem"
+// * timestamp = "2019-07-14T23:10:23+00:00"
+* source.name = "Aplicação Origem"
+* source.endpoint = "Endpont_Aplicação_Origem"
+* focus = Reference(ExemploRequestGroup)
+
+
+
 
 Instance: ExemploRequestGroup
 InstanceOf: PEMHRequestGroup
@@ -83,7 +91,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - RequestGroup"
 * action.timingPeriod.end = "2019-01-27"
 
 Instance: ExemploMedicationRequest
-InstanceOf: MedicationRequest
+InstanceOf: PEMHMedicationRequest
 Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
 
 * id = "e22942f3-a461-40b9-8449-30f7a7e9d0d5"
@@ -116,7 +124,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
 * dispenseRequest.quantity.system = "https://www.infarmed.pt"
 
 Instance: ExemploMedication
-InstanceOf: Medication
+InstanceOf: PEMHMedication
 Description: "Exemplo 1 - Nova prescrição de medicação - Medication"
 
 * id = "a87cddf3-01de-4241-b9b2-7209f5f2bcab"
@@ -125,12 +133,12 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Medication"
 
 
 Instance: ExemploPatient
-InstanceOf: Patient
+InstanceOf: PEMHPatient
 Description: "Exemplo 1 - Nova prescrição de medicação - Patient"
 
 * id = "3616b380-01be-465a-aa29-906337c6e7a4"
 * meta.lastUpdated = "2019-01-14T23:10:23+00:00"
-* identifier.type.coding =  http://h17.org/fhir/v2/0203#HC "Health Card Number"
+//* identifier.type.coding =  http://h17.org/fhir/v2/0203#HC "Health Card Number"
 * identifier.type.text = "NNU"
 * identifier.system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
 * identifier.value = "11920641576"
@@ -144,7 +152,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Patient"
 
 
 Instance: ExemploEncounter
-InstanceOf: Encounter
+InstanceOf: PEMHEncounter
 Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 
 * id = "2d3f8e19-205e-40c6-aeec7b17cbef8045"
@@ -160,7 +168,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * serviceProvider = Reference(Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 
 Instance: ExemploCoverage
-InstanceOf: Coverage
+InstanceOf: PEMHCoverage
 Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 
 * id = "219eb473-8ee3-4e3d-b785-b204b71de77f"
@@ -183,7 +191,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 
 
 Instance: ExemploLocation
-InstanceOf: Location
+InstanceOf: PEMHLocation
 Description: "Exemplo 1 - Nova prescrição de medicação - Location"
 
 * id = "04f1ea48-e0ef-405e-86fc-498ae907f6d0"
