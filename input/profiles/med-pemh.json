@@ -1,0 +1,56 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "med-pemh-profile",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+        "valueString": "Clinical.Medications"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+        "valueCode": "business"
+      }
+    ],
+    "url": "http://example.org/StructureDefinition/med-pemh-profile",
+    "version": "1.0.0",
+    "name": "PEMHMedication",
+    "title": "Perfil Medicação",
+    "status": "active",
+    "description": "Este recurso representa o medicamento que é referenciado pelo recurso MedicationRequest.",
+    "fhirVersion": "3.0.2",
+    "mapping": [
+      {
+        "identity": "script10.6",
+        "uri": "http://ncpdp.org/SCRIPT10_6",
+        "name": "Mapping to NCPDP SCRIPT 10.6"
+      },
+      {
+        "identity": "rim",
+        "uri": "http://hl7.org/v3",
+        "name": "RIM Mapping"
+      },
+      {
+        "identity": "w5",
+        "uri": "http://hl7.org/fhir/fivews",
+        "name": "FiveWs Pattern Mapping"
+      },
+      {
+        "identity": "v2",
+        "uri": "http://hl7.org/v2",
+        "name": "HL7 v2 Mapping"
+      }
+    ],
+    "kind": "resource",
+    "abstract": false,
+    "type": "Medication",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Medication",
+          "path": "Medication"
+        }
+      ]
+    }
+  }

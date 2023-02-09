@@ -1,0 +1,56 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "coverage-pemh-profile",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+        "valueString": "Base.Management"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+        "valueCode": "patient"
+      }
+    ],
+    "url": "http://example.org/StructureDefinition/coverage-pemh-profile",
+    "version": "1.0.0",
+    "name": "PEMHCoverage",
+    "title": "Perfil Coverage",
+    "status": "active",
+    "description": "Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria.",
+    "fhirVersion": "3.0.2",
+    "mapping": [
+      {
+        "identity": "workflow",
+        "uri": "http://hl7.org/fhir/workflow",
+        "name": "Workflow Pattern"
+      },
+      {
+        "identity": "rim",
+        "uri": "http://hl7.org/v3",
+        "name": "RIM Mapping"
+      },
+      {
+        "identity": "w5",
+        "uri": "http://hl7.org/fhir/fivews",
+        "name": "FiveWs Pattern Mapping"
+      },
+      {
+        "identity": "v2",
+        "uri": "http://hl7.org/v2",
+        "name": "HL7 v2 Mapping"
+      }
+    ],
+    "kind": "resource",
+    "abstract": false,
+    "type": "Encounter",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Encounter",
+          "path": "Encounter"
+        }
+      ]
+    }
+  }
