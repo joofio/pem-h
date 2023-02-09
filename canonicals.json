@@ -1,114 +1,79 @@
 [
   {
-    "id": "my-ig",
-    "type": "ImplementationGuide",
-    "url": "http://example.com/fhir/example",
-    "version": "1.0.0",
-    "name": "ExampleIG"
+    "id" : "bundle-response-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/bundle-response-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHbundleResponse"
   },
   {
-    "id": "bundle-response-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/bundle-response-profile",
-    "version": "1.0.0",
-    "name": "PEMHbundleResponse"
+    "id" : "content-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/content-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHContent"
   },
   {
-    "id": "content-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
-    "version": "1.0.0",
-    "name": "PEMHContent"
+    "id" : "coverage-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/coverage-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHCoverage"
   },
   {
-    "id": "coverage-pemh-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
-    "version": "1.0.0",
-    "name": "PEMHCoverage"
+    "id" : "encounter-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/encounter-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHEncounter"
   },
   {
-    "id": "encounter-pemh-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
-    "version": "1.0.0",
-    "name": "PEMHEncounter"
+    "id" : "example-patient-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/example-patient-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHbundleRquest"
   },
   {
-    "id": "example-patient-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/example-patient-profile",
-    "version": "1.0.0",
-    "name": "PEMHbundleRquest"
+    "id" : "location-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/location-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHLocation"
   },
   {
-    "id": "location-pemh-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/location-pemh-profile",
-    "version": "1.0.0",
-    "name": "PEMHLocation"
+    "id" : "med-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/med-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMedication"
   },
   {
-    "id": "med-pemh-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/med-pemh-profile",
-    "version": "1.0.0",
-    "name": "PEMHMedication"
+    "id" : "med-request-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/med-request-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMedicationRequest"
   },
   {
-    "id": "med-request-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/med-request-profile",
-    "version": "1.0.0",
-    "name": "PEMHMedicationRequest"
+    "id" : "msh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/msh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMSH"
   },
   {
-    "id": "msh-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/msh-profile",
-    "version": "1.0.0",
-    "name": "PEMHMSH"
+    "id" : "patient-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/patient-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHPatient"
   },
   {
-    "id": "patient-pemh-profile",
-    "type": "StructureDefinition",
-    "url": "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile",
-    "version": "1.0.0",
-    "name": "PEMHPatient"
-  },
-  {
-    "id": "EventCodeVS",
-    "type": "ValueSet",
-    "url": "http://example.com/fhir/example/ValueSet/EventCodeVS",
-    "version": "1.0.0",
-    "name": "EventCodeVS"
-  },
-  {
-    "id": "EventagsVS",
-    "type": "ValueSet",
-    "url": "http://example.com/fhir/example/ValueSet/EventagsVS",
-    "version": "1.0.0",
-    "name": "EventagsVS"
-  },
-  {
-    "id": "MeaningOrderVS",
-    "type": "ValueSet",
-    "url": "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
-    "version": "1.0.0",
-    "name": "MeaningOrderVS"
-  },
-  {
-    "id": "duplicate-order",
-    "type": "StructureDefinition",
-    "url": "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
-    "version": "1.0.0",
-    "name": "PrescriptionDuplicate"
-  },
-  {
-    "id": "meaning-order",
-    "type": "StructureDefinition",
-    "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
-    "version": "1.0.0",
-    "name": "MeaningOrder"
+    "id" : "xxxexample.fhir.uv.myig",
+    "type" : "ImplementationGuide",
+    "url" : "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
+    "version" : "0.1.0-test",
+    "name" : "hl7-pt-pem-h"
   }
 ]

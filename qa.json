@@ -1,12 +1,12 @@
 {
-  "url": "http://example.com/fhir/example",
-  "name": "ExampleIG",
-  "package-id": "my-ig",
-  "ig-ver": "1.0.0",
-  "date": "Thu, 22 Sep, 2022 18:17:38 +0000",
-  "errs": 35,
-  "warnings": 37,
-  "hints": 30,
-  "version": "4.0.1",
-  "tool": "5.0.0-ballot (3)"
+  "url" : "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
+  "name" : "hl7-pt-pem-h",
+  "package-id" : "pem-h.fhir.uv.myig",
+  "ig-ver" : "0.1.0-test",
+  "date" : "Thu, 09 Feb, 2023 14:33:47 +0000",
+  "errs" : 147,
+  "warnings" : 25,
+  "hints" : 0,
+  "version" : "3.0.2",
+  "tool" : "5.0.0-snapshot2 (3)"
 }
