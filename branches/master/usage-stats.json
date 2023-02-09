@@ -7,53 +7,57 @@
   "profiles": {
     "Bundle": [
       {
-        "url": "http://example.org/StructureDefinition/example-patient-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest",
         "title": "Perfil Bundle de mensagem"
+      },
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/bundle-response-profile",
+        "title": "Perfil Bundle de mensagem de resposta"
       }
     ],
     "RequestGroup": [
       {
-        "url": "http://example.org/StructureDefinition/content-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
         "title": "Perfil Conteudo Receita"
       }
     ],
     "Encounter": [
       {
-        "url": "http://example.org/StructureDefinition/coverage-pemh-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
         "title": "Perfil Coverage"
       },
       {
-        "url": "http://example.org/StructureDefinition/encounter-pemh-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
         "title": "Perfil Episódio"
       }
     ],
     "Location": [
       {
-        "url": "http://example.org/StructureDefinition/location-pemh-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/location-pemh-profile",
         "title": "Perfil Location"
       }
     ],
     "Medication": [
       {
-        "url": "http://example.org/StructureDefinition/med-pemh-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/med-pemh-profile",
         "title": "Perfil Medicação"
       }
     ],
     "MedicationRequest": [
       {
-        "url": "http://example.org/StructureDefinition/med-request-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/med-request-profile",
         "title": "Perfil informação de receita"
       }
     ],
     "MessageHeader": [
       {
-        "url": "http://example.org/StructureDefinition/msh-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/msh-profile",
         "title": "Perfil MessageHeader"
       }
     ],
     "Patient": [
       {
-        "url": "http://example.org/StructureDefinition/patient-pemh-profile",
+        "url": "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile",
         "title": "Perfil Paciente"
       }
     ]
@@ -77,6 +81,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -90,9 +97,11 @@
       "ImplementationGuide.dependency"
     ],
     "http://spms.min-saude.pt/iop/extensions/prescription-duplicate": [
+      "Bundle.entry.resource",
       "RequestGroup"
     ],
     "http://spms.min-saude/pe/top/extensions/med-request-modality": [
+      "Bundle.entry.resource",
       "RequestGroup"
     ]
   }

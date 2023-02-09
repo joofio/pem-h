@@ -13,12 +13,12 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
     "valueCode" : "not-classified"
   }],
-  "url" : "http://example.org/StructureDefinition/bundle-response-profile",
+  "url" : "http://example.com/fhir/example/StructureDefinition/bundle-response-profile",
   "version" : "0.1.0-test",
   "name" : "PEMHbundleResponse",
   "title" : "Perfil Bundle de mensagem de resposta",
   "status" : "active",
-  "date" : "2023-02-09T14:33:47+00:00",
+  "date" : "2023-02-09T20:39:01+00:00",
   "publisher" : "HL7 TC",
   "contact" : [{
     "telecom" : [{

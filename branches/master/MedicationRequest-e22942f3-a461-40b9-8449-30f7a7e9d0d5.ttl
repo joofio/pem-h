@@ -5,35 +5,35 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.com/fhir/example/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5> a fhir:MedicationRequest;
+<xxxhttp://somewhere.org/fhir/uv/myig/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "e22942f3-a461-40b9-8449-30f7a7e9d0d5"];
+  fhir:Resource.id [ fhir:value "e22942f3-a461-40b9-8449-30f7a7e9d0d5"]; # 
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2019-10-10T23:10:23+00:00"^^xsd:dateTime ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"e22942f3-a461-40b9-8449-30f7a7e9d0d5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest \"e22942f3-a461-40b9-8449-30f7a7e9d0d5\" Updated \"2019-10-10 11:10:23+0000\" </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication/a87cddf3-01de-4241-b9b27209f5f2bcab\">Medication/a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 11:10:23+0000</p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>note</b>: Informação sobre a prescrição</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 500 mg daily for 5 days</p><p><b>timing</b>: Starting 2019-07-16, Do Once, Until 2019-07-30</p><p><b>route</b>: Intravenous <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#255560000)</span></p></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style=\"background: LightGoldenRodYellow\"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>"
-  ];
-  fhir:MedicationRequest.status [ fhir:value "active"];
-  fhir:MedicationRequest.intent [ fhir:value "order"];
-  fhir:MedicationRequest.medicationReference [
-     fhir:link <http://example.com/fhir/example/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab>;
-     fhir:Reference.reference [ fhir:value "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" ]
-  ];
-  fhir:MedicationRequest.subject [
-     fhir:link <http://example.com/fhir/example/Patient/3616b380-01be-465a-aa29906337c6e7a4>;
-     fhir:Reference.reference [ fhir:value "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
-  ];
-  fhir:MedicationRequest.authoredOn [ fhir:value "2019-07-14T23:10:23+00:00"^^xsd:dateTime];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"e22942f3-a461-40b9-8449-30f7a7e9d0d5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;e22942f3-a461-40b9-8449-30f7a7e9d0d5&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p></div><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication/a87cddf3-01de-4241-b9b27209f5f2bcab\">Medication/a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 23:10:23+0000</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>500 mg daily for 5 days</td><td>Starting 2019-07-16, Once, Until 2019-07-30</td><td>Intravenous <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#255560000)</span></td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style=\"background: LightGoldenRodYellow\"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>"
+  ]; # 
   fhir:MedicationRequest.groupIdentifier [
      fhir:Identifier.system [ fhir:value "http://spms.min-saude.pt/his/<id-rnuentidade>/identifiers/local-prescription-id" ];
      fhir:Identifier.value [ fhir:value "6789342" ]
-  ];
+  ]; # 
+  fhir:MedicationRequest.status [ fhir:value "active"]; # 
+  fhir:MedicationRequest.intent [ fhir:value "order"]; # 
+  fhir:MedicationRequest.medicationReference [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab>;
+     fhir:Reference.reference [ fhir:value "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" ]
+  ]; # 
+  fhir:MedicationRequest.subject [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4>;
+     fhir:Reference.reference [ fhir:value "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
+  ]; # 
+  fhir:MedicationRequest.authoredOn [ fhir:value "2019-07-14T23:10:23+00:00"^^xsd:dateTime]; # 
   fhir:MedicationRequest.note [
      fhir:index 0;
      fhir:Annotation.text [ fhir:value "Informação sobre a prescrição" ]
-  ];
+  ]; # 
   fhir:MedicationRequest.dosageInstruction [
      fhir:index 0;
      fhir:Dosage.text [ fhir:value "500 mg daily for 5 days" ];
@@ -56,17 +56,8 @@
          fhir:Coding.code [ fhir:value "255560000" ];
          fhir:Coding.display [ fhir:value "Intravenous" ]
        ]
-     ];
-     fhir:Dosage.doseAndRate [
-       fhir:index 0;
-       fhir:Dosage.doseAndRate.doseQuantity [
-         fhir:Quantity.value [ fhir:value "400"^^xsd:decimal ];
-         fhir:Quantity.unit [ fhir:value "mg" ];
-         fhir:Quantity.system [ fhir:value "https://www.infarmed.pt" ];
-         fhir:Quantity.code [ fhir:value "mg" ]
-       ]
      ]
-  ];
+  ]; # 
   fhir:MedicationRequest.dispenseRequest [
      fhir:MedicationRequest.dispenseRequest.quantity [
        fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
@@ -74,11 +65,11 @@
        fhir:Quantity.system [ fhir:value "https://www.infarmed.pt" ];
        fhir:Quantity.code [ fhir:value "TAB" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.com/fhir/example/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5.ttl> a owl:Ontology;
+<xxxhttp://somewhere.org/fhir/uv/myig/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

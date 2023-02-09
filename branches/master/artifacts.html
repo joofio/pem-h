@@ -176,6 +176,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>
          <a href="#1">Structures: Resource Profiles</a>
       </li>
+      <li>
+         <a href="#2">Other</a>
+      </li>
    </ul>
 </div>
 <div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir">
@@ -191,18 +194,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-patient-pemh-profile.html" title="StructureDefinition/patient-pemh-profile">Perfil Paciente</a>
+                  <a href="StructureDefinition-bundle-response-profile.html" title="StructureDefinition/bundle-response-profile">Perfil Bundle de mensagem de resposta</a>
                </td>
                <td>
-<p>Utente a quem diz respeito a prescrição de medicação.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-med-request-profile.html" title="StructureDefinition/med-request-profile">Perfil informação de receita</a>
-               </td>
-               <td>
-<p>Este recurso contém informações da linha da receita.</p>
+<p>O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora.</p>
 </td>
             </tr>
             <tr>
@@ -215,10 +210,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-med-pemh-profile.html" title="StructureDefinition/med-pemh-profile">Perfil Medicação</a>
+               </td>
+               <td>
+<p>Este recurso representa o medicamento que é referenciado pelo recurso MedicationRequest.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-pemh-profile.html" title="StructureDefinition/patient-pemh-profile">Perfil Paciente</a>
+               </td>
+               <td>
+<p>Utente a quem diz respeito a prescrição de medicação.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-msh-profile.html" title="StructureDefinition/msh-profile">Perfil MessageHeader</a>
                </td>
                <td>
 <p>Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-request-profile.html" title="StructureDefinition/med-request-profile">Perfil informação de receita</a>
+               </td>
+               <td>
+<p>Este recurso contém informações da linha da receita.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-encounter-pemh-profile.html" title="StructureDefinition/encounter-pemh-profile">Perfil Episódio</a>
+               </td>
+               <td>
+<p>Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PEMHbundleRquest.html" title="StructureDefinition/PEMHbundleRquest">Perfil Bundle de mensagem</a>
+               </td>
+               <td>
+<p>O Bundle da mensagem deve ser do tipo ‘message’, deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso.</p>
 </td>
             </tr>
             <tr>
@@ -237,37 +272,72 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Recurso utilizado para representar informação sobre o local de prescrição da medicação.</p>
 </td>
             </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Other </h3>
+   <p>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-encounter-pemh-profile.html" title="StructureDefinition/encounter-pemh-profile">Perfil Episódio</a>
+                  <a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html" title="Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a>
                </td>
-               <td>
-<p>Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada.</p>
-</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-bundle-response-profile.html" title="StructureDefinition/bundle-response-profile">Perfil Bundle de mensagem de resposta</a>
+                  <a href="Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.html" title="Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab">Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab</a>
                </td>
-               <td>
-<p>O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora.</p>
-</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-example-patient-profile.html" title="StructureDefinition/example-patient-profile">Perfil Bundle de mensagem</a>
+                  <a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html" title="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a>
                </td>
-               <td>
-<p>O Bundle da mensagem deve ser do tipo ‘message’, deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso.</p>
-</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-med-pemh-profile.html" title="StructureDefinition/med-pemh-profile">Perfil Medicação</a>
+                  <a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html" title="Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045">Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045</a>
                </td>
-               <td>
-<p>Este recurso representa o medicamento que é referenciado pelo recurso MedicationRequest.</p>
-</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.html" title="RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df">RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html" title="Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f">Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.html" title="Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0">Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.html" title="Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8">Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-7898e419-6983-4afc-8163-a19274a12290.html" title="Bundle/7898e419-6983-4afc-8163-a19274a12290">Bundle/7898e419-6983-4afc-8163-a19274a12290</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html" title="MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5">MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.html" title="Patient/3616b380-01be-465a-aa29-906337c6e7a4">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a>
+               </td>
             </tr>
          </tbody>
       </table>
@@ -295,8 +365,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l528">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="xxxhttp://hl7.org/Special/committees/[something]">HL7 TC</a>.  Package pem-h.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Thu, Feb 9, 2023 14:33+0000">2023-02-09</span>
+        <p><a name="l656">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="xxxhttp://hl7.org/Special/committees/[something]">HL7 TC</a>.  Package pem-h.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Thu, Feb 9, 2023 20:39+0000">2023-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,7 +3,7 @@
   "id" : "med-request-profile",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest\">MedicationRequest</a><a name=\"MedicationRequest\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/medicationrequest.html\">MedicationRequest</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Ordering of medication for patient or group</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.id\">id</a><a name=\"MedicationRequest.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#id\">id</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Logical id of this artifact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.groupIdentifier\">groupIdentifier</a><a name=\"MedicationRequest.groupIdentifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Composite request this is part of</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.intent\">intent</a><a name=\"MedicationRequest.intent\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">proposal | plan | order | instance-order</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">order</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.medication[x]\">medication[x]</a><a name=\"MedicationRequest.medication_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-med-pemh-profile.html\">Perfil Medicação</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Medication to be taken</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.authoredOn\">authoredOn</a><a name=\"MedicationRequest.authoredOn\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">When request was initially authored</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest\">MedicationRequest</a><a name=\"MedicationRequest\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/medicationrequest.html\">MedicationRequest</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Ordering of medication for patient or group</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.id\">id</a><a name=\"MedicationRequest.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#id\">id</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Logical id of this artifact</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.meta\">meta</a><a name=\"MedicationRequest.meta\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.meta.lastUpdated\">lastUpdated</a><a name=\"MedicationRequest.meta.lastUpdated\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#instant\">instant</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indica a data da úlltima alteração desse recurso. Refere-se também à data de anulação da receita.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.groupIdentifier\">groupIdentifier</a><a name=\"MedicationRequest.groupIdentifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identificador local da prescrição</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.status\">status</a><a name=\"MedicationRequest.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A prescrição é criada com status active. Status para a anulação / cancelamento da prescrição: cancelled.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.intent\">intent</a><a name=\"MedicationRequest.intent\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">proposal | plan | order | instance-order</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">order</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.medication[x]\">medication[x]</a><a name=\"MedicationRequest.medication_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-med-pemh-profile.html\">Perfil Medicação</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Referência para o resource que contém informações do fármaco</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.subject\">subject</a><a name=\"MedicationRequest.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-patient-pemh-profile.html\">Perfil Paciente</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Referência para um resource que contém informações so utente a quem diz respeito a medicação</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.authoredOn\">authoredOn</a><a name=\"MedicationRequest.authoredOn\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Data e hora em que a prescrição foi emitida. Apenas preenchido no primeiro momento em que é feita a prescrição, i.e., se status = ACTIVE e não deve ser mais alterada em toda a vida do recurso.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.note\">note</a><a name=\"MedicationRequest.note\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Annotation\">Annotation</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informação adicionais sobre a prescrição [OBSERVAÇÕES GERAIS]</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction\">dosageInstruction</a><a name=\"MedicationRequest.dosageInstruction\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Dosage\">Dosage</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Posologia</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.text\">text</a><a name=\"MedicationRequest.dosageInstruction.text\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Conversão em texto da posologia estruturada definida na lista de posologias</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing\">timing</a><a name=\"MedicationRequest.dosageInstruction.timing\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Timing\">Timing</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">O elemento timing foi normalizado pela IOP com base no dataType timing do HL7 FHIR.\nRecomenda-se utilizar sempre que possível os elementos que compoem o timing para representar a posologia como forma de fazer uso dos elementos fornecidos pelo standard HL7 FHIR.\nEntretanto, para atender os requisitos de negócio e as normas da Prescrição da Medicação, no qual indicam para utilizar catálogos disponibilizados pelo CTC, utilizar a extension &quot;med-prescription-dosage-line&quot; para descrever a posologia.\nIsso justifica-se pois os elementos do standard HL7 FHIR f azem uso de catálogos pré-definidos e required.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing.repeat\">repeat</a><a name=\"MedicationRequest.dosageInstruction.timing.repeat\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod\">boundsPeriod</a><a name=\"MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Length/Range of lengths, or (Start and/or end) limits</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.start\">start</a><a name=\"MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.start\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Data de início para a toma</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.end\">end</a><a name=\"MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.end\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Data de termo para a toma</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing.repeat.durationUnit\">durationUnit</a><a name=\"MedicationRequest.dosageInstruction.timing.repeat.durationUnit\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unidade da duração do Tratamento/Tempo\ns | min | h | d | wk | mo | a - unit of time (UCUM) UnitsOfTime(Required)\ne.g.: 'wk'</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing.repeat.period\">period</a><a name=\"MedicationRequest.dosageInstruction.timing.repeat.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indica a duração do tempo durante o qual as repetições devem ocorrer; por exemplo, para expressar &quot;3 vezes por dia&quot;, 3 seria a frequência e &quot;1 dia&quot; seria o período.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-med-request-profile-definitions.html#MedicationRequest.dosageInstruction.timing.repeat.periodUnit\">periodUnit</a><a name=\"MedicationRequest.dosageInstruction.timing.repeat.periodUnit\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unidades de tempo do período.</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -13,12 +13,12 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
     "valueCode" : "patient"
   }],
-  "url" : "http://example.org/StructureDefinition/med-request-profile",
+  "url" : "http://example.com/fhir/example/StructureDefinition/med-request-profile",
   "version" : "0.1.0-test",
   "name" : "PEMHMedicationRequest",
   "title" : "Perfil informação de receita",
   "status" : "active",
-  "date" : "2023-02-09T14:33:47+00:00",
+  "date" : "2023-02-09T20:39:01+00:00",
   "publisher" : "HL7 TC",
   "contact" : [{
     "telecom" : [{
@@ -188,6 +188,174 @@
         "code" : "Meta"
       }],
       "isSummary" : true
+    },
+    {
+      "id" : "MedicationRequest.meta.id",
+      "path" : "MedicationRequest.meta.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.meta.extension",
+      "path" : "MedicationRequest.meta.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.meta.versionId",
+      "path" : "MedicationRequest.meta.versionId",
+      "short" : "Version specific identifier",
+      "definition" : "The version specific identifier, as it appears in the version portion of the URL. This values changes when the resource is created, updated, or deleted.",
+      "comment" : "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Meta.versionId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "id"
+      }],
+      "isSummary" : true
+    },
+    {
+      "id" : "MedicationRequest.meta.lastUpdated",
+      "path" : "MedicationRequest.meta.lastUpdated",
+      "short" : "Indica a data da úlltima alteração desse recurso. Refere-se também à data de anulação da receita.",
+      "definition" : "When the resource last changed - e.g. when the version changed.",
+      "comment" : "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Meta.lastUpdated",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "instant"
+      }],
+      "isSummary" : true
+    },
+    {
+      "id" : "MedicationRequest.meta.profile",
+      "path" : "MedicationRequest.meta.profile",
+      "short" : "Profiles this resource claims to conform to",
+      "definition" : "A list of profiles (references to [StructureDefinition](http://hl7.org/fhir/STU3/structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url]().",
+      "comment" : "It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Meta.profile",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "isSummary" : true
+    },
+    {
+      "id" : "MedicationRequest.meta.security",
+      "path" : "MedicationRequest.meta.security",
+      "short" : "Security Labels applied to this resource",
+      "definition" : "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+      "comment" : "The security labels can be updated without changing the stated version of the resource  The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Meta.security",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "SecurityLabels"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+          "valueBoolean" : true
+        }],
+        "strength" : "extensible",
+        "description" : "Security Labels from the Healthcare Privacy and Security Classification System.",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/security-labels"
+        }
+      }
+    },
+    {
+      "id" : "MedicationRequest.meta.tag",
+      "path" : "MedicationRequest.meta.tag",
+      "short" : "Tags applied to this resource",
+      "definition" : "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+      "comment" : "The tags can be updated without changing the stated version of the resource.  The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Meta.tag",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "Tags"
+        }],
+        "strength" : "example",
+        "description" : "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\"",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/common-tags"
+        }
+      }
     },
     {
       "id" : "MedicationRequest.implicitRules",
@@ -450,10 +618,10 @@
     {
       "id" : "MedicationRequest.groupIdentifier",
       "path" : "MedicationRequest.groupIdentifier",
-      "short" : "Composite request this is part of",
+      "short" : "Identificador local da prescrição",
       "definition" : "A shared identifier common to all requests that were authorized more or less simultaneously by a single author, representing the identifier of the requisition or prescription.",
       "requirements" : "Requests are linked either by a \"basedOn\" relationship (i.e. one request is fulfilling another) or by having a common requisition. Requests that are part of the same requisition are generally treated independently from the perspective of changing their state or maintaining them after initial creation.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "base" : {
         "path" : "MedicationRequest.groupIdentifier",
@@ -463,7 +631,6 @@
       "type" : [{
         "code" : "Identifier"
       }],
-      "mustSupport" : true,
       "isSummary" : true,
       "mapping" : [{
         "identity" : "workflow",
@@ -477,7 +644,7 @@
     {
       "id" : "MedicationRequest.status",
       "path" : "MedicationRequest.status",
-      "short" : "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown",
+      "short" : "A prescrição é criada com status active. Status para a anulação / cancelamento da prescrição: cancelled.",
       "definition" : "A code specifying the current state of the order.  Generally this will be active or completed state.",
       "comment" : "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
       "min" : 0,
@@ -645,7 +812,7 @@
     {
       "id" : "MedicationRequest.medication[x]",
       "path" : "MedicationRequest.medication[x]",
-      "short" : "Medication to be taken",
+      "short" : "Referência para o resource que contém informações do fármaco",
       "definition" : "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.",
       "comment" : "If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource. .",
       "min" : 1,
@@ -657,7 +824,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : "http://example.org/StructureDefinition/med-pemh-profile"
+        "targetProfile" : "http://example.com/fhir/example/StructureDefinition/med-pemh-profile"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -684,7 +851,7 @@
     {
       "id" : "MedicationRequest.subject",
       "path" : "MedicationRequest.subject",
-      "short" : "Who or group medication request is for",
+      "short" : "Referência para um resource que contém informações so utente a quem diz respeito a medicação",
       "definition" : "A link to a resource representing the person or set of individuals to whom the medication will be given.",
       "comment" : "The subject on a medication request is mandatory.  For the secondary use case where the actual subject is not provided, there still must be an anonymized subject specified.",
       "min" : 1,
@@ -696,12 +863,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Patient"
-      },
-      {
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Group"
+        "targetProfile" : "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile"
       }],
+      "mustSupport" : true,
       "isSummary" : true,
       "mapping" : [{
         "identity" : "workflow",
@@ -794,7 +958,7 @@
     {
       "id" : "MedicationRequest.authoredOn",
       "path" : "MedicationRequest.authoredOn",
-      "short" : "When request was initially authored",
+      "short" : "Data e hora em que a prescrição foi emitida. Apenas preenchido no primeiro momento em que é feita a prescrição, i.e., se status = ACTIVE e não deve ser mais alterada em toda a vida do recurso.",
       "definition" : "The date (and perhaps time) when the prescription was initially written or authored on.",
       "min" : 1,
       "max" : "1",
@@ -1144,7 +1308,7 @@
     {
       "id" : "MedicationRequest.note",
       "path" : "MedicationRequest.note",
-      "short" : "Information about the prescription",
+      "short" : "Informação adicionais sobre a prescrição [OBSERVAÇÕES GERAIS]",
       "definition" : "Extra information about the prescription that could not be conveyed by the other attributes.",
       "min" : 0,
       "max" : "*",
@@ -1172,7 +1336,7 @@
     {
       "id" : "MedicationRequest.dosageInstruction",
       "path" : "MedicationRequest.dosageInstruction",
-      "short" : "How the medication should be taken",
+      "short" : "Posologia",
       "definition" : "Indicates how the medication is to be used by the patient.",
       "comment" : "There are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, \"Ondansetron 8mg orally or IV twice a day as needed for nausea\" or \"Compazine® (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting\".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed.",
       "min" : 0,
@@ -1192,6 +1356,1250 @@
       {
         "identity" : "rim",
         "map" : "see dosageInstruction mapping"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.id",
+      "path" : "MedicationRequest.dosageInstruction.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.extension",
+      "path" : "MedicationRequest.dosageInstruction.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.sequence",
+      "path" : "MedicationRequest.dosageInstruction.sequence",
+      "short" : "The order of the dosage instructions",
+      "definition" : "Indicates the order in which the dosage instructions should be applied or interpreted.",
+      "requirements" : "If the sequence number of multiple Dosages is the same, then it is implied that the instructions are to be treated as concurrent.  If the sequence number is different, then the Dosages are intended to be sequential.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.sequence",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".text"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.text",
+      "path" : "MedicationRequest.dosageInstruction.text",
+      "short" : "Conversão em texto da posologia estruturada definida na lista de posologias",
+      "definition" : "Free text dosage instructions e.g. SIG.",
+      "requirements" : "Free text dosage instructions can be used for cases where the instructions are too complex to code.  The content of this attribute does not include the name or description of the medication. When coded instructions are present, the free text instructions may still be present for display to humans taking or administering the medication. It is expected that the text instructions will always be populated.  If the dosage.timing attribute is also populated, then the dosage.text should reflect the same information as the timing.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".text"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.additionalInstruction",
+      "path" : "MedicationRequest.dosageInstruction.additionalInstruction",
+      "short" : "Supplemental instruction - e.g. \"with meals\"",
+      "definition" : "Supplemental instruction - e.g. \"with meals\".",
+      "requirements" : "Additional instruction such as \"Swallow with plenty of water\" which may or may not be coded.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Dosage.additionalInstruction",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AdditionalInstruction"
+        }],
+        "strength" : "example",
+        "description" : "A coded concept identifying additional instructions such as \"take with water\" or \"avoid operating heavy machinery\".",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".text"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.patientInstruction",
+      "path" : "MedicationRequest.dosageInstruction.patientInstruction",
+      "short" : "Patient or consumer oriented instructions",
+      "definition" : "Instructions in terms that are understood by the patient or consumer.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.patientInstruction",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".text"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing",
+      "path" : "MedicationRequest.dosageInstruction.timing",
+      "short" : "O elemento timing foi normalizado pela IOP com base no dataType timing do HL7 FHIR.\nRecomenda-se utilizar sempre que possível os elementos que compoem o timing para representar a posologia como forma de fazer uso dos elementos fornecidos pelo standard HL7 FHIR.\nEntretanto, para atender os requisitos de negócio e as normas da Prescrição da Medicação, no qual indicam para utilizar catálogos disponibilizados pelo CTC, utilizar a extension \"med-prescription-dosage-line\" para descrever a posologia.\nIsso justifica-se pois os elementos do standard HL7 FHIR f azem uso de catálogos pré-definidos e required.",
+      "definition" : "When medication should be administered.",
+      "comment" : "This attribute may not always be populated while the Dosage.text is expected to be populated.  If both are populated, then the Dosage.text should reflect the content of the Dosage.timing.",
+      "requirements" : "The timing schedule for giving the medication to the patient. The Schedule data type allows many different expressions. For example: \"Every 8 hours\"; \"Three times a day\"; \"1/2 an hour before breakfast for 10 days from 23-Dec 2011:\"; \"15 Oct 2013, 17 Oct 2013 and 1 Nov 2013\".  Sometimes, a rate can imply duration when expressed as total volume / duration (e.g.  500mL/2 hours implies a duration of 2 hours).  However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.timing",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Timing"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".effectiveTime"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.id",
+      "path" : "MedicationRequest.dosageInstruction.timing.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.extension",
+      "path" : "MedicationRequest.dosageInstruction.timing.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.event",
+      "path" : "MedicationRequest.dosageInstruction.timing.event",
+      "short" : "When the event occurs",
+      "definition" : "Identifies specific times when the event occurs.",
+      "requirements" : "In an MAR, for instance, you need to take a general specification, and turn it into a precise specification.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Timing.event",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "QLIST<TS>"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat",
+      "short" : "When the event is to occur",
+      "definition" : "A set of rules that describe when the event is scheduled.",
+      "requirements" : "Many timing schedules are determined by regular repetitions.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "not(exists(f:offset)) or exists(f:when)"
+        }],
+        "key" : "tim-9",
+        "severity" : "error",
+        "human" : "If there's an offset, there must be a when (and not C, CM, CD, CV)",
+        "expression" : "offset.empty() or (when.exists() and ((when in ('C' | 'CM' | 'CD' | 'CV')).not()))",
+        "xpath" : "not(exists(f:offset)) or exists(f:when)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "f:period/@value >= 0 or not(f:period/@value)"
+        }],
+        "key" : "tim-5",
+        "severity" : "error",
+        "human" : "period SHALL be a non-negative value",
+        "expression" : "period.exists() implies period >= 0",
+        "xpath" : "f:period/@value >= 0 or not(f:period/@value)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "not(exists(f:periodMax)) or exists(f:period)"
+        }],
+        "key" : "tim-6",
+        "severity" : "error",
+        "human" : "If there's a periodMax, there must be a period",
+        "expression" : "periodMax.empty() or period.exists()",
+        "xpath" : "not(exists(f:periodMax)) or exists(f:period)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "not(exists(f:durationMax)) or exists(f:duration)"
+        }],
+        "key" : "tim-7",
+        "severity" : "error",
+        "human" : "If there's a durationMax, there must be a duration",
+        "expression" : "durationMax.empty() or duration.exists()",
+        "xpath" : "not(exists(f:durationMax)) or exists(f:duration)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "not(exists(f:countMax)) or exists(f:count)"
+        }],
+        "key" : "tim-8",
+        "severity" : "error",
+        "human" : "If there's a countMax, there must be a count",
+        "expression" : "countMax.empty() or count.exists()",
+        "xpath" : "not(exists(f:countMax)) or exists(f:count)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "not(exists(f:duration)) or exists(f:durationUnit)"
+        }],
+        "key" : "tim-1",
+        "severity" : "error",
+        "human" : "if there's a duration, there needs to be duration units",
+        "expression" : "duration.empty() or durationUnit.exists()",
+        "xpath" : "not(exists(f:duration)) or exists(f:durationUnit)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "not(exists(f:timeOfDay)) or not(exists(f:when))"
+        }],
+        "key" : "tim-10",
+        "severity" : "error",
+        "human" : "If there's a timeOfDay, there cannot be be a when, or vice versa",
+        "expression" : "timeOfDay.empty() or when.empty()",
+        "xpath" : "not(exists(f:timeOfDay)) or not(exists(f:when))",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "not(exists(f:period)) or exists(f:periodUnit)"
+        }],
+        "key" : "tim-2",
+        "severity" : "error",
+        "human" : "if there's a period, there needs to be period units",
+        "expression" : "period.empty() or periodUnit.exists()",
+        "xpath" : "not(exists(f:period)) or exists(f:periodUnit)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "f:duration/@value >= 0 or not(f:duration/@value)"
+        }],
+        "key" : "tim-4",
+        "severity" : "error",
+        "human" : "duration SHALL be a non-negative value",
+        "expression" : "duration.exists() implies duration >= 0",
+        "xpath" : "f:duration/@value >= 0 or not(f:duration/@value)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "Implies PIVL or EIVL"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.id",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.extension",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "short" : "Length/Range of lengths, or (Start and/or end) limits",
+      "definition" : "Either a duration for the length of the timing schedule, a range of possible length, or outer bounds for start and/or end limits of the timing schedule.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.bounds[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "IVL(TS) used in a QSI"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+      "sliceName" : "boundsPeriod",
+      "short" : "Length/Range of lengths, or (Start and/or end) limits",
+      "definition" : "Either a duration for the length of the timing schedule, a range of possible length, or outer bounds for start and/or end limits of the timing schedule.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.bounds[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "IVL(TS) used in a QSI"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.id",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.extension",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.start",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start",
+      "short" : "Data de início para a toma",
+      "definition" : "The start of the period. The boundary is inclusive.",
+      "comment" : "If the low element is missing, the meaning is that the low boundary is not known.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Period.start",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "condition" : ["per-1"],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "DR.1"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./low"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsPeriod.end",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end",
+      "short" : "Data de termo para a toma",
+      "definition" : "The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.",
+      "comment" : "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Period.end",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "meaningWhenMissing" : "If the end of the period is missing, it means that the period is ongoing",
+      "condition" : ["per-1"],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "DR.2"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./high"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.count",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.count",
+      "short" : "Number of times to repeat",
+      "definition" : "A total count of the desired number of repetitions.",
+      "comment" : "If you have both bounds and count, then this should be understood as within the bounds period, until count times happens.",
+      "requirements" : "Repetitions may be limited by end time or total occurrences.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.count",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.count"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.countMax",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.countMax",
+      "short" : "Maximum number of times to repeat",
+      "definition" : "A maximum value for the count of the desired repetitions (e.g. do something 6-8 times).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.countMax",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.count"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.duration",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.duration",
+      "short" : "How long when it happens",
+      "definition" : "How long this thing happens for when it happens.",
+      "comment" : "For some events the duration is part of the definition of the event (e.g. IV infusions, where the duration is implicit in the specified quantity and rate). For others, it's part of the timing specification (e.g. exercise).",
+      "requirements" : "Some activities are not instantaneous and need to be maintained for a period of time.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.duration",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.durationMax",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.durationMax",
+      "short" : "How long when it happens (Max)",
+      "definition" : "The upper limit of how long this thing happens for when it happens.",
+      "comment" : "For some events the duration is part of the definition of the event (e.g. IV infusions, where the duration is implicit in the specified quantity and rate). For others, it's part of the timing specification (e.g. exercise).",
+      "requirements" : "Some activities are not instantaneous and need to be maintained for a period of time.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.durationMax",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+      "short" : "Unidade da duração do Tratamento/Tempo\ns | min | h | d | wk | mo | a - unit of time (UCUM) UnitsOfTime(Required)\ne.g.: 'wk'",
+      "definition" : "The units of time for the duration, in UCUM units.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.durationUnit",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "UnitsOfTime"
+        }],
+        "strength" : "required",
+        "description" : "A unit of time (units from UCUM).",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/units-of-time"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase.unit"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.frequency",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.frequency",
+      "short" : "Event occurs frequency times per period",
+      "definition" : "The number of times to repeat the action within the specified period / period range (i.e. both period and periodMax provided).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.frequency",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }],
+      "defaultValueInteger" : 1,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.frequencyMax",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.frequencyMax",
+      "short" : "Event occurs up to frequencyMax times per period",
+      "definition" : "If present, indicates that the frequency is a range - so to repeat between [frequency] and [frequencyMax] times within the period or period range.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.frequencyMax",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.period",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.period",
+      "short" : "Indica a duração do tempo durante o qual as repetições devem ocorrer; por exemplo, para expressar \"3 vezes por dia\", 3 seria a frequência e \"1 dia\" seria o período.",
+      "definition" : "Indicates the duration of time over which repetitions are to occur; e.g. to express \"3 times per day\", 3 would be the frequency and \"1 day\" would be the period.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.periodMax",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.periodMax",
+      "short" : "Upper limit of period (3-4 hours)",
+      "definition" : "If present, indicates that the period is a range from [period] to [periodMax], allowing expressing concepts such as \"do this once every 3-5 days.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.periodMax",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+      "short" : "Unidades de tempo do período.",
+      "definition" : "The units of time for the period in UCUM units.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.periodUnit",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "UnitsOfTime"
+        }],
+        "strength" : "required",
+        "description" : "A unit of time (units from UCUM).",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/units-of-time"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "PIVL.phase.unit"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.dayOfWeek",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.dayOfWeek",
+      "short" : "mon | tue | wed | thu | fri | sat | sun",
+      "definition" : "If one or more days of week is provided, then the action happens only on the specified day(s).",
+      "comment" : "If no days are specified, the action is assumed to happen every day as otherwise specified. The elements frequency and period cannot be used as well as dayOfWeek.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Timing.repeat.dayOfWeek",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "DayOfWeek"
+        }],
+        "strength" : "required",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/days-of-week"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay",
+      "short" : "Time of day for action",
+      "definition" : "Specified time of day for action to take place.",
+      "comment" : "When time of day is specified, it is inferred that the action happens every day (as filtered by dayofWeek) on the specified times. The elements when, frequency and period cannot be used as well as timeOfDay.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Timing.repeat.timeOfDay",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "time"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.when",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.when",
+      "short" : "Regular life events the event is tied to",
+      "definition" : "Real world events that the occurrence of the event should be tied to.",
+      "comment" : "When more than one event is listed, the event is tied to the union of the specified events.",
+      "requirements" : "Timings are frequently determined by occurrences such as waking, eating and sleep.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Timing.repeat.when",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "EventTiming"
+        }],
+        "strength" : "required",
+        "description" : "Real world event relating to the schedule.",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/event-timing"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "EIVL.event"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.offset",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.offset",
+      "short" : "Minutes from event (before or after)",
+      "definition" : "The number of minutes from the event. If the event code does not indicate whether the minutes is before or after the event, then the offset is assumed to be after the event.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.repeat.offset",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "unsignedInt"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "EIVL.offset"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.code",
+      "path" : "MedicationRequest.dosageInstruction.timing.code",
+      "short" : "BID | TID | QID | AM | PM | QD | QOD | Q4H | Q6H +",
+      "definition" : "A code for the timing schedule. Some codes such as BID are ubiquitous, but many institutions define their own additional codes. If a code is provided, the code is understood to be a complete statement of whatever is specified in the structured timing data, and either the code or the data may be used to interpret the Timing, with the exception that .repeat.bounds still applies over the code (and is not contained in the code).",
+      "comment" : "BID etc are defined as 'at institutionally specified times'. For example, an institution may choose that BID is \"always at 7am and 6pm\".  If it is inappropriate for this choice to be made, the code BID should not be used. Instead, a distinct organization-specific code should be used in place of the HL7-defined BID code and/or the a structured representation should be used (in this case, specifying the two event times).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Timing.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "TimingAbbreviation"
+        }],
+        "strength" : "preferred",
+        "description" : "Code for a known / defined timing pattern.",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/timing-abbreviation"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "QSC.code"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.asNeeded[x]",
+      "path" : "MedicationRequest.dosageInstruction.asNeeded[x]",
+      "short" : "Take \"as needed\" (for x)",
+      "definition" : "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).",
+      "comment" : "Can express \"as needed\" without a reason by setting the Boolean = True.  In this case the CodeableConcept is not populated.  Or you can express \"as needed\" with a reason by including the CodeableConcept.  In this case the Boolean is assumed to be True.  If you set the Boolean to False, then the dose is given according to the schedule and is not \"prn\" or \"as needed\".",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.asNeeded[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      },
+      {
+        "code" : "CodeableConcept"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "MedicationAsNeededReason"
+        }],
+        "strength" : "example",
+        "description" : "A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example \"pain\", \"30 minutes prior to sexual intercourse\", \"on flare-up\" etc.",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".outboundRelationship[typeCode=PRCN].target[classCode=OBS, moodCode=EVN, code=\"as needed\"].value=boolean or codable concept"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.site",
+      "path" : "MedicationRequest.dosageInstruction.site",
+      "short" : "Body site to administer to",
+      "definition" : "Body site to administer to.",
+      "comment" : "If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [body-site-instance](http://hl7.org/fhir/STU3/extension-body-site-instance.html).  May be a summary code, or a reference to a very precise definition of the location, or both.",
+      "requirements" : "A coded specification of the anatomic site where the medication first enters the body.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.site",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "MedicationAdministrationSite"
+        }],
+        "strength" : "example",
+        "description" : "A coded concept describing the site location the medicine enters into or onto the body.",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/approach-site-codes"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".approachSiteCode"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.route",
+      "path" : "MedicationRequest.dosageInstruction.route",
+      "short" : "How drug should enter body",
+      "definition" : "How drug should enter body.",
+      "requirements" : "A code specifying the route or physiological path of administration of a therapeutic agent into or onto a patient's body.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.route",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "RouteOfAdministration"
+        }],
+        "strength" : "example",
+        "description" : "A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject.",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/route-codes"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".routeCode"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.method",
+      "path" : "MedicationRequest.dosageInstruction.method",
+      "short" : "Technique for administering medication",
+      "definition" : "Technique for administering medication.",
+      "comment" : "Terminologies used often pre-coordinate this term with the route and or form of administration.",
+      "requirements" : "A coded value indicating the method by which the medication is introduced into or onto the body. Most commonly used for injections.  For examples, Slow Push; Deep IV.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.method",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "MedicationAdministrationMethod"
+        }],
+        "strength" : "example",
+        "description" : "A coded concept describing the technique by which the medicine is administered.",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/administration-method-codes"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".doseQuantity"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.dose[x]",
+      "path" : "MedicationRequest.dosageInstruction.dose[x]",
+      "short" : "Amount of medication per dose",
+      "definition" : "Amount of medication per dose.",
+      "comment" : "Note that this specifies the quantity of the specified medication, not the quantity for each active ingredient(s). Each ingredient amount can be communicated in the Medication resource. For example, if one wants to communicate that a tablet was 375 mg, where the dose was one tablet, you can use the Medication resource to document that the tablet was comprised of 375 mg of drug XYZ. Alternatively if the dose was 375 mg, then you may only need to use the Medication resource to indicate this was a tablet. If the example were an IV such as dopamine and you wanted to communicate that 400mg of dopamine was mixed in 500 ml of some IV solution, then this would all be communicated in the Medication resource. If the administration is not intended to be instantaneous (rate is present or timing has a duration), this can be specified to convey the total amount to be administered over the period of time as indicated by the schedule e.g. 500 ml in dose, with timing used to convey that this should be done over 4 hours.",
+      "requirements" : "The amount of therapeutic or other substance given at one administration event.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.dose[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Range"
+      },
+      {
+        "code" : "Quantity",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".doseQuantity"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.maxDosePerPeriod",
+      "path" : "MedicationRequest.dosageInstruction.maxDosePerPeriod",
+      "short" : "Upper limit on medication per unit of time",
+      "definition" : "Upper limit on medication per unit of time.",
+      "comment" : "This is intended for use as an adjunct to the dosage when there is an upper cap.  For example \"2 tablets every 4 hours to a maximum of 8/day\".",
+      "requirements" : "The maximum total quantity of a therapeutic substance that may be administered to a subject over the period of time.  For example, 1000mg in 24 hours.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.maxDosePerPeriod",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Ratio"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".maxDoseQuantity"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.maxDosePerAdministration",
+      "path" : "MedicationRequest.dosageInstruction.maxDosePerAdministration",
+      "short" : "Upper limit on medication per administration",
+      "definition" : "Upper limit on medication per administration.",
+      "comment" : "This is intended for use as an adjunct to the dosage when there is an upper cap.  For example, a body surface area related dose with a maximum amount, such as 1.5 mg/m2 (maximum 2 mg) IV over 5 – 10 minutes would have doseQuantity of 1.5 mg/m2 and maxDosePerAdministration of 2 mg.",
+      "requirements" : "The maximum total quantity of a therapeutic substance that may be administered to a subject per administration.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.maxDosePerAdministration",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "not supported"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.maxDosePerLifetime",
+      "path" : "MedicationRequest.dosageInstruction.maxDosePerLifetime",
+      "short" : "Upper limit on medication per lifetime of the patient",
+      "definition" : "Upper limit on medication per lifetime of the patient.",
+      "requirements" : "The maximum total quantity of a therapeutic substance that may be administered per lifetime of the subject.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.maxDosePerLifetime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "not supported"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.rate[x]",
+      "path" : "MedicationRequest.dosageInstruction.rate[x]",
+      "short" : "Amount of medication per unit of time",
+      "definition" : "Amount of medication per unit of time.",
+      "comment" : "It is possible to supply both a rate and a doseQuantity to provide full details about how the medication is to be administered and supplied. If the rate is intended to change over time, depending on local rules/regulations, each change should be captured as a new version of the MedicationRequest with an updated rate, or captured with a new MedicationRequest with the new rate.",
+      "requirements" : "Identifies the speed with which the medication was or will be introduced into the patient. Typically the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time e.g. 500 ml per 2 hours.   Other examples: 200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours.  Sometimes, a rate can imply duration when expressed as total volume / duration (e.g.  500mL/2 hours implies a duration of 2 hours).  However, when rate doesn't imply duration (e.g. 250mL/hour), then the timing.repeat.duration is needed to convey the infuse over time period.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Dosage.rate[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Quantity",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".rateQuantity"
       }]
     },
     {
@@ -1701,10 +3109,19 @@
       "mustSupport" : true
     },
     {
+      "id" : "MedicationRequest.meta.lastUpdated",
+      "path" : "MedicationRequest.meta.lastUpdated",
+      "short" : "Indica a data da úlltima alteração desse recurso. Refere-se também à data de anulação da receita."
+    },
+    {
       "id" : "MedicationRequest.groupIdentifier",
       "path" : "MedicationRequest.groupIdentifier",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Identificador local da prescrição"
+    },
+    {
+      "id" : "MedicationRequest.status",
+      "path" : "MedicationRequest.status",
+      "short" : "A prescrição é criada com status active. Status para a anulação / cancelamento da prescrição: cancelled."
     },
     {
       "id" : "MedicationRequest.intent",
@@ -1714,15 +3131,81 @@
     {
       "id" : "MedicationRequest.medication[x]",
       "path" : "MedicationRequest.medication[x]",
+      "short" : "Referência para o resource que contém informações do fármaco",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : "http://example.org/StructureDefinition/med-pemh-profile"
+        "targetProfile" : "http://example.com/fhir/example/StructureDefinition/med-pemh-profile"
       }]
+    },
+    {
+      "id" : "MedicationRequest.subject",
+      "path" : "MedicationRequest.subject",
+      "short" : "Referência para um resource que contém informações so utente a quem diz respeito a medicação",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile"
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "MedicationRequest.authoredOn",
       "path" : "MedicationRequest.authoredOn",
+      "short" : "Data e hora em que a prescrição foi emitida. Apenas preenchido no primeiro momento em que é feita a prescrição, i.e., se status = ACTIVE e não deve ser mais alterada em toda a vida do recurso.",
       "min" : 1
+    },
+    {
+      "id" : "MedicationRequest.note",
+      "path" : "MedicationRequest.note",
+      "short" : "Informação adicionais sobre a prescrição [OBSERVAÇÕES GERAIS]"
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction",
+      "path" : "MedicationRequest.dosageInstruction",
+      "short" : "Posologia"
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.text",
+      "path" : "MedicationRequest.dosageInstruction.text",
+      "short" : "Conversão em texto da posologia estruturada definida na lista de posologias"
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing",
+      "path" : "MedicationRequest.dosageInstruction.timing",
+      "short" : "O elemento timing foi normalizado pela IOP com base no dataType timing do HL7 FHIR.\nRecomenda-se utilizar sempre que possível os elementos que compoem o timing para representar a posologia como forma de fazer uso dos elementos fornecidos pelo standard HL7 FHIR.\nEntretanto, para atender os requisitos de negócio e as normas da Prescrição da Medicação, no qual indicam para utilizar catálogos disponibilizados pelo CTC, utilizar a extension \"med-prescription-dosage-line\" para descrever a posologia.\nIsso justifica-se pois os elementos do standard HL7 FHIR f azem uso de catálogos pré-definidos e required."
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.start",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.start",
+      "short" : "Data de início para a toma"
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.end",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.boundsPeriod.end",
+      "short" : "Data de termo para a toma"
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+      "short" : "Unidade da duração do Tratamento/Tempo\ns | min | h | d | wk | mo | a - unit of time (UCUM) UnitsOfTime(Required)\ne.g.: 'wk'"
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.period",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.period",
+      "short" : "Indica a duração do tempo durante o qual as repetições devem ocorrer; por exemplo, para expressar \"3 vezes por dia\", 3 seria a frequência e \"1 dia\" seria o período."
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+      "path" : "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+      "short" : "Unidades de tempo do período."
     }]
   }
 }
