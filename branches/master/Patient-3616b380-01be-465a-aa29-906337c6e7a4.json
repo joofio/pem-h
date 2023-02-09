@@ -2,7 +2,8 @@
   "resourceType" : "Patient",
   "id" : "3616b380-01be-465a-aa29-906337c6e7a4",
   "meta" : {
-    "lastUpdated" : "2019-01-14T23:10:23+00:00"
+    "lastUpdated" : "2019-01-14T23:10:23+00:00",
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/patient-pemh-profile"]
   },
   "text" : {
     "status" : "generated",
@@ -10,11 +11,6 @@
   },
   "identifier" : [{
     "type" : {
-      "coding" : [{
-        "system" : "http://h17.org/fhir/v2/0203",
-        "code" : "HC",
-        "display" : "Health Card Number"
-      }],
       "text" : "NNU"
     },
     "system" : "http://spms.min-saude.pt/rnu/identifiers/patient-id",

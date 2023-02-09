@@ -31,8 +31,6 @@
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:when) &gt;= 1">when: minimum cardinality of 'when' is 1</sch:assert>
       <sch:assert test="count(f:when) &lt;= 1">when: maximum cardinality of 'when' is 1</sch:assert>
-      <sch:assert test="count(f:who[x]) &gt;= 1">who[x]: minimum cardinality of 'who[x]' is 1</sch:assert>
-      <sch:assert test="count(f:who[x]) &lt;= 1">who[x]: maximum cardinality of 'who[x]' is 1</sch:assert>
       <sch:assert test="count(f:onBehalfOf[x]) &lt;= 1">onBehalfOf[x]: maximum cardinality of 'onBehalfOf[x]' is 1</sch:assert>
       <sch:assert test="count(f:contentType) &lt;= 1">contentType: maximum cardinality of 'contentType' is 1</sch:assert>
       <sch:assert test="count(f:blob) &lt;= 1">blob: maximum cardinality of 'blob' is 1</sch:assert>

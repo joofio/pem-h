@@ -3,11 +3,11 @@
   "id" : "coverage-pemh-profile",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-coverage-pemh-profile-definitions.html#Encounter\">Encounter</a><a name=\"Encounter\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/encounter.html\">Encounter</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An interaction during which services are provided to the patient</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-coverage-pemh-profile-definitions.html#Coverage\">Coverage</a><a name=\"Coverage\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/coverage.html\">Coverage</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Insurance or medical plan or a payment agreement</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-    "valueString" : "Base.Management"
+    "valueString" : "Financial.Support"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
@@ -18,7 +18,7 @@
   "name" : "PEMHCoverage",
   "title" : "Perfil Coverage",
   "status" : "active",
-  "date" : "2023-02-09T20:39:01+00:00",
+  "date" : "2023-02-09T22:10:16+00:00",
   "publisher" : "HL7 TC",
   "contact" : [{
     "telecom" : [{
@@ -50,9 +50,19 @@
     "name" : "FiveWs Pattern Mapping"
   },
   {
+    "identity" : "cdanetv4",
+    "uri" : "http://www.cda-adc.ca/en/services/cdanet/",
+    "name" : "Canadian Dental Association eclaims standard"
+  },
+  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
     "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "cpha3pharm",
+    "uri" : "http://www.pharmacists.ca/",
+    "name" : "Canadian Pharmacy Associaiton eclaims standard"
   },
   {
     "identity" : "w5",
@@ -61,20 +71,19 @@
   }],
   "kind" : "resource",
   "abstract" : false,
-  "type" : "Encounter",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "type" : "Coverage",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Coverage",
   "derivation" : "constraint",
   "snapshot" : {
     "element" : [{
-      "id" : "Encounter",
-      "path" : "Encounter",
-      "short" : "An interaction during which services are provided to the patient",
-      "definition" : "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
-      "alias" : ["Visit"],
+      "id" : "Coverage",
+      "path" : "Coverage",
+      "short" : "Insurance or medical plan or a payment agreement",
+      "definition" : "Financial instrument which may be used to reimburse or pay for health care products and services.",
       "min" : 0,
       "max" : "*",
       "base" : {
-        "path" : "Encounter",
+        "path" : "Coverage",
         "min" : 0,
         "max" : "*"
       },
@@ -131,17 +140,21 @@
         "map" : "Entity. Role, or Act"
       },
       {
+        "identity" : "workflow",
+        "map" : "Event"
+      },
+      {
         "identity" : "rim",
-        "map" : "Encounter[@moodCode='EVN']"
+        "map" : "Coverage"
       },
       {
         "identity" : "w5",
-        "map" : "workflow.encounter"
+        "map" : "financial.support"
       }]
     },
     {
-      "id" : "Encounter.id",
-      "path" : "Encounter.id",
+      "id" : "Coverage.id",
+      "path" : "Coverage.id",
       "short" : "Logical id of this artifact",
       "definition" : "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
       "comment" : "The only time that a resource does not have an id is when it is being submitted to the server using a create operation.",
@@ -158,8 +171,8 @@
       "isSummary" : true
     },
     {
-      "id" : "Encounter.meta",
-      "path" : "Encounter.meta",
+      "id" : "Coverage.meta",
+      "path" : "Coverage.meta",
       "short" : "Metadata about the resource",
       "definition" : "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
       "min" : 0,
@@ -175,8 +188,8 @@
       "isSummary" : true
     },
     {
-      "id" : "Encounter.implicitRules",
-      "path" : "Encounter.implicitRules",
+      "id" : "Coverage.implicitRules",
+      "path" : "Coverage.implicitRules",
       "short" : "A set of rules under which this content was created",
       "definition" : "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.",
       "comment" : "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. \n\nThis element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation.",
@@ -194,8 +207,8 @@
       "isSummary" : true
     },
     {
-      "id" : "Encounter.language",
-      "path" : "Encounter.language",
+      "id" : "Coverage.language",
+      "path" : "Coverage.language",
       "short" : "Language of the resource content",
       "definition" : "The base language in which the resource is written.",
       "comment" : "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
@@ -232,8 +245,8 @@
       }
     },
     {
-      "id" : "Encounter.text",
-      "path" : "Encounter.text",
+      "id" : "Coverage.text",
+      "path" : "Coverage.text",
       "short" : "Text summary of the resource, for human interpretation",
       "definition" : "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
       "comment" : "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \"text blob\" or where text is additionally entered raw or narrated and encoded in formation is added later.",
@@ -258,8 +271,8 @@
       }]
     },
     {
-      "id" : "Encounter.contained",
-      "path" : "Encounter.contained",
+      "id" : "Coverage.contained",
+      "path" : "Coverage.contained",
       "short" : "Contained, inline Resources",
       "definition" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
       "comment" : "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.",
@@ -282,8 +295,8 @@
       }]
     },
     {
-      "id" : "Encounter.extension",
-      "path" : "Encounter.extension",
+      "id" : "Coverage.extension",
+      "path" : "Coverage.extension",
       "short" : "Additional Content defined by implementations",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -305,8 +318,8 @@
       }]
     },
     {
-      "id" : "Encounter.modifierExtension",
-      "path" : "Encounter.modifierExtension",
+      "id" : "Coverage.modifierExtension",
+      "path" : "Coverage.modifierExtension",
       "short" : "Extensions that cannot be ignored",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -329,14 +342,15 @@
       }]
     },
     {
-      "id" : "Encounter.identifier",
-      "path" : "Encounter.identifier",
-      "short" : "Identifier(s) by which this encounter is known",
-      "definition" : "Identifier(s) by which this encounter is known.",
+      "id" : "Coverage.identifier",
+      "path" : "Coverage.identifier",
+      "short" : "The primary coverage ID",
+      "definition" : "The main (and possibly only) identifier for the coverage - often referred to as a Member Id, Certificate number, Personal Health Number or Case ID. May be constructed as the concatination of the Coverage.SubscriberID and the Coverage.dependant.",
+      "requirements" : "This value may uniquely identify the coverage or it may be used in conjunction with the additional identifiers below.",
       "min" : 0,
       "max" : "*",
       "base" : {
-        "path" : "Encounter.identifier",
+        "path" : "Coverage.identifier",
         "min" : 0,
         "max" : "*"
       },
@@ -345,12 +359,20 @@
       }],
       "isSummary" : true,
       "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-19"
+        "identity" : "workflow",
+        "map" : "Event.identifier"
       },
       {
-        "identity" : "rim",
-        "map" : ".id"
+        "identity" : "cdanetv4",
+        "map" : "C02"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-2"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.32, C.33, C.39"
       },
       {
         "identity" : "w5",
@@ -358,16 +380,16 @@
       }]
     },
     {
-      "id" : "Encounter.status",
-      "path" : "Encounter.status",
-      "short" : "planned | arrived | triaged | in-progress | onleave | finished | cancelled +",
-      "definition" : "planned | arrived | triaged | in-progress | onleave | finished | cancelled +.",
-      "comment" : "Note that internal business rules will detemine the appropraite transitions that may occur between statuses (and also classes).\n\nThis element is labeled as a modifier because the status contains codes that mark the encounter as not currently valid.",
-      "min" : 1,
+      "id" : "Coverage.status",
+      "path" : "Coverage.status",
+      "short" : "active | cancelled | draft | entered-in-error",
+      "definition" : "The status of the resource instance.",
+      "comment" : "This element is labeled as a modifier because the status contains the code entered-in-error that marks the coverage as not currently valid.",
+      "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Encounter.status",
-        "min" : 1,
+        "path" : "Coverage.status",
+        "min" : 0,
         "max" : "1"
       },
       "type" : [{
@@ -378,21 +400,17 @@
       "binding" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "EncounterStatus"
+          "valueString" : "CoverageStatus"
         }],
         "strength" : "required",
-        "description" : "Current state of the encounter",
+        "description" : "A code specifying the state of the resource instance.",
         "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-status"
+          "reference" : "http://hl7.org/fhir/ValueSet/fm-status"
         }
       },
       "mapping" : [{
-        "identity" : "v2",
-        "map" : "No clear equivalent in HL7 v2; active/finished could be inferred from PV1-44, PV1-45, PV2-24; inactive could be inferred from PV2-16"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".statusCode"
+        "identity" : "workflow",
+        "map" : "Event.status"
       },
       {
         "identity" : "w5",
@@ -400,197 +418,36 @@
       }]
     },
     {
-      "id" : "Encounter.statusHistory",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "StatusHistory"
-      }],
-      "path" : "Encounter.statusHistory",
-      "short" : "List of past encounter statuses",
-      "definition" : "The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them.",
-      "comment" : "The current status is always found in the current version of the resource, not the status history.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.statusHistory",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "BackboneElement"
-      }],
-      "constraint" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
-          "valueString" : "@value|f:*|h:div"
-        }],
-        "key" : "ele-1",
-        "severity" : "error",
-        "human" : "All FHIR elements must have a @value or children",
-        "expression" : "hasValue() | (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.statusHistory.id",
-      "path" : "Encounter.statusHistory.id",
-      "representation" : ["xmlAttr"],
-      "short" : "xml:id (or equivalent in JSON)",
-      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "id" : "Coverage.type",
+      "path" : "Coverage.type",
+      "short" : "Type of coverage such as medical or accident",
+      "definition" : "The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization.",
+      "requirements" : "The order of application of coverages is dependent on the types of coverage.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Element.id",
+        "path" : "Coverage.type",
         "min" : 0,
         "max" : "1"
       },
       "type" : [{
-        "code" : "string"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.statusHistory.extension",
-      "path" : "Encounter.statusHistory.extension",
-      "short" : "Additional Content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Element.extension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.statusHistory.modifierExtension",
-      "path" : "Encounter.statusHistory.modifierExtension",
-      "short" : "Extensions that cannot be ignored",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content",
-      "modifiers"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "BackboneElement.modifierExtension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "isModifier" : true,
-      "isSummary" : true,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "N/A"
-      }]
-    },
-    {
-      "id" : "Encounter.statusHistory.status",
-      "path" : "Encounter.statusHistory.status",
-      "short" : "planned | arrived | triaged | in-progress | onleave | finished | cancelled +",
-      "definition" : "planned | arrived | triaged | in-progress | onleave | finished | cancelled +.",
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.statusHistory.status",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "code"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "EncounterStatus"
-        }],
-        "strength" : "required",
-        "description" : "Current state of the encounter",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-status"
-        }
-      },
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.statusHistory.period",
-      "path" : "Encounter.statusHistory.period",
-      "short" : "The time that the episode was in the specified status",
-      "definition" : "The time that the episode was in the specified status.",
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.statusHistory.period",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Period"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.class",
-      "path" : "Encounter.class",
-      "short" : "inpatient | outpatient | ambulatory | emergency +",
-      "definition" : "inpatient | outpatient | ambulatory | emergency +.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.class",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Coding"
+        "code" : "CodeableConcept"
       }],
       "isSummary" : true,
       "binding" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "EncounterClass"
+          "valueString" : "CoverageType"
         }],
-        "strength" : "extensible",
-        "description" : "Classification of the encounter",
+        "strength" : "preferred",
+        "description" : "The type of insurance: public health, worker compensation; private accident, auto, private health, etc.) or a direct payment by an individual or organization.",
         "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"
+          "reference" : "http://hl7.org/fhir/ValueSet/coverage-type"
         }
       },
       "mapping" : [{
         "identity" : "v2",
-        "map" : "PV1-2"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code"
+        "map" : "IN1-15"
       },
       {
         "identity" : "w5",
@@ -598,253 +455,14 @@
       }]
     },
     {
-      "id" : "Encounter.classHistory",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "ClassHistory"
-      }],
-      "path" : "Encounter.classHistory",
-      "short" : "List of past encounter classes",
-      "definition" : "The class history permits the tracking of the encounters transitions without needing to go  through the resource history.\n\nThis would be used for a case where an admission starts of as an emergency encounter, then transisions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kindof discharge from emergency to inpatient.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.classHistory",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "BackboneElement"
-      }],
-      "constraint" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
-          "valueString" : "@value|f:*|h:div"
-        }],
-        "key" : "ele-1",
-        "severity" : "error",
-        "human" : "All FHIR elements must have a @value or children",
-        "expression" : "hasValue() | (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.classHistory.id",
-      "path" : "Encounter.classHistory.id",
-      "representation" : ["xmlAttr"],
-      "short" : "xml:id (or equivalent in JSON)",
-      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "id" : "Coverage.policyHolder",
+      "path" : "Coverage.policyHolder",
+      "short" : "Owner of the policy",
+      "definition" : "The party who 'owns' the insurance policy,  may be an individual, corporation or the subscriber's employer.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Element.id",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "string"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.classHistory.extension",
-      "path" : "Encounter.classHistory.extension",
-      "short" : "Additional Content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Element.extension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.classHistory.modifierExtension",
-      "path" : "Encounter.classHistory.modifierExtension",
-      "short" : "Extensions that cannot be ignored",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content",
-      "modifiers"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "BackboneElement.modifierExtension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "isModifier" : true,
-      "isSummary" : true,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "N/A"
-      }]
-    },
-    {
-      "id" : "Encounter.classHistory.class",
-      "path" : "Encounter.classHistory.class",
-      "short" : "inpatient | outpatient | ambulatory | emergency +",
-      "definition" : "inpatient | outpatient | ambulatory | emergency +.",
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.classHistory.class",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Coding"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "EncounterClass"
-        }],
-        "strength" : "extensible",
-        "description" : "Classification of the encounter",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"
-        }
-      },
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.classHistory.period",
-      "path" : "Encounter.classHistory.period",
-      "short" : "The time that the episode was in the specified class",
-      "definition" : "The time that the episode was in the specified class.",
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.classHistory.period",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Period"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.type",
-      "path" : "Encounter.type",
-      "short" : "Specific type of encounter",
-      "definition" : "Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).",
-      "comment" : "Since there are many ways to further classify encounters, this element is 0..*.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.type",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "isSummary" : true,
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "EncounterType"
-        }],
-        "strength" : "example",
-        "description" : "The type of encounter",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-type"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-4 / PV1-18"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".code"
-      },
-      {
-        "identity" : "w5",
-        "map" : "class"
-      }]
-    },
-    {
-      "id" : "Encounter.priority",
-      "path" : "Encounter.priority",
-      "short" : "Indicates the urgency of the encounter",
-      "definition" : "Indicates the urgency of the encounter.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.priority",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "Priority"
-        }],
-        "strength" : "example",
-        "description" : "Indicates the urgency of the encounter.",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/v3-ActPriority"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV2-25"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".priorityCode"
-      },
-      {
-        "identity" : "w5",
-        "map" : "grade"
-      }]
-    },
-    {
-      "id" : "Encounter.subject",
-      "path" : "Encounter.subject",
-      "short" : "The patient ro group present at the encounter",
-      "definition" : "The patient ro group present at the encounter.",
-      "comment" : "While the encounter is always about the patient, the patient may not actually be known in all contexts of use, and there may be a group of patients that could be anonymous (such as in a group therapy for Alcoholics Anonymous - where the recording of the encounter could be used for billing on the number of people/staff and not important to the context of the specific patients) or alternately in veterinary care a herd of sheep receiving treatment (where the animals are not individually tracked).",
-      "alias" : ["patient"],
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.subject",
+        "path" : "Coverage.policyHolder",
         "min" : 0,
         "max" : "1"
       },
@@ -854,16 +472,24 @@
       },
       {
         "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Group"
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+      },
+      {
+        "code" : "Reference",
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Organization"
       }],
       "isSummary" : true,
       "mapping" : [{
-        "identity" : "v2",
-        "map" : "PID-3"
+        "identity" : "cdanetv4",
+        "map" : "D01 through D09"
       },
       {
-        "identity" : "rim",
-        "map" : ".participation[typeCode=SBJ]/role[classCode=PAT]"
+        "identity" : "v2",
+        "map" : "IN1-16, 18,  19-name of insured, address, date of birth"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.35"
       },
       {
         "identity" : "w5",
@@ -871,239 +497,20 @@
       }]
     },
     {
-      "id" : "Encounter.episodeOfCare",
-      "path" : "Encounter.episodeOfCare",
-      "short" : "Episode(s) of care that this encounter should be recorded against",
-      "definition" : "Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care, and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years).",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.episodeOfCare",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
-      }],
-      "isSummary" : true,
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-54, PV1-53"
-      },
-      {
-        "identity" : "rim",
-        "map" : "n/a"
-      },
-      {
-        "identity" : "w5",
-        "map" : "context"
-      }]
-    },
-    {
-      "id" : "Encounter.incomingReferral",
-      "path" : "Encounter.incomingReferral",
-      "short" : "The ReferralRequest that initiated this encounter",
-      "definition" : "The referral request this encounter satisfies (incoming referral).",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.incomingReferral",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/ReferralRequest"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".reason.ClinicalDocument"
-      }]
-    },
-    {
-      "id" : "Encounter.participant",
-      "path" : "Encounter.participant",
-      "short" : "List of participants involved in the encounter",
-      "definition" : "The list of people responsible for providing the service.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.participant",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "BackboneElement"
-      }],
-      "constraint" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
-          "valueString" : "@value|f:*|h:div"
-        }],
-        "key" : "ele-1",
-        "severity" : "error",
-        "human" : "All FHIR elements must have a @value or children",
-        "expression" : "hasValue() | (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isSummary" : true,
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "ROL"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".participation[typeCode=PFM]"
-      }]
-    },
-    {
-      "id" : "Encounter.participant.id",
-      "path" : "Encounter.participant.id",
-      "representation" : ["xmlAttr"],
-      "short" : "xml:id (or equivalent in JSON)",
-      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "id" : "Coverage.subscriber",
+      "path" : "Coverage.subscriber",
+      "short" : "Subscriber to the policy",
+      "definition" : "The party who has signed-up for or 'owns' the contractual relationship to the policy or to whom the benefit of the policy for services rendered to them or their family is due.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Element.id",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "string"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.participant.extension",
-      "path" : "Encounter.participant.extension",
-      "short" : "Additional Content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Element.extension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.participant.modifierExtension",
-      "path" : "Encounter.participant.modifierExtension",
-      "short" : "Extensions that cannot be ignored",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content",
-      "modifiers"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "BackboneElement.modifierExtension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "isModifier" : true,
-      "isSummary" : true,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "N/A"
-      }]
-    },
-    {
-      "id" : "Encounter.participant.type",
-      "path" : "Encounter.participant.type",
-      "short" : "Role of participant in encounter",
-      "definition" : "Role of participant in encounter.",
-      "comment" : "The participant type indicates how an individual partitipates in an encounter. It includes non-practitioner participants, and for practitioners this is to describe the action type in the context of this encounter (e.g. Admitting Dr, Attending Dr, Translator, Consulting Dr). This is different to the practitioner roles which are functional roles, derived from terms of employment, education, licensing, etc.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.participant.type",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "isSummary" : true,
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "ParticipantType"
-        }],
-        "strength" : "extensible",
-        "description" : "Role of participant in encounter",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-participant-type"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "ROL-3 (or maybe PRT-4)"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".functionCode"
-      }]
-    },
-    {
-      "id" : "Encounter.participant.period",
-      "path" : "Encounter.participant.period",
-      "short" : "Period of time during the encounter that the participant participated",
-      "definition" : "The period of time that the specified participant participated in the encounter. These can overlap or be sub-sets of the overall encounter's period.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.participant.period",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Period"
-      }],
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "ROL-5, ROL-6 (or maybe PRT-5)"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".time"
-      }]
-    },
-    {
-      "id" : "Encounter.participant.individual",
-      "path" : "Encounter.participant.individual",
-      "short" : "Persons involved in the encounter other than the patient",
-      "definition" : "Persons involved in the encounter other than the patient.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.participant.individual",
+        "path" : "Coverage.subscriber",
         "min" : 0,
         "max" : "1"
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Patient"
       },
       {
         "code" : "Reference",
@@ -1111,67 +518,148 @@
       }],
       "isSummary" : true,
       "mapping" : [{
-        "identity" : "v2",
-        "map" : "ROL-4"
+        "identity" : "cdanetv4",
+        "map" : "D01 through D09"
       },
       {
-        "identity" : "rim",
-        "map" : ".role"
+        "identity" : "v2",
+        "map" : "IN1-16, 18,  19-name of insured, address, date of birth"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.35"
       },
       {
         "identity" : "w5",
-        "map" : "who"
+        "map" : "who.focus"
       }]
     },
     {
-      "id" : "Encounter.appointment",
-      "path" : "Encounter.appointment",
-      "short" : "The appointment that scheduled this encounter",
-      "definition" : "The appointment that scheduled this encounter.",
+      "id" : "Coverage.subscriberId",
+      "path" : "Coverage.subscriberId",
+      "short" : "ID assigned to the Subscriber",
+      "definition" : "The insurer assigned ID for the Subscriber.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Encounter.appointment",
+        "path" : "Coverage.subscriberId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "D01 through D09"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-16, 18,  19-name of insured, address, date of birth"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.35"
+      },
+      {
+        "identity" : "w5",
+        "map" : "who.focus"
+      }]
+    },
+    {
+      "id" : "Coverage.beneficiary",
+      "path" : "Coverage.beneficiary",
+      "short" : "Plan Beneficiary",
+      "definition" : "The party who benefits from the insurance coverage., the patient when services are provided.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.beneficiary",
         "min" : 0,
         "max" : "1"
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Appointment"
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Patient"
       }],
       "isSummary" : true,
       "mapping" : [{
-        "identity" : "v2",
-        "map" : "SCH-1 / SCH-2"
+        "identity" : "workflow",
+        "map" : "Event.subject"
       },
       {
-        "identity" : "rim",
-        "map" : ".outboundRelationship[typeCode=FLFS].target[classCode=ENC, moodCode=APT]"
+        "identity" : "cdanetv4",
+        "map" : "D01 through D09"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-16, 18,  19-name of insured, address, date of birth"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.35"
+      },
+      {
+        "identity" : "w5",
+        "map" : "who.focus"
       }]
     },
     {
-      "id" : "Encounter.period",
-      "path" : "Encounter.period",
-      "short" : "The start and end time of the encounter",
-      "definition" : "The start and end time of the encounter.",
-      "comment" : "If not (yet) known, the end of the Period may be omitted.",
+      "id" : "Coverage.relationship",
+      "path" : "Coverage.relationship",
+      "short" : "Beneficiary relationship to the Subscriber",
+      "definition" : "The relationship of beneficiary (patient) to the subscriber.",
+      "requirements" : "To determine relationship between the patient and the subscriber.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Encounter.period",
+        "path" : "Coverage.relationship",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "Relationship"
+        }],
+        "strength" : "example",
+        "description" : "The relationship between the Policyholder and the Beneficiary (insured/covered party/patient).",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/policyholder-relationship"
+        }
+      },
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C03"
+      }]
+    },
+    {
+      "id" : "Coverage.period",
+      "path" : "Coverage.period",
+      "short" : "Coverage start and end dates",
+      "definition" : "Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.period",
         "min" : 0,
         "max" : "1"
       },
       "type" : [{
         "code" : "Period"
       }],
+      "isSummary" : true,
       "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-44, PV1-45"
+        "identity" : "workflow",
+        "map" : "Event.occurrence"
       },
       {
-        "identity" : "rim",
-        "map" : ".effectiveTime (low & high)"
+        "identity" : "v2",
+        "map" : "IN1-12 / IN1-13"
       },
       {
         "identity" : "w5",
@@ -1179,88 +667,63 @@
       }]
     },
     {
-      "id" : "Encounter.length",
-      "path" : "Encounter.length",
-      "short" : "Quantity of time the encounter lasted (less time absent)",
-      "definition" : "Quantity of time the encounter lasted. This excludes the time during leaves of absence.",
-      "comment" : "May differ from the time the Encounter.period lasted because of leave of absence.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.length",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Duration"
-      }],
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "(PV1-45 less PV1-44) iff ( (PV1-44 not empty) and (PV1-45 not empty) ); units in minutes"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".lengthOfStayQuantity"
-      }]
-    },
-    {
-      "id" : "Encounter.reason",
-      "path" : "Encounter.reason",
-      "short" : "Reason the encounter takes place (code)",
-      "definition" : "Reason the encounter takes place, expressed as a code. For admissions, this can be used for a coded admission diagnosis.",
-      "comment" : "For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis).",
-      "alias" : ["Indication",
-      "Admission diagnosis"],
+      "id" : "Coverage.payor",
+      "path" : "Coverage.payor",
+      "short" : "Identifier for the plan or agreement issuer",
+      "definition" : "The program or plan underwriter or payor including both insurance and non-insurance agreements, such as patient-pay agreements. May provide multiple identifiers such as insurance company identifier or business identifier (BIN number).",
+      "requirements" : "Need to identify the issuer to target for processing and for coordination of benefit processing.",
       "min" : 0,
       "max" : "*",
       "base" : {
-        "path" : "Encounter.reason",
+        "path" : "Coverage.payor",
         "min" : 0,
         "max" : "*"
       },
       "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "isSummary" : true,
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "EncounterReason"
-        }],
-        "strength" : "preferred",
-        "description" : "Reason why the encounter takes place.",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-reason"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "EVN-4 / PV2-3 (note: PV2-3 is nominally constrained to inpatient admissions; HL7 v2 makes no vocabulary suggestions for PV2-3; would not expect PV2 segment or PV2-3 to be in use in all implementations )"
+        "code" : "Reference",
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Organization"
       },
       {
-        "identity" : "rim",
-        "map" : ".reasonCode"
+        "code" : "Reference",
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Patient"
+      },
+      {
+        "code" : "Reference",
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "A05"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-3"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.30"
       },
       {
         "identity" : "w5",
-        "map" : "why"
+        "map" : "who.author"
       }]
     },
     {
-      "id" : "Encounter.diagnosis",
+      "id" : "Coverage.grouping",
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "Diagnosis"
+        "valueString" : "Group"
       }],
-      "path" : "Encounter.diagnosis",
-      "short" : "The list of diagnosis relevant to this encounter",
-      "definition" : "The list of diagnosis relevant to this encounter.",
+      "path" : "Coverage.grouping",
+      "short" : "Additional coverage classifications",
+      "definition" : "A suite of underwrite specific classifiers, for example may be used to identify a class of coverage or employer group, Policy, Plan.",
       "min" : 0,
-      "max" : "*",
+      "max" : "1",
       "base" : {
-        "path" : "Encounter.diagnosis",
+        "path" : "Coverage.grouping",
         "min" : 0,
-        "max" : "*"
+        "max" : "1"
       },
       "type" : [{
         "code" : "BackboneElement"
@@ -1276,16 +739,11 @@
         "expression" : "hasValue() | (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "isSummary" : true,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".outboundRelationship[typeCode=RSON]"
       }]
     },
     {
-      "id" : "Encounter.diagnosis.id",
-      "path" : "Encounter.diagnosis.id",
+      "id" : "Coverage.grouping.id",
+      "path" : "Coverage.grouping.id",
       "representation" : ["xmlAttr"],
       "short" : "xml:id (or equivalent in JSON)",
       "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
@@ -1305,8 +763,8 @@
       }]
     },
     {
-      "id" : "Encounter.diagnosis.extension",
-      "path" : "Encounter.diagnosis.extension",
+      "id" : "Coverage.grouping.extension",
+      "path" : "Coverage.grouping.extension",
       "short" : "Additional Content defined by implementations",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -1328,8 +786,8 @@
       }]
     },
     {
-      "id" : "Encounter.diagnosis.modifierExtension",
-      "path" : "Encounter.diagnosis.modifierExtension",
+      "id" : "Coverage.grouping.modifierExtension",
+      "path" : "Coverage.grouping.modifierExtension",
       "short" : "Extensions that cannot be ignored",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -1354,740 +812,425 @@
       }]
     },
     {
-      "id" : "Encounter.diagnosis.condition",
-      "path" : "Encounter.diagnosis.condition",
-      "short" : "Reason the encounter takes place (resource)",
-      "definition" : "Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-      "comment" : "For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis).",
-      "alias" : ["Admission diagnosis",
-      "discharge diagnosis",
-      "indication"],
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.diagnosis.condition",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Condition"
-      },
-      {
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Procedure"
-      }],
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "Resources that would commonly referenced at Encounter.indication would be Condition and/or Procedure. These most closely align with DG1/PRB and PR1 respectively."
-      },
-      {
-        "identity" : "rim",
-        "map" : ".outboundRelationship[typeCode=RSON].target"
-      },
-      {
-        "identity" : "w5",
-        "map" : "why"
-      }]
-    },
-    {
-      "id" : "Encounter.diagnosis.role",
-      "path" : "Encounter.diagnosis.role",
-      "short" : "Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …)",
-      "definition" : "Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …).",
+      "id" : "Coverage.grouping.group",
+      "path" : "Coverage.grouping.group",
+      "short" : "An identifier for the group",
+      "definition" : "Identifies a style or collective of coverage issued by the underwriter, for example may be used to identify an employer group. May also be referred to as a Policy or Group ID.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Encounter.diagnosis.role",
+        "path" : "Coverage.grouping.group",
         "min" : 0,
         "max" : "1"
       },
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "string"
       }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "DiagnosisRole"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
-        }],
-        "strength" : "preferred",
-        "description" : "The type of diagnosis this condition represents",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/diagnosis-role"
-        }
-      },
+      "isSummary" : true,
       "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
+        "identity" : "cdanetv4",
+        "map" : "C11 (Division,Section)"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-8"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.31"
       }]
     },
     {
-      "id" : "Encounter.diagnosis.rank",
-      "path" : "Encounter.diagnosis.rank",
-      "short" : "Ranking of the diagnosis (for each role type)",
-      "definition" : "Ranking of the diagnosis (for each role type).",
+      "id" : "Coverage.grouping.groupDisplay",
+      "path" : "Coverage.grouping.groupDisplay",
+      "short" : "Display text for an identifier for the group",
+      "definition" : "A short description for the group.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Encounter.diagnosis.rank",
+        "path" : "Coverage.grouping.groupDisplay",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C11 (Division,Section)"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-8"
+      },
+      {
+        "identity" : "cpha3pharm",
+        "map" : "C.31"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.subGroup",
+      "path" : "Coverage.grouping.subGroup",
+      "short" : "An identifier for the subsection of the group",
+      "definition" : "Identifies a style or collective of coverage issued by the underwriter, for example may be used to identify a subset of an employer group.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.subGroup",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "IN1-8"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.subGroupDisplay",
+      "path" : "Coverage.grouping.subGroupDisplay",
+      "short" : "Display text for the subsection of the group",
+      "definition" : "A short description for the subgroup.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.subGroupDisplay",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "IN1-8"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.plan",
+      "path" : "Coverage.grouping.plan",
+      "short" : "An identifier for the plan",
+      "definition" : "Identifies a style or collective of coverage issued by the underwriter, for example may be used to identify a collection of benefits provided to employees. May be referred to as a Section or Division ID.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.plan",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C01"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-35"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.planDisplay",
+      "path" : "Coverage.grouping.planDisplay",
+      "short" : "Display text for the plan",
+      "definition" : "A short description for the plan.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.planDisplay",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C01"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-35"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.subPlan",
+      "path" : "Coverage.grouping.subPlan",
+      "short" : "An identifier for the subsection of the plan",
+      "definition" : "Identifies a sub-style or sub-collective of coverage issued by the underwriter, for example may be used to identify a subset of a collection of benefits provided to employees.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.subPlan",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "IN1-10"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.subPlanDisplay",
+      "path" : "Coverage.grouping.subPlanDisplay",
+      "short" : "Display text for the subsection of the plan",
+      "definition" : "A short description for the subplan.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.subPlanDisplay",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "IN1-10"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.class",
+      "path" : "Coverage.grouping.class",
+      "short" : "An identifier for the class",
+      "definition" : "Identifies a style or collective of coverage issues by the underwriter, for example may be used to identify a class of coverage such as a level of deductables or co-payment.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.class",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C01"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-35"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.classDisplay",
+      "path" : "Coverage.grouping.classDisplay",
+      "short" : "Display text for the class",
+      "definition" : "A short description for the class.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.classDisplay",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C01"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-35"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.subClass",
+      "path" : "Coverage.grouping.subClass",
+      "short" : "An identifier for the subsection of the class",
+      "definition" : "Identifies a sub-style or sub-collective of coverage issues by the underwriter, for example may be used to identify a subclass of coverage such as a sub-level of deductables or co-payment.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.subClass",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C01"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-35"
+      }]
+    },
+    {
+      "id" : "Coverage.grouping.subClassDisplay",
+      "path" : "Coverage.grouping.subClassDisplay",
+      "short" : "Display text for the subsection of the subclass",
+      "definition" : "A short description for the subclass.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.grouping.subClassDisplay",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C01"
+      },
+      {
+        "identity" : "v2",
+        "map" : "IN1-35"
+      }]
+    },
+    {
+      "id" : "Coverage.dependent",
+      "path" : "Coverage.dependent",
+      "short" : "Dependent number",
+      "definition" : "A unique identifier for a dependent under the coverage.",
+      "requirements" : "For some coverage a single identifier is issued to the Subscriber and a dependent number issued to each beneficiary.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.dependent",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "C17"
+      },
+      {
+        "identity" : "v2",
+        "map" : "- No exact HL7 v2 equivalent concept seems to exist;"
+      }]
+    },
+    {
+      "id" : "Coverage.sequence",
+      "path" : "Coverage.sequence",
+      "short" : "The plan instance or sequence counter",
+      "definition" : "An optional counter for a particular instance of the identified coverage which increments upon each renewal.",
+      "requirements" : "Some coverage, for example social plans, may be offered in short time increments, for example for a week or a month at a time, so while the rest of the plan details and identifiers may remain constant over time, the instance is incremented with each renewal and provided to the covered party on their 'card'.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.sequence",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "cdanetv4",
+        "map" : "D11"
+      },
+      {
+        "identity" : "v2",
+        "map" : "No HL7 v2 equivalent concept seems to exist"
+      }]
+    },
+    {
+      "id" : "Coverage.order",
+      "path" : "Coverage.order",
+      "short" : "Relative order of the coverage",
+      "definition" : "The order of applicability of this coverage relative to other coverages which are currently inforce. Note, there may be gaps in the numbering and this does not imply primary, secondard etc. as the specific positioning of coverages depends upon the episode of care.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Coverage.order",
         "min" : 0,
         "max" : "1"
       },
       "type" : [{
         "code" : "positiveInt"
       }],
+      "isSummary" : true,
       "mapping" : [{
-        "identity" : "rim",
-        "map" : ".outboundRelationship[typeCode=RSON].priority"
+        "identity" : "v2",
+        "map" : "- No exact HL7 v2 equivalent concept seems to exist;"
       }]
     },
     {
-      "id" : "Encounter.account",
-      "path" : "Encounter.account",
-      "short" : "The set of accounts that may be used for billing for this Encounter",
-      "definition" : "The set of accounts that may be used for billing for this Encounter.",
-      "comment" : "The billing system may choose to allocate billable items associated with the Encounter to different referenced Accounts based on internal business rules.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.account",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Account"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".pertains.A_Account"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization",
-      "path" : "Encounter.hospitalization",
-      "short" : "Details about the admission to a healthcare service",
-      "definition" : "Details about the admission to a healthcare service.",
-      "comment" : "An Encounter may cover more than just the inpatient stay. Contexts such as outpatients, community clinics, and aged care facilities are also included.\r\rThe duration recorded in the period of this encounter covers the entire scope of this hospitalization record.",
+      "id" : "Coverage.network",
+      "path" : "Coverage.network",
+      "short" : "Insurer network",
+      "definition" : "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' terms and conditions apply.",
       "min" : 0,
       "max" : "1",
       "base" : {
-        "path" : "Encounter.hospitalization",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "BackboneElement"
-      }],
-      "constraint" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
-          "valueString" : "@value|f:*|h:div"
-        }],
-        "key" : "ele-1",
-        "severity" : "error",
-        "human" : "All FHIR elements must have a @value or children",
-        "expression" : "hasValue() | (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".outboundRelationship[typeCode=COMP].target[classCode=ENC, moodCode=EVN]"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.id",
-      "path" : "Encounter.hospitalization.id",
-      "representation" : ["xmlAttr"],
-      "short" : "xml:id (or equivalent in JSON)",
-      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Element.id",
+        "path" : "Coverage.network",
         "min" : 0,
         "max" : "1"
       },
       "type" : [{
         "code" : "string"
       }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.extension",
-      "path" : "Encounter.hospitalization.extension",
-      "short" : "Additional Content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Element.extension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.modifierExtension",
-      "path" : "Encounter.hospitalization.modifierExtension",
-      "short" : "Extensions that cannot be ignored",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content",
-      "modifiers"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "BackboneElement.modifierExtension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "isModifier" : true,
       "isSummary" : true,
       "mapping" : [{
-        "identity" : "rim",
-        "map" : "N/A"
+        "identity" : "cdanetv4",
+        "map" : "D10"
       }]
     },
     {
-      "id" : "Encounter.hospitalization.preAdmissionIdentifier",
-      "path" : "Encounter.hospitalization.preAdmissionIdentifier",
-      "short" : "Pre-admission identifier",
-      "definition" : "Pre-admission identifier.",
+      "id" : "Coverage.contract",
+      "path" : "Coverage.contract",
+      "short" : "Contract details",
+      "definition" : "The policy(s) which constitute this insurance coverage.",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "base" : {
-        "path" : "Encounter.hospitalization.preAdmissionIdentifier",
+        "path" : "Coverage.contract",
         "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Identifier"
-      }],
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-5"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".id"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.origin",
-      "path" : "Encounter.hospitalization.origin",
-      "short" : "The location from which the patient came before admission",
-      "definition" : "The location from which the patient came before admission.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.hospitalization.origin",
-        "min" : 0,
-        "max" : "1"
+        "max" : "*"
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Location"
+        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Contract"
       }],
       "mapping" : [{
-        "identity" : "rim",
-        "map" : ".participation[typeCode=ORG].role"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.admitSource",
-      "path" : "Encounter.hospitalization.admitSource",
-      "short" : "From where patient was admitted (physician referral, transfer)",
-      "definition" : "From where patient was admitted (physician referral, transfer).",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.hospitalization.admitSource",
-        "min" : 0,
-        "max" : "1"
+        "identity" : "cdanetv4",
+        "map" : "D01 through D09"
       },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "AdmitSource"
-        }],
-        "strength" : "preferred",
-        "description" : "From where the patient was admitted.",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-admit-source"
-        }
-      },
-      "mapping" : [{
+      {
         "identity" : "v2",
-        "map" : "PV1-14"
+        "map" : "IN1-16, 18,  19"
       },
       {
-        "identity" : "rim",
-        "map" : ".admissionReferralSourceCode"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.reAdmission",
-      "path" : "Encounter.hospitalization.reAdmission",
-      "short" : "The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission",
-      "definition" : "Whether this hospitalization is a readmission and why if known.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.hospitalization.reAdmission",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "ReAdmissionType"
-        }],
-        "strength" : "example",
-        "description" : "The reason for re-admission of this hospitalization encounter.",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/v2-0092"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-13"
-      },
-      {
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.dietPreference",
-      "path" : "Encounter.hospitalization.dietPreference",
-      "short" : "Diet preferences reported by the patient",
-      "definition" : "Diet preferences reported by the patient.",
-      "comment" : "For example a patient may request both a dairy-free and nut-free diet preference (not mutually exclusive).",
-      "requirements" : "Used to track patient's diet restrictions and/or preference. For a complete description of the nutrition needs of a patient during their stay, one should use the nutritionOrder resource which links to Encounter.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.hospitalization.dietPreference",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "PatientDiet"
-        }],
-        "strength" : "example",
-        "description" : "Medical, cultural or ethical food preferences to help with catering requirements.",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-diet"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-38"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".outboundRelationship[typeCode=COMP].target[classCode=SBADM, moodCode=EVN, code=\"diet\"]"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.specialCourtesy",
-      "path" : "Encounter.hospitalization.specialCourtesy",
-      "short" : "Special courtesies (VIP, board member)",
-      "definition" : "Special courtesies (VIP, board member).",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.hospitalization.specialCourtesy",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "Courtesies"
-        }],
-        "strength" : "preferred",
-        "description" : "Special courtesies",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-16"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".specialCourtesiesCode"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.specialArrangement",
-      "path" : "Encounter.hospitalization.specialArrangement",
-      "short" : "Wheelchair, translator, stretcher, etc.",
-      "definition" : "Any special requests that have been made for this hospitalization encounter, such as the provision of specific equipment or other things.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.hospitalization.specialArrangement",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "Arrangements"
-        }],
-        "strength" : "preferred",
-        "description" : "Special arrangements",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-15 / OBR-30 / OBR-43"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".specialArrangementCode"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.destination",
-      "path" : "Encounter.hospitalization.destination",
-      "short" : "Location to which the patient is discharged",
-      "definition" : "Location to which the patient is discharged.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.hospitalization.destination",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Location"
-      }],
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-37"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".participation[typeCode=DST]"
-      }]
-    },
-    {
-      "id" : "Encounter.hospitalization.dischargeDisposition",
-      "path" : "Encounter.hospitalization.dischargeDisposition",
-      "short" : "Category or kind of location after discharge",
-      "definition" : "Category or kind of location after discharge.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.hospitalization.dischargeDisposition",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "DischargeDisp"
-        }],
-        "strength" : "example",
-        "description" : "Discharge Disposition",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition"
-        }
-      },
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-36"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".dischargeDispositionCode"
-      }]
-    },
-    {
-      "id" : "Encounter.location",
-      "path" : "Encounter.location",
-      "short" : "List of locations where the patient has been",
-      "definition" : "List of locations where  the patient has been during this encounter.",
-      "comment" : "Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type \"kind\" such as \"client's home\" and an encounter.class = \"virtual\".",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Encounter.location",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "BackboneElement"
-      }],
-      "constraint" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
-          "valueString" : "@value|f:*|h:div"
-        }],
-        "key" : "ele-1",
-        "severity" : "error",
-        "human" : "All FHIR elements must have a @value or children",
-        "expression" : "hasValue() | (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".participation[typeCode=LOC]"
-      }]
-    },
-    {
-      "id" : "Encounter.location.id",
-      "path" : "Encounter.location.id",
-      "representation" : ["xmlAttr"],
-      "short" : "xml:id (or equivalent in JSON)",
-      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Element.id",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "string"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.location.extension",
-      "path" : "Encounter.location.extension",
-      "short" : "Additional Content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "Element.extension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      }]
-    },
-    {
-      "id" : "Encounter.location.modifierExtension",
-      "path" : "Encounter.location.modifierExtension",
-      "short" : "Extensions that cannot be ignored",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-      "alias" : ["extensions",
-      "user content",
-      "modifiers"],
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "BackboneElement.modifierExtension",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Extension"
-      }],
-      "isModifier" : true,
-      "isSummary" : true,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "N/A"
-      }]
-    },
-    {
-      "id" : "Encounter.location.location",
-      "path" : "Encounter.location.location",
-      "short" : "Location the encounter takes place",
-      "definition" : "The location where the encounter takes place.",
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.location.location",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Location"
-      }],
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-3 / PV1-6 / PV1-11 / PV1-42 / PV1-43"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".role"
-      },
-      {
-        "identity" : "w5",
-        "map" : "where"
-      }]
-    },
-    {
-      "id" : "Encounter.location.status",
-      "path" : "Encounter.location.status",
-      "short" : "planned | active | reserved | completed",
-      "definition" : "The status of the participants' presence at the specified location during the period specified. If the participant is is no longer at the location, then the period will have an end date/time.",
-      "comment" : "When the patient is no longer active at a location, then the period end date is entered, and the status may be changed to completed.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.location.status",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "code"
-      }],
-      "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "EncounterLocationStatus"
-        }],
-        "strength" : "required",
-        "description" : "The status of the location.",
-        "valueSetReference" : {
-          "reference" : "http://hl7.org/fhir/ValueSet/encounter-location-status"
-        }
-      },
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".role.statusCode"
-      }]
-    },
-    {
-      "id" : "Encounter.location.period",
-      "path" : "Encounter.location.period",
-      "short" : "Time period during which the patient was present at the location",
-      "definition" : "Time period during which the patient was present at the location.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.location.period",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Period"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".time"
-      }]
-    },
-    {
-      "id" : "Encounter.serviceProvider",
-      "path" : "Encounter.serviceProvider",
-      "short" : "The custodian organization of this Encounter record",
-      "definition" : "An organization that is in charge of maintaining the information of this Encounter (e.g. who maintains the report or the master service catalog item, etc.). This MAY be the same as the organization on the Patient record, however it could be different. This MAY not be not the Service Delivery Location's Organization.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.serviceProvider",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Organization"
-      }],
-      "mapping" : [{
-        "identity" : "v2",
-        "map" : "PV1-10 / PL.6  & PL.1  (note: HL7 v2 definition is \"the treatment or type of surgery that the patient is scheduled to receive\"; seems slightly out of alignment with the concept name 'hospital service'. Would not trust that implementations apply this semantic by default)"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".particiaption[typeCode=PFM].role"
-      }]
-    },
-    {
-      "id" : "Encounter.partOf",
-      "path" : "Encounter.partOf",
-      "short" : "Another Encounter this encounter is part of",
-      "definition" : "Another Encounter of which this encounter is a part of (administratively or in time).",
-      "comment" : "This is also used for associating a child's encounter back to the mother's encounter.\r\rRefer to the Notes section in the Patient resource for further details.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "Encounter.partOf",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : "http://hl7.org/fhir/StructureDefinition/Encounter"
-      }],
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : ".inboundRelationship[typeCode=COMP].source[classCode=COMP, moodCode=EVN]"
+        "identity" : "cpha3pharm",
+        "map" : "C.35"
       }]
     }]
   },
   "differential" : {
     "element" : [{
-      "id" : "Encounter",
-      "path" : "Encounter"
+      "id" : "Coverage",
+      "path" : "Coverage"
     }]
   }
 }

@@ -21,11 +21,13 @@
         "title": "Perfil Conteudo Receita"
       }
     ],
-    "Encounter": [
+    "Coverage": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
         "title": "Perfil Coverage"
-      },
+      }
+    ],
+    "Encounter": [
       {
         "url": "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
         "title": "Perfil Episódio"
