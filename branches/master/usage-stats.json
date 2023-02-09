@@ -1,84 +1,72 @@
 {
-  "package": "my-ig",
-  "version": "1.0.0",
-  "fhirVersion": "4.0.1",
+  "package": "pem-h.fhir.uv.myig",
+  "version": "0.1.0-test",
+  "fhirVersion": "3.0.2",
   "jurisdiction": "001",
-  "extensions": [
-    {
-      "url": "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
-      "title": "Condition related to the current resource",
-      "types": [
-        "positiveInt"
-      ]
-    },
-    {
-      "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
-      "title": "Condition related to the current resource",
-      "types": [
-        "CodeableConcept"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
     "Bundle": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/example-patient-profile",
+        "url": "http://example.org/StructureDefinition/example-patient-profile",
         "title": "Perfil Bundle de mensagem"
       }
     ],
     "RequestGroup": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
+        "url": "http://example.org/StructureDefinition/content-profile",
         "title": "Perfil Conteudo Receita"
       }
     ],
     "Encounter": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
+        "url": "http://example.org/StructureDefinition/coverage-pemh-profile",
         "title": "Perfil Coverage"
       },
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
+        "url": "http://example.org/StructureDefinition/encounter-pemh-profile",
         "title": "Perfil Episódio"
       }
     ],
     "Location": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/location-pemh-profile",
+        "url": "http://example.org/StructureDefinition/location-pemh-profile",
         "title": "Perfil Location"
       }
     ],
     "Medication": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/med-pemh-profile",
+        "url": "http://example.org/StructureDefinition/med-pemh-profile",
         "title": "Perfil Medicação"
       }
     ],
     "MedicationRequest": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/med-request-profile",
+        "url": "http://example.org/StructureDefinition/med-request-profile",
         "title": "Perfil informação de receita"
       }
     ],
     "MessageHeader": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/msh-profile",
+        "url": "http://example.org/StructureDefinition/msh-profile",
         "title": "Perfil MessageHeader"
       }
     ],
     "Patient": [
       {
-        "url": "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile",
+        "url": "http://example.org/StructureDefinition/patient-pemh-profile",
         "title": "Perfil Paciente"
       }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath": [
       "StructureDefinition.snapshot.element.constraint"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
-      "StructureDefinition.snapshot.element.constraint"
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId": [
+      "ImplementationGuide.dependency"
+    ],
+    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version": [
+      "ImplementationGuide.dependency"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
@@ -95,34 +83,16 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.snapshot.element.type"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
-      "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
-      "ImplementationGuide.definition"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
-      "ImplementationGuide.definition.resource"
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependency"
     ],
     "http://spms.min-saude.pt/iop/extensions/prescription-duplicate": [
-      "Bundle.entry.resource",
       "RequestGroup"
     ],
     "http://spms.min-saude/pe/top/extensions/med-request-modality": [
-      "Bundle.entry.resource",
       "RequestGroup"
     ]
   }

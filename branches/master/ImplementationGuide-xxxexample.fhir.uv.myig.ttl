@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "xxxexample.fhir.uv.myig"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>\n</div></div>"
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0-test"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "hl7-pt-pem-h"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
+  fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-09T14:33:47+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 TC"]; # 
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "xxxhttp://hl7.org/Special/committees/[something]" ]
+     ]
+  ]; # 
+  fhir:ImplementationGuide.description [ fhir:value "xxxA brief description of what this IG is about "]; # 
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ]; # 
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.2"]; # 
+  fhir:ImplementationGuide.dependency [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ];
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId" ];
+       fhir:Extension.valueId [ fhir:value "hl7.terminology.r3" ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version" ];
+       fhir:Extension.valueString [ fhir:value "5.0.0" ]
+     ];
+     fhir:ImplementationGuide.dependency.type [ fhir:value "reference" ];
+     fhir:ImplementationGuide.dependency.uri [ fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ]
+  ]; # 
+  fhir:ImplementationGuide.page [
+     fhir:ImplementationGuide.page.source [ fhir:value "toc.html" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "ìndice" ];
+     fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
+     fhir:ImplementationGuide.page.page [
+       fhir:index 0;
+       fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Home Page" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.page.source [ fhir:value "downloads.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Downloads" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.page.source [ fhir:value "changes.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "IG Change History" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,8 +1,6 @@
 {
-  "version": "1.0.0",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20220922181701",
-  "name": "my-ig"
+  "version" : "0.1.0-test",
+  "fhirVersion" : ["3.0.2"],
+  "date" : "20230209143258",
+  "name" : "pem-h.fhir.uv.myig"
 }
