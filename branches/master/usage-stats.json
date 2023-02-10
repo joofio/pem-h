@@ -19,6 +19,10 @@
       {
         "url": "http://example.com/fhir/example/StructureDefinition/content-profile",
         "title": "Perfil Conteudo Receita"
+      },
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/content-response-profile",
+        "title": "Perfil Conteudo Receita"
       }
     ],
     "Coverage": [
@@ -55,6 +59,10 @@
       {
         "url": "http://example.com/fhir/example/StructureDefinition/msh-profile",
         "title": "Perfil MessageHeader"
+      },
+      {
+        "url": "http://example.com/fhir/example/StructureDefinition/msh-response-profile",
+        "title": "Perfil Bundle de mensagem de resposta"
       }
     ],
     "Patient": [

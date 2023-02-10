@@ -3,9 +3,9 @@
   "name" : "hl7-pt-pem-h",
   "package-id" : "pem-h.fhir.uv.myig",
   "ig-ver" : "0.1.0-test",
-  "date" : "Thu, 09 Feb, 2023 22:10:16 +0000",
-  "errs" : 274,
-  "warnings" : 40,
+  "date" : "Fri, 10 Feb, 2023 09:10:53 +0000",
+  "errs" : 317,
+  "warnings" : 50,
   "hints" : 26,
   "version" : "3.0.2",
   "tool" : "5.0.0-snapshot2 (3)"
