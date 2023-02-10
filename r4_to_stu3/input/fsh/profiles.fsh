@@ -89,6 +89,7 @@ Description: "Este recurso representa a receita (Número da receita, local e cen
 * action.resource only Reference(PEMHMedicationRequest)
 * action.resource ^short = "Referência para um resource que contém informações da linha da receita"
 
+
 Profile:     PEMHMedicationRequest
 Id:          med-request-profile
 Parent:      MedicationRequest
@@ -164,10 +165,10 @@ Id:          patient-pemh-profile
 Parent:      Patient
 Title:       "Perfil Paciente"
 Description: "Utente a quem diz respeito a prescrição de medicação."
-* identifier. ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding"
 * identifier ^slicing.rules = #open
-* identifier contains VISTO 0..1 MS and  CC 0..1 MS and NIF 0..1 MS and SS 0..1 MS and NNU 0..1 MS
+* identifier contains VISTO 0..1 MS and  CC 0..1 MS and NIF 0..1 MS and SS 0..1 MS and NNU 0..1 MS and NP 0..1 MS
 * identifier.type.coding.system = "http://hl7.org/fhir/v2/0203"
 * identifier[VISTO].type.coding.code = #PRC
 * identifier[VISTO].type.coding.display = "Permanent Resident Card Number"
@@ -197,6 +198,11 @@ Description: "Utente a quem diz respeito a prescrição de medicação."
 * identifier[NNU].system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
 * identifier[NNU].value 1..1
 
+* identifier[NP].type.coding.code = #MR
+* identifier[NP].type.coding.display = "Medical Record Number"
+//* identifier[NP].system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
+* identifier[NP].value 1..1
+
 * name.text ^short = "Nome completo do utente"
 * name.given ^short = "Nomes próprios do utente"
 * name.family ^short = "Apelidos do utente"
@@ -219,11 +225,46 @@ Parent:      Encounter
 Title:       "Perfil Episódio"
 Description: "Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada."
 
+* identifier ^short = "Número do episódio no âmbito do qual foi emitida a receita"
+* identifier.system = "http://spms.min-saude.pt/iop/identifiers/encounter"
+* status = #in-progress
+* class ^short = "Identificador do tipo de episódio que deu origem à prescrição - Módulo do Episódio
+e.g.: INT, CE, URG, EMER"
+* subject ^short = "Referência para um resource que contém informações do utente"
+//* encounter.participant ^short = "Preencher com os profissionais envolvidos."
+//* encounter.participant.individual ^short = "Referência para um resource que contém informações do profissional de saúde"
+//* encounter.serviceProvider ^short = "Referência para um resource que contém informações da consulta de especialidade"
+//extension
+
 Profile:     PEMHCoverage
 Id:          coverage-pemh-profile
 Parent:      Coverage
 Title:       "Perfil Coverage"
 Description: "Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria."
+
+* identifier ^short = "Será obrigatório somente se for uma Entidade Responsável.Número de Beneficiário do Utente na Entidade"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "type.coding"
+* identifier ^slicing.rules = #open
+* identifier contains NBU 0..1 MS
+* identifier[NBU].type.coding.code = #NBU
+//* identifier[NBU].coding.display = "Número de Beneficiário do Utente"
+* identifier[NBU].system = "http://spms.min-saude.pt/iop/identifiers/coverage"
+* type ^short = "Designação da Entidade Responsável, enviar outros códigos se necessário, com o respetivo sistema de codificação [CÓDIGO (EFR) E DESIGNAÇÃO (EFR)]"
+* type.coding ^slicing.discriminator.type = #value
+* type.coding ^slicing.discriminator.path = "code"
+* type.coding ^slicing.rules = #open
+* type.coding contains ExtendedHealthcare 0..1 MS
+* type.coding[ExtendedHealthcare].system = "http://hl7.org/fhir/v3/ActCode"
+* type.coding[ExtendedHealthcare].code = #EHCPOL
+* type.coding[ExtendedHealthcare].display = "Extended healthcare"
+* subscriberId ^short = "Número do documento de direito [NÚMERO (CARTÃO)]"
+* beneficiary ^short = "Referência para um resource que contém informações do utente"
+* payor ^short = "Referência para um resource que contém informações da Entidad e Financeira Responsável"
+* period ^short = "Este elemento representa a data de emissão do documento de direito representado pelo \"start\" e a data de validade do documento de direito representado pelo \"end\"."
+//extension
+
+
 
 
 Profile:     PEMHLocation
@@ -232,10 +273,94 @@ Parent:      Location
 Title:       "Perfil Location"
 Description: "Recurso utilizado para representar informação sobre o local de prescrição da medicação."
 
+* identifier ^short = "Código SGES do local de prescrição"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains SGES 0..1 MS
+* identifier[SGES].system = "http://spms.min-saude.pt/sges/identifiers/entity-id"
 
-Profile:     PEMHbundleResponse
+* name ^short = "DESIGNAÇÃO DO LOCAL DA PRESCRIÇÃO, Nome do local de prescrição"
+
+* type ^short = "Locais de prescrição definidos pelo PRVR."
+
+* managingOrganization ^short = "Referência para um resource que contém informa ções da instituição à qual pertence este local."
+
+/*Profile:     PEMHbundleResponse
 Id:          bundle-response-profile
 Parent:      Bundle
 Title:       "Perfil Bundle de mensagem de resposta"
 Description: "O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora."
 
+* id ^short = "Deve ser único e mudar sempre que a mensagem for enviada."
+* meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/outcome/v1-0-3"
+*/
+Profile:     PEMHMessageHeaderResposta
+Id:          msh-response-profile
+Parent:      MessageHeader
+Title:       "Perfil Bundle de mensagem de resposta"
+Description: "Este recurso deve ser a primeira entrada no Bundledas mensagens resposta de ACK de transporte e aplicacional, e deve trazer informação sobre o resultado da recepção ou processamento da mensagem pelo cliente destino."
+
+* meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-outcome-msh/v1-0-3"
+
+* meta.tag.system =  "http://spms.min-saude.pt/iop/event-meta-tags"
+
+* eventCoding.system = "http://spms.min-saude.pt/iop/events" //eventCoding -> event
+* eventCoding.code from EventCodeVS (required) //eventCoding -> event
+* eventCoding.display = "MED_PRESCRIPTION_SYNCHRONIZATION" //eventCoding -> event
+
+* destination.name ^short = "<Aplicação de Origem>"
+* destination.endpoint ^short = "<Fornecedor da Aplicação/Aplicação de Origem>"
+* destination.receiver ^short = "Corresponde à organização que recebe a prescrição de medicação." //destination.receiver -> receiver
+* destination.receiver only Reference(Organization) //destination.receiver -> receiver
+* sender only Reference(Organization) //sender -> sender\
+* sender ^short = "Corresponde à organização que envia a a prescrição de medicação."
+
+* source.name="PEMH"
+* author ^short = "Profissional que fez a prescrição de medicação para o utente."
+
+* response.details only Reference(OperationOutcome) //response.details -> details
+* response.details ^short = "Obrigatório enviar apenas em caso de erro /problemas na recepção/processamento da mensagem."
+* focus only Reference(RequestGroup) //focus -> focus
+* focus 1..1 MS
+* focus ^short = "Corresponde ao retorno da receita contendo o identidicador central da receita e o Pin da receita.
+Obrigatório enviar apenas em caso de sucesso na recepção/processamento da mensagem.
+Só deve ser enviada uma referência para o recurso
+RequestGroup por mensagem."
+
+
+
+Profile:     PEMHRequestGroupResponse
+Id:          content-response-profile
+Parent:      RequestGroup
+Title:       "Perfil Conteudo Receita"
+Description: "Este recurso representa o retorno da receita quando ocorre o sucesso na recepção/processamento da mensagem. Para além disso, esse recurso contêm elementos que compõem a receita gerados somente no retorno da receita, como o \"Número Central da
+Receita\" e o \"Pin da Receita\"."
+
+ 
+* id ^short = "ID lógico do pedido de referenciação no contexto FHIR"
+* meta.profile = "http://spms.min-saude.pt/fhir/iop/profiles/med-prescriptionsynchronization-msh/v1-0-3"
+* meta.lastUpdated ^short = "Indica a data da última alteração desse recurso."
+* groupIdentifier 1..1 MS
+* groupIdentifier ^short = "Identificador local da prescrição. NÚMERO RECEITA LOCAL"
+* status 1..1 MS
+* status ^short = "A prescrição é criada com status active. Status para a anulação / cancelamento da prescrição: cancelled."
+// novo valueSet
+* intent = #order
+
+* extension 0..* MS
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+
+
+* extension contains duplicate-order named duplicateOrder 0..1 
+* extension[duplicate-order] ^short = "Extensão para indicar a via da receita prescrita"
+* extension contains meaning-order named MeaningOrder 0..1
+* extension[meaning-order] ^short = "Extensão para indicar a via da receita prescrita"
+* extension[meaning-order] ^short = "Extensão sobre a Modalidade de Prescrição. Receita com papel (RCP) ou receita sem papel (RSP) [MODALIDADE DE PRESCRIÇÃO]" 
+
+//* action.label ^short = "Número da linha da receita (1, 2, 3, ...). [NÚMERO LINHA]"
+* action.timingPeriod ^short = "Data da linha da receita [DATA VALIDADE LINHA]"
+* action.resource only Reference(PEMHMedicationRequest)
+* action.resource ^short = "Referência para um resource que contém informações da linha da receita"
