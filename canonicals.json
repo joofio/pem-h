@@ -21,6 +21,13 @@
     "name" : "PEMHRequestGroup"
   },
   {
+    "id" : "content-response-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/content-response-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHRequestGroupResponse"
+  },
+  {
     "id" : "coverage-pemh-profile",
     "type" : "StructureDefinition",
     "url" : "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
@@ -61,6 +68,13 @@
     "url" : "http://example.com/fhir/example/StructureDefinition/msh-profile",
     "version" : "0.1.0-test",
     "name" : "PEMHMSH"
+  },
+  {
+    "id" : "msh-response-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/msh-response-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMessageHeaderResposta"
   },
   {
     "id" : "patient-pemh-profile",
