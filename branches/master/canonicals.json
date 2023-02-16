@@ -56,6 +56,27 @@
     "name" : "PEMHMedication"
   },
   {
+    "id" : "med-prescription-duration",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/med-prescription-duration",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-duration"
+  },
+  {
+    "id" : "med-prescription-frequency-time",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/med-prescription-frequency-time",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-frequency-time"
+  },
+  {
+    "id" : "med-prescription-legal-diploma",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/med-prescription-legal-diploma",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-legal-diploma"
+  },
+  {
     "id" : "med-request-profile",
     "type" : "StructureDefinition",
     "url" : "http://example.com/fhir/example/StructureDefinition/med-request-profile",
@@ -82,6 +103,104 @@
     "url" : "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile",
     "version" : "0.1.0-test",
     "name" : "PEMHPatient"
+  },
+  {
+    "id" : "med-cost",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-cost",
+    "version" : "0.1.0-test",
+    "name" : "med-cost"
+  },
+  {
+    "id" : "med-prescription-cancel-reason",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-cancel-reason"
+  },
+  {
+    "id" : "test",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction",
+    "version" : "0.1.0-test",
+    "name" : "teste"
+  },
+  {
+    "id" : "med-prescription-dosage-line",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-line",
+    "version" : "0.1.0-test",
+    "name" : "MedPrescriptionDosageLine"
+  },
+  {
+    "id" : "med-prescription-framing-dispense",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-framing-dispense"
+  },
+  {
+    "id" : "presc-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration",
+    "version" : "0.1.0-test",
+    "name" : "presc-administration"
+  },
+  {
+    "id" : "presc-local",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-local",
+    "version" : "0.1.0-test",
+    "name" : "presc-local"
+  },
+  {
+    "id" : "presc-print",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-print",
+    "version" : "0.1.0-test",
+    "name" : "presc-print"
+  },
+  {
+    "id" : "presc-transcription",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-transcript",
+    "version" : "0.1.0-test",
+    "name" : "presc-transcription"
+  },
+  {
+    "id" : "presc-type",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-request-type",
+    "version" : "0.1.0-test",
+    "name" : "presc-type"
+  },
+  {
+    "id" : "prescription-duplicate",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
+    "version" : "0.1.0-test",
+    "name" : "PrescriptionDuplicate"
+  },
+  {
+    "id" : "meaning-order",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude/pe/top/extensions/med-request-modality",
+    "version" : "0.1.0-test",
+    "name" : "MeaningOrder"
+  },
+  {
+    "id" : "med-currency",
+    "type" : "StructureDefinition",
+    "url" : "med-currency",
+    "version" : "0.1.0-test",
+    "name" : "med-currency"
+  },
+  {
+    "id" : "med-value",
+    "type" : "StructureDefinition",
+    "url" : "med-value",
+    "version" : "0.1.0-test",
+    "name" : "med-value"
   },
   {
     "id" : "xxxexample.fhir.uv.myig",

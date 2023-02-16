@@ -177,7 +177,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Other</a>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Other</a>
       </li>
    </ul>
 </div>
@@ -293,6 +296,154 @@ Receita” e o “Pin da Receita”.</p>
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-prescription-cancel-reason.html" title="StructureDefinition/med-prescription-cancel-reason">MOTIVO ANULAÇÃO</a>
+               </td>
+               <td>
+<p>Motivo de anulação da receita.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-prescription-framing-dispense.html" title="StructureDefinition/med-prescription-framing-dispense">Tipo enquadramento</a>
+               </td>
+               <td>
+<p>Sub-extensão relativa ao Tipo de Enquadramento.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-transcription.html" title="StructureDefinition/presc-transcription">RECEITA MANUSCRITA</a>
+               </td>
+               <td>
+<p>Indicar se trata-se de uma transcrição de uma receita manuscrita.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-test.html" title="StructureDefinition/test">NÚMERO DE VIAS</a>
+               </td>
+               <td>
+<p>Via da receita no caso de ser renovável (1, 2, 3, …).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-local.html" title="StructureDefinition/presc-local">LOCAL</a>
+               </td>
+               <td>
+<p>Referência para um resource que contém informações do local de prescrição</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-prescription-frequency-time.html" title="StructureDefinition/med-prescription-frequency-time">FREQUENCIA E HORARIO</a>
+               </td>
+               <td>
+<p>Indica a frequência e horário de toma do medicamento definidos pelo CTC.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-value.html" title="StructureDefinition/med-value">VALOR</a>
+               </td>
+               <td>
+<p>Sub-extensão referente ao valor da terapêutica</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-meaning-order.html" title="StructureDefinition/meaning-order">MODALIDADE DE PRESCRIÇÃO</a>
+               </td>
+               <td>
+<p>Receita com papel (RCP) ou receita sem papel (RSP).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-type.html" title="StructureDefinition/presc-type">TIPO DE RECEITA</a>
+               </td>
+               <td>
+<p>Tipo de prescrição: e.g.: FH, RE, BIO ou OUT.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-administration.html" title="StructureDefinition/presc-administration">ADMINISTRAÇÃO</a>
+               </td>
+               <td>
+<p>Indicar se a prescrição é para administração interna ou SFH; true: administração interna; false: SFH</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-print.html" title="StructureDefinition/presc-print">IMPRESSÃO</a>
+               </td>
+               <td>
+<p>Indicar se a receita foi impressa</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-prescription-duration.html" title="StructureDefinition/med-prescription-duration">DURACAO - VALOR E UNIDADE</a>
+               </td>
+               <td>
+<p>Indica a duração de tratamento da posologia - Valor e Unidade</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-cost.html" title="StructureDefinition/med-cost">Custo</a>
+               </td>
+               <td>
+<p>Extensão referente ao valor e a moeda da terapêutica</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-currency.html" title="StructureDefinition/med-currency">MOEDA</a>
+               </td>
+               <td>
+<p>Sub-extensão referente a moeda</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-prescription-duplicate.html" title="StructureDefinition/prescription-duplicate">NÚMERO DE VIAS</a>
+               </td>
+               <td>
+<p>Via da receita no caso de ser renovável (1, 2, 3, …).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-prescription-legal-diploma.html" title="StructureDefinition/med-prescription-legal-diploma">CÓDIGO E DESCRIÇÃO DO DIPLOMA</a>
+               </td>
+               <td>
+<p>Sub-extensão relativa ao Diploma Legal que estabelece o regime especial ou excecional de comparticipação.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-prescription-dosage-line.html" title="StructureDefinition/med-prescription-dosage-line">NÚMERO DE VIAS</a>
+               </td>
+               <td>
+<p>Via da receita no caso de ser renovável (1, 2, 3, …).</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
@@ -387,8 +538,8 @@ Receita” e o “Pin da Receita”.</p>
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l695">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="xxxhttp://hl7.org/Special/committees/[something]">HL7 TC</a>.  Package pem-h.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 10, 2023 09:10+0000">2023-02-10</span>
+        <p><a name="l979">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="xxxhttp://hl7.org/Special/committees/[something]">HL7 TC</a>.  Package pem-h.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Thu, Feb 16, 2023 19:26+0000">2023-02-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

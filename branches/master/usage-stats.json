@@ -3,7 +3,164 @@
   "version": "0.1.0-test",
   "fhirVersion": "3.0.2",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://example.com/fhir/example/StructureDefinition/med-prescription-duration",
+      "title": "DURACAO - VALOR E UNIDADE",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/example/StructureDefinition/med-prescription-frequency-time",
+      "title": "FREQUENCIA E HORARIO",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/example/StructureDefinition/med-prescription-legal-diploma",
+      "title": "CÓDIGO E DESCRIÇÃO DO DIPLOMA",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-cost",
+      "title": "Custo",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason",
+      "title": "MOTIVO ANULAÇÃO",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction",
+      "title": "NÚMERO DE VIAS",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-line",
+      "title": "NÚMERO DE VIAS",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense",
+      "title": "Tipo enquadramento",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration",
+      "title": "ADMINISTRAÇÃO",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-local",
+      "title": "LOCAL",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-print",
+      "title": "IMPRESSÃO",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-transcript",
+      "title": "RECEITA MANUSCRITA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/med-request-type",
+      "title": "TIPO DE RECEITA",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
+      "title": "NÚMERO DE VIAS",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
+      "title": "MODALIDADE DE PRESCRIÇÃO",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "med-currency",
+      "title": "MOEDA",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "med-value",
+      "title": "VALOR",
+      "types": [
+        "decimal"
+      ]
+    }
+  ],
   "profiles": {
     "Bundle": [
       {
@@ -113,6 +270,12 @@
     "http://spms.min-saude/pe/top/extensions/med-request-modality": [
       "Bundle.entry.resource",
       "RequestGroup"
+    ],
+    "med-currency": [
+      "Extension"
+    ],
+    "med-value": [
+      "Extension"
     ]
   }
 }
