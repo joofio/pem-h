@@ -49,7 +49,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Bundle"
 
 Instance: ExemploMSH
 InstanceOf: PEMHMSH
-Description: "ttt"
+Description: "Exemplo Message Header"
 
 
 * id = "db6428bf-1e58-48d4-9102-b85d6c716bb1"
@@ -60,7 +60,7 @@ Description: "ttt"
 * meta.tag.display = "MED PRESCRIPTION NEW"
 * eventCoding.system =  "http://spms.min-saude.pt/iop/events" //#stu3 is not supported by SUSHI
 * eventCoding.code = #10724
-//* eventCoding.display = "MED PRESCRIPTION SYNCHRONIZATION"
+* eventCoding.display = "MED PRESCRIPTION SYNCHRONIZATION"
 * destination.name = "PEMH"
 * destination.endpoint = "SPMS/PEMH"
 * destination.receiver = Reference(ExemploOrganization1)
@@ -118,6 +118,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
   * doseAndRate.doseQuantity.unit = "mg"
   * doseAndRate.doseQuantity.system = "https://www.infarmed.pt"
   * doseAndRate.doseQuantity.code = #mg
+  //* extension[]
 * dispenseRequest.quantity.value = 30
 * dispenseRequest.quantity.unit = "TAB"
 * dispenseRequest.quantity.code = #TAB

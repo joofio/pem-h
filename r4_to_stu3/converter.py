@@ -2,7 +2,7 @@ import json
 from os import listdir
 
 
-def transform_bundle(data):
+def transform_bundle_sd(data):
 
     json_string = json.dumps(data)
 
@@ -22,7 +22,7 @@ def transfrom_extension(data):
     return data
 
 
-def transform_med_req(data):
+def transform_med_req_sd(data):
     data["differential"]["element"].append(
         {
             "id": "MedicationRequest.requester.onBehalfOf",
@@ -51,7 +51,7 @@ def transform_med_req(data):
     return json.loads(newdata)
 
 
-def transform_msh(data):
+def transform_msh_sd(data):
 
     data["differential"]["element"].append(
         {
@@ -80,14 +80,30 @@ def transform_msh(data):
     return json.loads(newdata)
 
 
+def transform_to_stu3_sd(data, resourcetype):
+    # print(resourcetype)
+    if resourcetype == "MessageHeader":
+        return transform_msh_sd(data)
+    if resourcetype == "MedicationRequest":
+        return transform_med_req_sd(data)
+    if resourcetype == "Bundle":
+        return transform_bundle_sd(data)
+    return data
+
+
+def transform_msh(data):
+    #  print(data["eventCoding"])
+    #  print("HEERE")
+    data["event"] = data["eventCoding"]
+    del data["eventCoding"]
+    return data
+
+
 def transform_to_stu3(data, resourcetype):
-    print(resourcetype)
+    # print(resourcetype)
     if resourcetype == "MessageHeader":
         return transform_msh(data)
-    if resourcetype == "MedicationRequest":
-        return transform_med_req(data)
-    if resourcetype == "Bundle":
-        return transform_bundle(data)
+
     return data
 
 
@@ -110,7 +126,7 @@ for file in listdir(INPUT_FOLDER):
     type_ = data.get("type")
     # print(type_)
     if restype == "StructureDefinition":
-        ndata = transform_to_stu3(data, type_)
+        ndata = transform_to_stu3_sd(data, type_)
 
         if type_ == "Extension":
             ndata = transfrom_extension(data)
@@ -131,5 +147,7 @@ for file in listdir(INPUT_FOLDER):
         # with open(VOCAB_FOLDER + file, "w") as file:
         #    json.dump(data, file)
     else:
+        print(type_, restype)
+        ndata = transform_to_stu3(data, restype)
         with open(EXAMPLE_FOLDER + file, "w") as file:
-            json.dump(data, file)
+            json.dump(ndata, file)
