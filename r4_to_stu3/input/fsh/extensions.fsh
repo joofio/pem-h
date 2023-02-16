@@ -27,31 +27,18 @@ Id:       med-prescription-dosage-instruction
 Title:    "FREQ+HORÁRIO"
 Description: "Extensões referentes a frequência e horário de toma do medicamento e a duração de tratamento da posologia em valor e unidade."
 * ^url = "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction"
-* extension 0..* MS
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 
+* extension contains
+    med-prescription-frequency-time 1..1 MS and
+    med-prescription-duration 1..1 MS 
 
-* extension contains med-prescription-frequency-time named med-prescription-frequency-time 1..1 
-* extension contains med-prescription-duration named med-prescription-duration 1..1
+* extension[med-prescription-frequency-time].value[x] only CodeableConcept
+* extension[med-prescription-frequency-time].value[x] from MedPrescriptionFrequencyTimeVS (required)
+* extension[med-prescription-frequency-time] ^short = "Indica a frequência e horário de toma do medicamento definidos pelo CTC."
 
-
-Extension: med-prescription-frequency-time
-Id:       med-prescription-frequency-time
-Title:    "FREQUENCIA E HORARIO"
-Description: "Indica a frequência e horário de toma do medicamento definidos pelo CTC."
-* value[x] only CodeableConcept
-* value[x] from MedPrescriptionFrequencyTimeVS (required)
-* ^url = "med-prescription-frequency-time"
-
-Extension: med-prescription-duration
-Id:       med-prescription-duration
-Title:    "DURACAO - VALOR E UNIDADE"
-Description: "Indica a duração de tratamento da posologia - Valor e Unidade"
-* value[x] only Quantity
-* value[x] from MedPrescriptionDurationVS (required)
-* ^url = "med-prescription-duration"
+* extension[med-prescription-duration].value[x] only Quantity
+* extension[med-prescription-duration].value[x] from MedPrescriptionDurationVS (required) 
+* extension[med-prescription-duration] ^short = "Indica a duração de tratamento da posologia - Valor e Unidade"
 
 
 Extension: presc-print
@@ -98,34 +85,20 @@ Extension: med-prescription-framing-dispense
 Id:       med-prescription-framing-dispense
 Title:    "Tipo enquadramento"
 Description: "Extensões referentes ao enquadramento da dispensa"
-* extension 0..* MS
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-
-
-* extension contains med-prescription-legal-diploma named med-prescription-legal-diploma 0..1 
-* extension contains meaning-order named MeaningOrder 0..1
-
 * ^url = "http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense"
 
+* extension contains
+    med-prescription-framing-type 0..1 MS and
+    med-prescription-legal-diploma 0..1 MS 
 
-Extension: med-prescription-framing-type
-Id:       med-prescription-framing-type
-Title:    "CÓDIGO E DESCRIÇÃO DO DIPLOMA"
-Description: "Sub-extensão relativa ao Diploma Legal que estabelece o regime especial ou excecional de comparticipação."
-* value[x] only CodeableConcept
-* value[x] from MedPrescriptionFramingTypeVS (required)
-* ^url = "med-prescription-framing-type"
+* extension[med-prescription-framing-type].value[x] only CodeableConcept
+* extension[med-prescription-framing-type].value[x] from MedPrescriptionFramingTypeVS (required)
+* extension[med-prescription-framing-type] ^short = "Sub-extensão relativa ao Diploma Legal que estabelece o regime especial ou excecional de comparticipação."
 
+* extension[med-prescription-legal-diploma].value[x] only CodeableConcept
+* extension[med-prescription-legal-diploma].value[x] from MedPrescriptionLegalDiplomaVS (required)
+* extension[med-prescription-legal-diploma] ^short = "Sub-extensão relativa ao Diploma Legal que estabelece o regime especial ou excecional de comparticipação."
 
-Extension: med-prescription-legal-diploma
-Id:       med-prescription-legal-diploma
-Title:    "CÓDIGO E DESCRIÇÃO DO DIPLOMA"
-Description: "Sub-extensão relativa ao Diploma Legal que estabelece o regime especial ou excecional de comparticipação."
-* value[x] only CodeableConcept
-* value[x] from MedPrescriptionLegalDiplomaVS (required)
-* ^url = "med-prescription-legal-diploma"
 
 
 
@@ -141,30 +114,18 @@ Extension: med-cost
 Id:       med-cost
 Title:    "Custo"
 Description: "Extensão referente ao valor e a moeda da terapêutica"
-* extension 0..* MS
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains med-currency named med-currency 1..1 
-* extension contains med-value named med-value 1..1 
 * ^url = "http://spms.min-saude.pt/iop/extensions/med-cost"
 
-Extension: med-currency
-Id:       med-currency
-Title:    "MOEDA"
-Description: "Sub-extensão referente a moeda"
-* value[x] only CodeableConcept
-* value[x] from urn:iso:std:iso:4217 (required)
-* ^url = "med-currency"
+* extension contains
+    med-currency 1..1 MS and
+    med-value 1..1 MS 
 
+* extension[med-currency].value[x] only CodeableConcept
+* extension[med-currency].value[x] from urn:iso:std:iso:4217 (required)
+* extension[med-currency] ^short = "Sub-extensão referente a moeda"
 
-
-Extension: med-value
-Id:       med-value
-Title:    "VALOR"
-Description: "Sub-extensão referente ao valor da terapêutica"
-* value[x] only decimal
-* ^url = "med-value"
+* extension[med-value].value[x] only decimal
+* extension[med-value] ^short = "Sub-extensão referente ao valor da terapêutica"
 
 
 
@@ -172,177 +133,92 @@ Description: "Sub-extensão referente ao valor da terapêutica"
 
 Extension: ptAddress
 Id:       ptAddress
-Title:    "Custo"
-Description: "Extensão referente ao valor e a moeda da terapêutica"
-* extension 0..* MS
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains ptaddressType named ptaddressType 0..1 
-* extension contains ptstreetType named ptstreetType 0..1 
-* extension contains ptstreet named ptstreet 0..1 
-* extension contains ptbuildingType named ptbuildingType 0..1 
-* extension contains ptdoorNumber named ptdoorNumber 0..1 
-* extension contains ptdoorSide named ptdoorSide 0..1 
-* extension contains ptfloor named ptfloor 0..1 
-* extension contains ptplace named ptplace 0..1 
-* extension contains ptlocality named ptlocality 0..1 
-* extension contains ptstate named ptstate 0..1 
-* extension contains ptparish named ptparish 0..1 
-* extension contains foreignPostalCode named foreignPostalCode 0..1 
-* extension contains ptpostalCode named ptpostalCode 0..1 
-* extension contains foreignDistrict named foreignDistrict 0..1 
-* extension contains foreignCity named foreignCity 0..1 
+Title:    "Endereço"
+Description: "Extensão referente ao endereço"
 
-* extension contains foreignAddress named foreignAddress 0..1 
-* extension contains foreignRegion named foreignRegion 0..1 
-* extension contains foreignCountry named foreignCountry 0..1 
+* extension contains
+    address-type 0..1 MS and
+    street-type 0..1 MS and
+    street 0..1 MS and
+    building-type 0..1 MS and
+    door-number 0..1 MS and
+    door-side 0..1 MS and
+    floor 0..1 MS and
+    place 0..1 MS and
+    locality 0..1 MS and
+    state 0..1 MS and
+    city 0..1 MS and
+    postal-code 0..1 MS and
+    parish 0..1 MS and
+    foreign-address 0..1 MS and
+    foreign-region 0..1 MS and
+    foreign-city 0..1 MS and
+    foreign-district 0..1 MS and
+    foreign-postal-code 0..1 MS and
+    country 0..1 MS 
+
+* extension[address-type].value[x] only Coding
+* extension[address-type].value[x] from AddressTypeVS (required)
+
+* extension[address-type] ^short = "Sub-extensão para o Tipo de via"
+
+* extension[street-type].value[x] only CodeableConcept
+* extension[street-type] ^short = "Sub-extensão para o Tipo de via"
+
+* extension[street].value[x] only CodeableConcept
+* extension[street] ^short = "Sub-extensão para o Nome da via"
+
+* extension[building-type].value[x] only CodeableConcept
+* extension[building-type] ^short = "Sub-extensão para o Tipo de Edificio"
+
+* extension[door-number].value[x] only CodeableConcept
+* extension[door-number] ^short = "Sub-extensão para o Número da porta"
+
+* extension[door-side].value[x] only CodeableConcept
+* extension[door-side] ^short =  "Sub-extensão para o Tipo de lado da porta"
+
+* extension[floor].value[x] only CodeableConcept
+* extension[floor] ^short = "Sub-extensão para o Andar"
+
+* extension[place].value[x] only CodeableConcept
+* extension[place] ^short = "Sub-extensão para o Lugar"
+
+* extension[locality].value[x] only CodeableConcept
+* extension[locality] ^short = "Sub-extensão para a Localidade"
+
+* extension[state].value[x] only CodeableConcept
+* extension[state] ^short = "Sub-extensão para o Distrito"
+
+* extension[city].value[x] only CodeableConcept
+* extension[city] ^short = "Sub-extensão para o Concelho"
+
+* extension[parish].value[x] only CodeableConcept
+* extension[parish] ^short = "Sub-extensão para a Freguesia"
+
+* extension[postal-code].value[x] only CodeableConcept
+* extension[postal-code] ^short =  "Sub-extensão para código postal"
+
+* extension[foreign-address].value[x] only string
+* extension[foreign-address] ^short = "Sub-extensão para o endereço da morada no estrangeiro"
+
+* extension[foreign-region].value[x] only string
+* extension[foreign-region] ^short =   "Sub-extensão para Região no estrangeiro"
+
+* extension[foreign-city].value[x] only string
+* extension[foreign-city] ^short =  "Sub-extensão para a Cidade no estrangeiro"
+
+* extension[foreign-district].value[x] only string
+* extension[foreign-district] ^short =  "Sub-extensão para a Localidade no estrangeiro"
+
+* extension[foreign-postal-code].value[x] only string
+* extension[foreign-postal-code] ^short = "Sub-extensão para a Código Postal no estrangeiro"
+
+* extension[country].value[x] only CodeableConcept
+* extension[country].value[x] from urn:iso:std:iso:3166 (required)
+* extension[country] ^short = "Sub-extensão para o País Estrangeiro"
+
 
 * ^url = "http://spms.min-saude.pt/rnu/extensions/address"
-
-
-Extension: ptaddressType
-Id:       ptaddressType
-Title:    "VALOR"
-Description: "Sub-extensão para o tipo de morada"
-* value[x] only Coding
-* value[x] from AddressTypeVS (required)
-* ^url = "address-type"
-
-
-Extension: ptstreetType
-Id:       ptstreetType
-Title:    "VALOR"
-Description: "Sub-extensão para o Tipo de via"
-* value[x] only CodeableConcept
-* ^url = "street-type"
-
-Extension: ptstreet
-Id:       ptstreet
-Title:    "VALOR"
-Description: "Sub-extensão para o Nome da via"
-* value[x] only string
-* ^url = "street"
-
-
-Extension: ptbuildingType
-Id:       ptbuildingType
-Title:    "VALOR"
-Description: "Sub-extensão para o Tipo de Edificio"
-* value[x] only CodeableConcept
-* ^url = "building-type"
-
-Extension: ptdoorNumber
-Id:       ptdoorNumber
-Title:    "VALOR"
-Description: "Sub-extensão para o Número da porta"
-* value[x] only string
-* ^url = "door-number"
-
-Extension: ptdoorSide
-Id:       ptdoorSide
-Title:    "VALOR"
-Description: "Sub-extensão para o Tipo de lado da porta"
-* value[x] only CodeableConcept
-* ^url = "door-side"
-
-Extension: ptfloor
-Id:       ptfloor
-Title:    "VALOR"
-Description: "Sub-extensão para o Andar"
-* value[x] only string
-* ^url = "floor"
-
-
-Extension: ptplace
-Id:       ptplace
-Title:    "VALOR"
-Description: "Sub-extensão para o Lugar"
-* value[x] only string
-* ^url = "place"
-
-Extension: ptlocality
-Id:       ptlocality
-Title:    "VALOR"
-Description: "Sub-extensão para a Localidade"
-* value[x] only string
-* ^url = "locality"
-
-
-Extension: ptstate
-Id:       ptstate
-Title:    "VALOR"
-Description: "Sub-extensão para o Distrito"
-* value[x] only CodeableConcept
-* ^url = "state"
-
-Extension: ptcity
-Id:       ptcity
-Title:    "VALOR"
-Description: "Sub-extensão para o Concelho"
-* value[x] only CodeableConcept
-* ^url = "city"
-
-
-Extension: ptparish
-Id:       ptparish
-Title:    "VALOR"
-Description: "Sub-extensão para a Freguesia"
-* value[x] only CodeableConcept
-* ^url = "parish"
-
-Extension: ptpostalCode
-Id:       ptpostalCode
-Title:    "VALOR"
-Description: "Sub-extensão para código postal"
-* value[x] only CodeableConcept
-* ^url = "parish"
-
-Extension: foreignAddress
-Id:       foreignAddress
-Title:    "VALOR"
-Description: "Sub-extensão para o endereço da morada no estrangeiro"
-* value[x] only string
-* ^url = "foreign-address"
-
-Extension: foreignRegion
-Id:       foreignRegion
-Title:    "VALOR"
-Description: "Sub-extensão para Região no estrangeiro"
-* value[x] only string
-* ^url = "foreign-region"
-
-
-Extension: foreignCity
-Id:       foreignCity
-Title:    "VALOR"
-Description: "Sub-extensão para a Cidade no estrangeiro"
-* value[x] only string
-* ^url = "foreign-city"
-
-
-Extension: foreignDistrict
-Id:       foreignDistrict
-Title:    "VALOR"
-Description: "Sub-extensão para a Localidade no estrangeiro"
-* value[x] only string
-* ^url = "foreign-district"
-
-Extension: foreignPostalCode
-Id:       foreignPostalCode
-Title:    "VALOR"
-Description: "Sub-extensão para a Código Postal no estrangeiro"
-* value[x] only string
-* ^url = "foreign-postal-code"
-
-
-Extension: foreignCountry
-Id:       foreignCountry
-Title:    "VALOR"
-Description: "Sub-extensão para o País Estrangeiro"
-* value[x] only CodeableConcept
-* value[x] from urn:iso:std:iso:3166 (required)
-* ^url = "country"
 
 
 
@@ -365,40 +241,20 @@ Description: "Extensão para informar se o contacto atual é o preferencial"
 
 Extension: ptOccupation
 Id:       ptOccupation
-Title:    "Contacto preferencial"
+Title:    "Profissão do utente"
 Description: "Extensão para a profissão do utente"
 * ^url = "http://spms.min-saude.pt/rnu/extensions/occupation"
-* extension 0..* MS
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains ptOccupationCode  named ptOccupationCode 0..1 
-* extension contains ptOccupationStatus  named ptOccupationStatus 0..1 
-* extension contains ptOccupationEducation  named ptOccupationEducation 0..1 
+* extension contains
+    code 0..1 MS and
+    status 0..1 MS and
+    education 0..1 MS
+* extension[code].value[x] only CodeableConcept
+* extension[status].value[x] only CodeableConcept
+* extension[education].value[x] only CodeableConcept
 
-
-
-Extension: ptOccupationCode
-Id:       ptOccupationCode
-Title:    "profissão"
-Description: "Sub-extensão que corresponde à Profissão"
-* value[x] only CodeableConcept
-* ^url = "code"
-
-
-Extension: ptOccupationStatus
-Id:       ptOccupationStatus
-Title:    "profissão"
-Description: "Sub-extensão que corresponde à Situação da Profissão"
-* value[x] only CodeableConcept
-* ^url = "status"
-
-Extension: ptOccupationEducation
-Id:       ptOccupationEducation
-Title:    "profissão"
-Description: "Sub-extensão para as Habilitações Literárias do utente"
-* value[x] only CodeableConcept
-* ^url = "education"
+* extension[code] ^short = "Sub-extensão que corresponde à Profissão"
+* extension[status] ^short =  "Sub-extensão que corresponde à Situação da Profissão"
+* extension[education] ^short =  "Sub-extensão para as Habilitações Literárias do utente"
 
 
 Extension: ptFilliation
@@ -407,28 +263,13 @@ Title:    "Filiação do utente"
 Description: "Extensão Filiação do utente"
 * ^url = "http://spms.min-saude.pt/rnu/extensions/patient-parents"
 
-* extension 0..* MS
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains ptFilliationMother  named ptFilliationMother 0..1 
-* extension contains ptFilliationFather  named ptFilliationFather 0..1 
-
-
-Extension: ptFilliationMother
-Id:       ptFilliationMother
-Title:    "Mãe"
-Description: "Sub-extensão para indicar a mãe"
-* value[x] only Reference(RelatedPerson)
-* ^url = "mother"
-
-Extension: ptFilliationFather
-Id:       ptFilliationFather
-Title:    "Pai"
-Description: "Sub-extensão para indicar o pai"
-* value[x] only Reference(RelatedPerson)
-* ^url = "father"
-
+* extension contains
+    mother 0..1 MS and
+    father 0..1 MS 
+* extension[mother].value[x] only Reference(RelatedPerson)
+* extension[father].value[x] only Reference(RelatedPerson)
+* extension[mother] ^short = "Sub-extensão para indicar a mãe"
+* extension[father] ^short = "Sub-extensão para indicar o pai"
 
 
 Extension: ptPatientOtherInfo
@@ -468,27 +309,11 @@ Title:    "Informações sobre o cartão do beneficiário relativo a entidade"
 Description: "Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição"
 * ^url = "http://spms.min-saude.pt/iop/extensions/coverage-card-info"
 
-* extension 0..* MS
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains CardInfoType  named CardInfoType 0..1 
-* extension contains CardCountry  named CardCountry 0..1 
+* extension contains
+    card-type 1..1 MS and
+    card-country 0..1 MS 
+* extension[card-type].value[x] only CodeableConcept
+* extension[card-type].value[x] from CardInfoTypeVS (required)
 
-
-
-Extension: CardInfoType
-Id:       CardInfoType
-Title:    "Tipo de documento de direito. Exemplo: CESD"
-Description: "Sub-extensão para indicar o tipo de documento de direito"
-* value[x] only CodeableConcept
-* value[x] from CardInfoTypeVS (required)
-* ^url = "card-type"
-
-Extension: CardCountry
-Id:       CardCountry
-Title:    "País emissor do documento de direito"
-Description: "SuSub-extensão para indicar o país emissor do documento de direito"
-* value[x] only CodeableConcept
-* value[x] from CardCountryVS (required)
-* ^url = "card-country"
+* extension[card-country].value[x] only CodeableConcept
+* extension[card-country].value[x] from CardCountryVS (required)
