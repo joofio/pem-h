@@ -13,3 +13,21 @@ CodeSystem: MeaningOrderCS
 
 ValueSet: MeaningOrderVS
 * include codes from system MeaningOrderCS
+
+
+
+ValueSet: MedPrescriptionFrequencyTimeVS
+* include codes from system MeaningOrderCS
+
+ValueSet: MedPrescriptionDurationVS
+* include codes from system MeaningOrderCS
+
+
+ValueSet: MedPrescriptionTypeVS
+* include codes from system MeaningOrderCS
+
+ValueSet: MedPrescriptionCancelReasonVS
+* include codes from system MeaningOrderCS
+
+ValueSet: MedPrescriptionFramingDispenseVS
+* include codes from system MeaningOrderCS

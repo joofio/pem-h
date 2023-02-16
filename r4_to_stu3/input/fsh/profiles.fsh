@@ -78,8 +78,8 @@ Description: "Este recurso representa a receita (Número da receita, local e cen
 * extension ^slicing.rules = #open
 
 
-* extension contains duplicate-order named duplicateOrder 0..1 
-* extension[duplicate-order] ^short = "Extensão para indicar a via da receita prescrita"
+* extension contains PrescriptionDuplicate named PrescriptionDuplicate 0..1 
+* extension[PrescriptionDuplicate] ^short = "Extensão para indicar a via da receita prescrita"
 * extension contains meaning-order named MeaningOrder 0..1
 * extension[meaning-order] ^short = "Extensão para indicar a via da receita prescrita"
 * extension[meaning-order] ^short = "Extensão sobre a Modalidade de Prescrição. Receita com papel (RCP) ou receita sem papel (RSP) [MODALIDADE DE PRESCRIÇÃO]" 
@@ -354,8 +354,8 @@ Receita\" e o \"Pin da Receita\"."
 * extension ^slicing.rules = #open
 
 
-* extension contains duplicate-order named duplicateOrder 0..1 
-* extension[duplicate-order] ^short = "Extensão para indicar a via da receita prescrita"
+* extension contains PrescriptionDuplicate named PrescriptionDuplicate 0..1 
+* extension[PrescriptionDuplicate] ^short = "Extensão para indicar a via da receita prescrita"
 * extension contains meaning-order named MeaningOrder 0..1
 * extension[meaning-order] ^short = "Extensão para indicar a via da receita prescrita"
 * extension[meaning-order] ^short = "Extensão sobre a Modalidade de Prescrição. Receita com papel (RCP) ou receita sem papel (RSP) [MODALIDADE DE PRESCRIÇÃO]" 

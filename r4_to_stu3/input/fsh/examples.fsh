@@ -85,7 +85,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - RequestGroup"
 * groupIdentifier.value = "6789342"
 * status = #active
 * intent = #order
-* extension[duplicateOrder].valuePositiveInt = 1
+* extension[PrescriptionDuplicate].valuePositiveInt = 1
 * extension[MeaningOrder].valueCodeableConcept.coding = http://spms.min-saude.pt/bdnp/codesystem/med-request-modality#RSP "Receita sem Papel"
 //* action.label = 1
 * action.timingPeriod.end = "2019-01-27"

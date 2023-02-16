@@ -12,6 +12,16 @@ def transform_bundle(data):
     return json.loads(newdata)
 
 
+def transfrom_extension(data):
+
+    data["context"] = ["DataElement"]
+    data["contextType"] = "resource"
+    # json_string = json.dumps(data)
+
+    # newdata = json_string.replace("Extension.url", "Extension.url")  # print(newdata)
+    return data
+
+
 def transform_med_req(data):
     data["differential"]["element"].append(
         {
@@ -30,9 +40,14 @@ def transform_med_req(data):
     )
     json_string = json.dumps(data)
 
-    newdata = json_string.replace(
-        "MedicationRequest.encounter", "MedicationRequest.context"
-    ).replace("MedicationRequest.requester", "MedicationRequest.requester.agent").replace("dosageInstruction.doseAndRate.doseQuantity","dosageInstruction.doseQuantity")
+    newdata = (
+        json_string.replace("MedicationRequest.encounter", "MedicationRequest.context")
+        .replace("MedicationRequest.requester", "MedicationRequest.requester.agent")
+        .replace(
+            "dosageInstruction.doseAndRate.doseQuantity",
+            "dosageInstruction.doseQuantity",
+        )
+    )
     return json.loads(newdata)
 
 
@@ -98,7 +113,9 @@ for file in listdir(INPUT_FOLDER):
         ndata = transform_to_stu3(data, type_)
 
         if type_ == "Extension":
-            pass
+            ndata = transfrom_extension(data)
+            with open(EXTENSION_FOLDER + file, "w") as file:
+                json.dump(ndata, file)
         else:
             with open(OUTPUT_FOLDER + file, "w") as file:
                 json.dump(ndata, file)
