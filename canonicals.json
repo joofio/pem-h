@@ -1,5 +1,124 @@
 [
   {
+    "id" : "ptaddressType",
+    "type" : "StructureDefinition",
+    "url" : "address-type",
+    "version" : "0.1.0-test",
+    "name" : "ptaddressType"
+  },
+  {
+    "id" : "ptbuildingType",
+    "type" : "StructureDefinition",
+    "url" : "building-type",
+    "version" : "0.1.0-test",
+    "name" : "ptbuildingType"
+  },
+  {
+    "id" : "CardCountry",
+    "type" : "StructureDefinition",
+    "url" : "card-country",
+    "version" : "0.1.0-test",
+    "name" : "CardCountry"
+  },
+  {
+    "id" : "CardInfoType",
+    "type" : "StructureDefinition",
+    "url" : "card-type",
+    "version" : "0.1.0-test",
+    "name" : "CardInfoType"
+  },
+  {
+    "id" : "ptcity",
+    "type" : "StructureDefinition",
+    "url" : "city",
+    "version" : "0.1.0-test",
+    "name" : "ptcity"
+  },
+  {
+    "id" : "ptOccupationCode",
+    "type" : "StructureDefinition",
+    "url" : "code",
+    "version" : "0.1.0-test",
+    "name" : "ptOccupationCode"
+  },
+  {
+    "id" : "foreignCountry",
+    "type" : "StructureDefinition",
+    "url" : "country",
+    "version" : "0.1.0-test",
+    "name" : "foreignCountry"
+  },
+  {
+    "id" : "ptdoorNumber",
+    "type" : "StructureDefinition",
+    "url" : "door-number",
+    "version" : "0.1.0-test",
+    "name" : "ptdoorNumber"
+  },
+  {
+    "id" : "ptdoorSide",
+    "type" : "StructureDefinition",
+    "url" : "door-side",
+    "version" : "0.1.0-test",
+    "name" : "ptdoorSide"
+  },
+  {
+    "id" : "ptOccupationEducation",
+    "type" : "StructureDefinition",
+    "url" : "education",
+    "version" : "0.1.0-test",
+    "name" : "ptOccupationEducation"
+  },
+  {
+    "id" : "ptFilliationFather",
+    "type" : "StructureDefinition",
+    "url" : "father",
+    "version" : "0.1.0-test",
+    "name" : "ptFilliationFather"
+  },
+  {
+    "id" : "ptfloor",
+    "type" : "StructureDefinition",
+    "url" : "floor",
+    "version" : "0.1.0-test",
+    "name" : "ptfloor"
+  },
+  {
+    "id" : "foreignAddress",
+    "type" : "StructureDefinition",
+    "url" : "foreign-address",
+    "version" : "0.1.0-test",
+    "name" : "foreignAddress"
+  },
+  {
+    "id" : "foreignCity",
+    "type" : "StructureDefinition",
+    "url" : "foreign-city",
+    "version" : "0.1.0-test",
+    "name" : "foreignCity"
+  },
+  {
+    "id" : "foreignDistrict",
+    "type" : "StructureDefinition",
+    "url" : "foreign-district",
+    "version" : "0.1.0-test",
+    "name" : "foreignDistrict"
+  },
+  {
+    "id" : "foreignPostalCode",
+    "type" : "StructureDefinition",
+    "url" : "foreign-postal-code",
+    "version" : "0.1.0-test",
+    "name" : "foreignPostalCode"
+  },
+  {
+    "id" : "foreignRegion",
+    "type" : "StructureDefinition",
+    "url" : "foreign-region",
+    "version" : "0.1.0-test",
+    "name" : "foreignRegion"
+  },
+  {
     "id" : "PEMHbundleRquest",
     "type" : "StructureDefinition",
     "url" : "http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest",
@@ -56,27 +175,6 @@
     "name" : "PEMHMedication"
   },
   {
-    "id" : "med-prescription-duration",
-    "type" : "StructureDefinition",
-    "url" : "http://example.com/fhir/example/StructureDefinition/med-prescription-duration",
-    "version" : "0.1.0-test",
-    "name" : "med-prescription-duration"
-  },
-  {
-    "id" : "med-prescription-frequency-time",
-    "type" : "StructureDefinition",
-    "url" : "http://example.com/fhir/example/StructureDefinition/med-prescription-frequency-time",
-    "version" : "0.1.0-test",
-    "name" : "med-prescription-frequency-time"
-  },
-  {
-    "id" : "med-prescription-legal-diploma",
-    "type" : "StructureDefinition",
-    "url" : "http://example.com/fhir/example/StructureDefinition/med-prescription-legal-diploma",
-    "version" : "0.1.0-test",
-    "name" : "med-prescription-legal-diploma"
-  },
-  {
     "id" : "med-request-profile",
     "type" : "StructureDefinition",
     "url" : "http://example.com/fhir/example/StructureDefinition/med-request-profile",
@@ -105,6 +203,20 @@
     "name" : "PEMHPatient"
   },
   {
+    "id" : "CardInfo",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/coverage-card-info",
+    "version" : "0.1.0-test",
+    "name" : "CardInfo"
+  },
+  {
+    "id" : "episodeServiceSpecialty",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/episode-service-specialty",
+    "version" : "0.1.0-test",
+    "name" : "episodeServiceSpecialty"
+  },
+  {
     "id" : "med-cost",
     "type" : "StructureDefinition",
     "url" : "http://spms.min-saude.pt/iop/extensions/med-cost",
@@ -112,11 +224,25 @@
     "name" : "med-cost"
   },
   {
+    "id" : "ptPatientOtherInfo",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-patient-info",
+    "version" : "0.1.0-test",
+    "name" : "ptPatientOtherInfo"
+  },
+  {
     "id" : "med-prescription-cancel-reason",
     "type" : "StructureDefinition",
     "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason",
     "version" : "0.1.0-test",
     "name" : "med-prescription-cancel-reason"
+  },
+  {
+    "id" : "med-prescription-dosage-instruction",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-dosage-instruction"
   },
   {
     "id" : "test",
@@ -175,11 +301,53 @@
     "name" : "presc-type"
   },
   {
+    "id" : "nextAppointmentDate",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date",
+    "version" : "0.1.0-test",
+    "name" : "nextAppointmentDate"
+  },
+  {
     "id" : "prescription-duplicate",
     "type" : "StructureDefinition",
     "url" : "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
     "version" : "0.1.0-test",
     "name" : "PrescriptionDuplicate"
+  },
+  {
+    "id" : "ptAddress",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/address",
+    "version" : "0.1.0-test",
+    "name" : "ptAddress"
+  },
+  {
+    "id" : "contactObservations",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/contact-observations",
+    "version" : "0.1.0-test",
+    "name" : "contactObservations"
+  },
+  {
+    "id" : "ptOccupation",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/occupation",
+    "version" : "0.1.0-test",
+    "name" : "ptOccupation"
+  },
+  {
+    "id" : "ptFilliation",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/patient-parents",
+    "version" : "0.1.0-test",
+    "name" : "ptFilliation"
+  },
+  {
+    "id" : "contactPreference",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/preferred-contact",
+    "version" : "0.1.0-test",
+    "name" : "contactPreference"
   },
   {
     "id" : "meaning-order",
@@ -189,6 +357,13 @@
     "name" : "MeaningOrder"
   },
   {
+    "id" : "ptlocality",
+    "type" : "StructureDefinition",
+    "url" : "locality",
+    "version" : "0.1.0-test",
+    "name" : "ptlocality"
+  },
+  {
     "id" : "med-currency",
     "type" : "StructureDefinition",
     "url" : "med-currency",
@@ -196,11 +371,95 @@
     "name" : "med-currency"
   },
   {
+    "id" : "med-prescription-duration",
+    "type" : "StructureDefinition",
+    "url" : "med-prescription-duration",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-duration"
+  },
+  {
+    "id" : "med-prescription-framing-type",
+    "type" : "StructureDefinition",
+    "url" : "med-prescription-framing-type",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-framing-type"
+  },
+  {
+    "id" : "med-prescription-frequency-time",
+    "type" : "StructureDefinition",
+    "url" : "med-prescription-frequency-time",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-frequency-time"
+  },
+  {
+    "id" : "med-prescription-legal-diploma",
+    "type" : "StructureDefinition",
+    "url" : "med-prescription-legal-diploma",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-legal-diploma"
+  },
+  {
     "id" : "med-value",
     "type" : "StructureDefinition",
     "url" : "med-value",
     "version" : "0.1.0-test",
     "name" : "med-value"
+  },
+  {
+    "id" : "ptFilliationMother",
+    "type" : "StructureDefinition",
+    "url" : "mother",
+    "version" : "0.1.0-test",
+    "name" : "ptFilliationMother"
+  },
+  {
+    "id" : "ptparish",
+    "type" : "StructureDefinition",
+    "url" : "parish",
+    "version" : "0.1.0-test",
+    "name" : "ptparish"
+  },
+  {
+    "id" : "ptpostalCode",
+    "type" : "StructureDefinition",
+    "url" : "parish",
+    "version" : "0.1.0-test",
+    "name" : "ptpostalCode"
+  },
+  {
+    "id" : "ptplace",
+    "type" : "StructureDefinition",
+    "url" : "place",
+    "version" : "0.1.0-test",
+    "name" : "ptplace"
+  },
+  {
+    "id" : "ptstate",
+    "type" : "StructureDefinition",
+    "url" : "state",
+    "version" : "0.1.0-test",
+    "name" : "ptstate"
+  },
+  {
+    "id" : "ptOccupationStatus",
+    "type" : "StructureDefinition",
+    "url" : "status",
+    "version" : "0.1.0-test",
+    "name" : "ptOccupationStatus"
+  },
+  {
+    "id" : "ptstreet",
+    "type" : "StructureDefinition",
+    "url" : "street",
+    "version" : "0.1.0-test",
+    "name" : "ptstreet"
+  },
+  {
+    "id" : "ptstreetType",
+    "type" : "StructureDefinition",
+    "url" : "street-type",
+    "version" : "0.1.0-test",
+    "name" : "ptstreetType"
   },
   {
     "id" : "xxxexample.fhir.uv.myig",

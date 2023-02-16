@@ -10,6 +10,13 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:Encounter</sch:title>
+    <sch:rule context="f:Encounter">
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/episode-service-specialty']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/episode-service-specialty': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:Encounter/f:identifier</sch:title>
     <sch:rule context="f:Encounter/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>

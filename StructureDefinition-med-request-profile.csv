@@ -35,9 +35,45 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "MedicationRequest.contained","MedicationRequest.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"MedicationRequest.extension","MedicationRequest.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","N/A"
+"MedicationRequest.extension","MedicationRequest.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"",""
+"MedicationRequest.extension:med-prescription-dosage-instruction","MedicationRequest.extension","med-prescription-dosage-instruction","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction]]} {[]}
+","NÚMERO DE VIAS","Via da receita no caso de ser renovável (1, 2, 3, ...).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:presc-print","MedicationRequest.extension","presc-print","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-print]]} {[]}
+","IMPRESSÃO","Indicar se a receita foi impressa","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:presc-administration","MedicationRequest.extension","presc-administration","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration]]} {[]}
+","ADMINISTRAÇÃO","Indicar se a prescrição é para administração interna ou SFH; true: administração interna; false: SFH","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:presc-transcription","MedicationRequest.extension","presc-transcription","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-transcript]]} {[]}
+","RECEITA MANUSCRITA","Indicar se trata-se de uma transcrição de uma receita manuscrita.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:presc-type","MedicationRequest.extension","presc-type","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-request-type]]} {[]}
+","TIPO DE RECEITA","Tipo de prescrição: e.g.: FH, RE, BIO ou OUT.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:presc-local","MedicationRequest.extension","presc-local","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-local]]} {[]}
+","LOCAL","Referência para um resource que contém informações do local de prescrição","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:med-prescription-framing-dispense","MedicationRequest.extension","med-prescription-framing-dispense","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense]]} {[]}
+","Tipo enquadramento","Extensões referentes ao enquadramento da dispensa","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:med-prescription-cancel-reason","MedicationRequest.extension","med-prescription-cancel-reason","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason]]} {[]}
+","MOTIVO ANULAÇÃO","Motivo de anulação da receita.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationRequest.extension:med-cost","MedicationRequest.extension","med-cost","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-cost]]} {[]}
+","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","","N/A"
