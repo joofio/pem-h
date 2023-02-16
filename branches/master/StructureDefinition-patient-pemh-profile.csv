@@ -23,7 +23,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"",""
 "Patient.extension:ptOccupation","Patient.extension","ptOccupation","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/occupation]]} {[]}
-","Contacto preferencial","Extensão para a profissão do utente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Profissão do utente","Extensão para a profissão do utente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:ptFilliation","Patient.extension","ptFilliation","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/patient-parents]]} {[]}
@@ -423,7 +423,7 @@ Podem ser enviadas quantas moradas forem necessárias.","unique id for the eleme
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
 "Patient.address.extension:ptAddress","Patient.address.extension","ptAddress","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/address]]} {[]}
-","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+","Endereço","Extensão referente ao endereço","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
 "Patient.address.use","Patient.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old - purpose of this address","The purpose of this address.","This is labeled as ""Is Modifier"" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address","http://hl7.org/fhir/ValueSet/address-use","",,,,"Address.use",0,1,"","","unique(./use)","XAD.7"
 "Patient.address.type","Patient.address.type","","","",0,1,"","","Y","code {[]} {[]}
@@ -491,7 +491,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
 "Patient.contact.address.extension:ptAddress","Patient.contact.address.extension","ptAddress","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/address]]} {[]}
-","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+","Endereço","Extensão referente ao endereço","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
 "Patient.contact.address.use","Patient.contact.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old - purpose of this address","The purpose of this address.","This is labeled as ""Is Modifier"" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address","http://hl7.org/fhir/ValueSet/address-use","",,,,"Address.use",0,1,"","","unique(./use)","XAD.7"
 "Patient.contact.address.type","Patient.contact.address.type","","","",0,1,"","","Y","code {[]} {[]}

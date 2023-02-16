@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PEMHMessageHeaderResposta"]; # 
   fhir:StructureDefinition.title [ fhir:value "Perfil Bundle de mensagem de resposta"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-16T20:28:10+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-16T21:17:23+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "HL7 TC"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;

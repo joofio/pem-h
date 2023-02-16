@@ -5,128 +5,11 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "address-type",
-      "title": "VALOR",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "building-type",
-      "title": "VALOR",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "card-country",
-      "title": "País emissor do documento de direito",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "card-type",
-      "title": "Tipo de documento de direito. Exemplo: CESD",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "city",
-      "title": "VALOR",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "code",
-      "title": "profissão",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "country",
-      "title": "VALOR",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "door-number",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "door-side",
-      "title": "VALOR",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "education",
-      "title": "profissão",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "father",
-      "title": "Pai",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "floor",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "foreign-address",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "foreign-city",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "foreign-district",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "foreign-postal-code",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "foreign-region",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
       "url": "http://spms.min-saude.pt/iop/extensions/coverage-card-info",
       "title": "Informações sobre o cartão do beneficiário relativo a entidade",
       "types": [
+        "CodeableConcept",
+        "CodeableConcept",
         "base64Binary",
         "boolean",
         "code",
@@ -178,6 +61,8 @@
       "url": "http://spms.min-saude.pt/iop/extensions/med-cost",
       "title": "Custo",
       "types": [
+        "CodeableConcept",
+        "decimal",
         "base64Binary",
         "boolean",
         "code",
@@ -236,6 +121,8 @@
       "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction",
       "title": "FREQ+HORÁRIO",
       "types": [
+        "CodeableConcept",
+        "Quantity",
         "base64Binary",
         "boolean",
         "code",
@@ -277,13 +164,6 @@
       ]
     },
     {
-      "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction",
-      "title": "NÚMERO DE VIAS",
-      "types": [
-        "positiveInt"
-      ]
-    },
-    {
       "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-line",
       "title": "NÚMERO DE VIAS",
       "types": [
@@ -294,6 +174,8 @@
       "url": "http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense",
       "title": "Tipo enquadramento",
       "types": [
+        "CodeableConcept",
+        "CodeableConcept",
         "base64Binary",
         "boolean",
         "code",
@@ -385,8 +267,27 @@
     },
     {
       "url": "http://spms.min-saude.pt/rnu/extensions/address",
-      "title": "Custo",
+      "title": "Endereço",
       "types": [
+        "Coding",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "CodeableConcept",
         "base64Binary",
         "boolean",
         "code",
@@ -436,8 +337,11 @@
     },
     {
       "url": "http://spms.min-saude.pt/rnu/extensions/occupation",
-      "title": "Contacto preferencial",
+      "title": "Profissão do utente",
       "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
         "base64Binary",
         "boolean",
         "code",
@@ -482,6 +386,8 @@
       "url": "http://spms.min-saude.pt/rnu/extensions/patient-parents",
       "title": "Filiação do utente",
       "types": [
+        "Reference",
+        "Reference",
         "base64Binary",
         "boolean",
         "code",
@@ -532,111 +438,6 @@
     {
       "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
       "title": "MODALIDADE DE PRESCRIÇÃO",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "locality",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "med-currency",
-      "title": "MOEDA",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "med-prescription-duration",
-      "title": "DURACAO - VALOR E UNIDADE",
-      "types": [
-        "Quantity"
-      ]
-    },
-    {
-      "url": "med-prescription-framing-type",
-      "title": "CÓDIGO E DESCRIÇÃO DO DIPLOMA",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "med-prescription-frequency-time",
-      "title": "FREQUENCIA E HORARIO",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "med-prescription-legal-diploma",
-      "title": "CÓDIGO E DESCRIÇÃO DO DIPLOMA",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "med-value",
-      "title": "VALOR",
-      "types": [
-        "decimal"
-      ]
-    },
-    {
-      "url": "mother",
-      "title": "Mãe",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "parish",
-      "title": "VALOR",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "parish",
-      "title": "VALOR",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "place",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "state",
-      "title": "VALOR",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "status",
-      "title": "profissão",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "street",
-      "title": "VALOR",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "street-type",
-      "title": "VALOR",
       "types": [
         "CodeableConcept"
       ]
@@ -711,54 +512,6 @@
     ]
   },
   "usage": {
-    "address-type": [
-      "Extension"
-    ],
-    "building-type": [
-      "Extension"
-    ],
-    "card-country": [
-      "Extension"
-    ],
-    "card-type": [
-      "Extension"
-    ],
-    "code": [
-      "Extension"
-    ],
-    "country": [
-      "Extension"
-    ],
-    "door-number": [
-      "Extension"
-    ],
-    "door-side": [
-      "Extension"
-    ],
-    "education": [
-      "Extension"
-    ],
-    "father": [
-      "Extension"
-    ],
-    "floor": [
-      "Extension"
-    ],
-    "foreign-address": [
-      "Extension"
-    ],
-    "foreign-city": [
-      "Extension"
-    ],
-    "foreign-district": [
-      "Extension"
-    ],
-    "foreign-postal-code": [
-      "Extension"
-    ],
-    "foreign-region": [
-      "Extension"
-    ],
     "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -853,47 +606,7 @@
     ],
     "http://spms.min-saude/pe/top/extensions/med-request-modality": [
       "Bundle.entry.resource",
-      "Extension",
       "RequestGroup"
-    ],
-    "locality": [
-      "Extension"
-    ],
-    "med-currency": [
-      "Extension"
-    ],
-    "med-prescription-duration": [
-      "Extension"
-    ],
-    "med-prescription-frequency-time": [
-      "Extension"
-    ],
-    "med-prescription-legal-diploma": [
-      "Extension"
-    ],
-    "med-value": [
-      "Extension"
-    ],
-    "mother": [
-      "Extension"
-    ],
-    "parish": [
-      "Extension"
-    ],
-    "place": [
-      "Extension"
-    ],
-    "state": [
-      "Extension"
-    ],
-    "status": [
-      "Extension"
-    ],
-    "street": [
-      "Extension"
-    ],
-    "street-type": [
-      "Extension"
     ]
   }
 }
