@@ -13,6 +13,15 @@
     <sch:title>f:MedicationRequest</sch:title>
     <sch:rule context="f:MedicationRequest">
       <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-print']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-prescription-print': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-transcript']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-prescription-transcript': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-request-type']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-request-type': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-local']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-prescription-local': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-cost']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-cost': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:authoredOn) &gt;= 1">authoredOn: minimum cardinality of 'authoredOn' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

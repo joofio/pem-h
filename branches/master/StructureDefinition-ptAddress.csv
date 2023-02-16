@@ -1,0 +1,49 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Extension.extension","Extension.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"Extension.extension:ptaddressType","Extension.extension","ptaddressType","","",0,1,"","","","Extension {[CanonicalType[address-type]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptstreetType","Extension.extension","ptstreetType","","",0,1,"","","","Extension {[CanonicalType[street-type]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptstreet","Extension.extension","ptstreet","","",0,1,"","","","Extension {[CanonicalType[street]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptbuildingType","Extension.extension","ptbuildingType","","",0,1,"","","","Extension {[CanonicalType[building-type]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptdoorNumber","Extension.extension","ptdoorNumber","","",0,1,"","","","Extension {[CanonicalType[door-number]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptdoorSide","Extension.extension","ptdoorSide","","",0,1,"","","","Extension {[CanonicalType[door-side]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptfloor","Extension.extension","ptfloor","","",0,1,"","","","Extension {[CanonicalType[floor]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptplace","Extension.extension","ptplace","","",0,1,"","","","Extension {[CanonicalType[place]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptlocality","Extension.extension","ptlocality","","",0,1,"","","","Extension {[CanonicalType[locality]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptstate","Extension.extension","ptstate","","",0,1,"","","","Extension {[CanonicalType[state]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptparish","Extension.extension","ptparish","","",0,1,"","","","Extension {[CanonicalType[parish]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:foreignPostalCode","Extension.extension","foreignPostalCode","","",0,1,"","","","Extension {[CanonicalType[foreign-postal-code]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:ptpostalCode","Extension.extension","ptpostalCode","","",0,1,"","","","Extension {[CanonicalType[parish]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:foreignDistrict","Extension.extension","foreignDistrict","","",0,1,"","","","Extension {[CanonicalType[foreign-district]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:foreignCity","Extension.extension","foreignCity","","",0,1,"","","","Extension {[CanonicalType[foreign-city]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:foreignAddress","Extension.extension","foreignAddress","","",0,1,"","","","Extension {[CanonicalType[foreign-address]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:foreignRegion","Extension.extension","foreignRegion","","",0,1,"","","","Extension {[CanonicalType[foreign-region]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.extension:foreignCountry","Extension.extension","foreignCountry","","",0,1,"","","","Extension {[CanonicalType[country]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/rnu/extensions/address""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"

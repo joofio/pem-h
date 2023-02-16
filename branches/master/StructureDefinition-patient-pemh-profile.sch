@@ -10,6 +10,14 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:Patient</sch:title>
+    <sch:rule context="f:Patient">
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/rnu/extensions/occupation']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/rnu/extensions/occupation': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/rnu/extensions/patient-parents']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/rnu/extensions/patient-parents': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/iop/extensions/med-patient-info']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/iop/extensions/med-patient-info': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:Patient/f:identifier</sch:title>
     <sch:rule context="f:Patient/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
@@ -149,6 +157,30 @@
     <sch:title>f:Patient/f:address</sch:title>
     <sch:rule context="f:Patient/f:address">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/rnu/extensions/address']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/rnu/extensions/address': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+      <sch:assert test="count(f:city) &lt;= 1">city: maximum cardinality of 'city' is 1</sch:assert>
+      <sch:assert test="count(f:district) &lt;= 1">district: maximum cardinality of 'district' is 1</sch:assert>
+      <sch:assert test="count(f:state) &lt;= 1">state: maximum cardinality of 'state' is 1</sch:assert>
+      <sch:assert test="count(f:postalCode) &lt;= 1">postalCode: maximum cardinality of 'postalCode' is 1</sch:assert>
+      <sch:assert test="count(f:country) &lt;= 1">country: maximum cardinality of 'country' is 1</sch:assert>
+      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Patient/f:contact</sch:title>
+    <sch:rule context="f:Patient/f:contact">
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/rnu/extensions/contact-observations']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/rnu/extensions/contact-observations': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/rnu/extensions/preferred-contact']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/rnu/extensions/preferred-contact': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Patient/f:contact/f:address</sch:title>
+    <sch:rule context="f:Patient/f:contact/f:address">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude.pt/rnu/extensions/address']) &lt;= 1">extension with URL = 'http://spms.min-saude.pt/rnu/extensions/address': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>

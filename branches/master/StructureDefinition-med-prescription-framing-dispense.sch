@@ -9,4 +9,12 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
+  <sch:pattern>
+    <sch:title>f:Extension</sch:title>
+    <sch:rule context="f:Extension">
+      <sch:assert test="count(f:extension[@url = 'med-prescription-legal-diploma']) &lt;= 1">extension with URL = 'med-prescription-legal-diploma': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://spms.min-saude/pe/top/extensions/med-request-modality']) &lt;= 1">extension with URL = 'http://spms.min-saude/pe/top/extensions/med-request-modality': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

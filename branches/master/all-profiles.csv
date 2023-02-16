@@ -1,4 +1,52 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ptplace","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Lugar","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptplace","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptplace","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptplace","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""place""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptplace","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"nextAppointmentDate","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","DATA PROXIMA CONSULTA","Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"nextAppointmentDate","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"nextAppointmentDate","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"nextAppointmentDate","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"nextAppointmentDate","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","dateTime {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptstate","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Distrito","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptstate","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptstate","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptstate","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""state""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptstate","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptFilliationFather","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Pai","Sub-extensão para indicar o pai","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptFilliationFather","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptFilliationFather","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptFilliationFather","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""father""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptFilliationFather","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-prescription-cancel-reason","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","MOTIVO ANULAÇÃO","Motivo de anulação da receita.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -11,18 +59,38 @@
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "med-prescription-cancel-reason","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"med-prescription-dosage-instruction","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","FREQ+HORÁRIO","Extensões referentes a frequência e horário de toma do medicamento e a duração de tratamento da posologia em valor e unidade.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"med-prescription-dosage-instruction","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"med-prescription-dosage-instruction","Extension.extension","Extension.extension","","","",2,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"med-prescription-dosage-instruction","Extension.extension:med-prescription-frequency-time","Extension.extension","med-prescription-frequency-time","","",1,1,"","","","Extension {[CanonicalType[med-prescription-frequency-time]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"med-prescription-dosage-instruction","Extension.extension:med-prescription-duration","Extension.extension","med-prescription-duration","","",1,1,"","","","Extension {[CanonicalType[med-prescription-duration]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"med-prescription-dosage-instruction","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"med-prescription-dosage-instruction","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-prescription-framing-dispense","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Tipo enquadramento","Sub-extensão relativa ao Tipo de Enquadramento.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Tipo enquadramento","Extensões referentes ao enquadramento da dispensa","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
 "med-prescription-framing-dispense","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"med-prescription-framing-dispense","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+"med-prescription-framing-dispense","Extension.extension","Extension.extension","","","",0,*,"Y","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"med-prescription-framing-dispense","Extension.extension:med-prescription-legal-diploma","Extension.extension","med-prescription-legal-diploma","","",0,1,"","","","Extension {[CanonicalType[med-prescription-legal-diploma]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"med-prescription-framing-dispense","Extension.extension:MeaningOrder","Extension.extension","MeaningOrder","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude/pe/top/extensions/med-request-modality]]} {[]}
+","MODALIDADE DE PRESCRIÇÃO","Receita com papel (RCP) ou receita sem papel (RSP).","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
 "med-prescription-framing-dispense","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"med-prescription-framing-dispense","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"med-prescription-framing-dispense","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "presc-transcription","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","RECEITA MANUSCRITA","Indicar se trata-se de uma transcrição de uma receita manuscrita.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -35,6 +103,42 @@
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-prescription-transcript""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "presc-transcription","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptstreetType","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Tipo de via","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptstreetType","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptstreetType","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptstreetType","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""street-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptstreetType","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"contactObservations","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Observações relacionadas com o bloco dos contactos do Utente","Extensão para Observações relacionadas com o bloco dos contactos do Utente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"contactObservations","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"contactObservations","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"contactObservations","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/rnu/extensions/contact-observations""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"contactObservations","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"med-prescription-framing-type","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","CÓDIGO E DESCRIÇÃO DO DIPLOMA","Sub-extensão relativa ao Diploma Legal que estabelece o regime especial ou excecional de comparticipação.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"med-prescription-framing-type","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"med-prescription-framing-type","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"med-prescription-framing-type","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""med-prescription-framing-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"med-prescription-framing-type","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
 "test","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","NÚMERO DE VIAS","Via da receita no caso de ser renovável (1, 2, 3, ...).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -46,6 +150,18 @@
 "test","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "test","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","positiveInt {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"foreignDistrict","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para a Localidade no estrangeiro","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"foreignDistrict","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"foreignDistrict","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"foreignDistrict","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""foreign-district""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"foreignDistrict","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "presc-local","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","LOCAL","Referência para um resource que contém informações do local de prescrição","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -59,6 +175,66 @@
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-prescription-local""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "presc-local","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptaddressType","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o tipo de morada","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptaddressType","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptaddressType","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptaddressType","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""address-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptaddressType","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"foreignAddress","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o endereço da morada no estrangeiro","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"foreignAddress","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"foreignAddress","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"foreignAddress","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""foreign-address""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"foreignAddress","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"foreignCity","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para a Cidade no estrangeiro","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"foreignCity","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"foreignCity","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"foreignCity","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""foreign-city""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"foreignCity","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptcity","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Concelho","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptcity","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptcity","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptcity","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""city""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptcity","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptlocality","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para a Localidade","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptlocality","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptlocality","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptlocality","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""locality""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptlocality","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-prescription-frequency-time","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","FREQUENCIA E HORARIO","Indica a frequência e horário de toma do medicamento definidos pelo CTC.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -68,9 +244,53 @@
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
 "med-prescription-frequency-time","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://example.com/fhir/example/StructureDefinition/med-prescription-frequency-time""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""med-prescription-frequency-time""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "med-prescription-frequency-time","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"ptFilliation","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Filiação do utente","Extensão Filiação do utente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptFilliation","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptFilliation","Extension.extension","Extension.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptFilliation","Extension.extension:ptFilliationMother","Extension.extension","ptFilliationMother","","",0,1,"","","","Extension {[CanonicalType[mother]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptFilliation","Extension.extension:ptFilliationFather","Extension.extension","ptFilliationFather","","",0,1,"","","","Extension {[CanonicalType[father]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptFilliation","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/rnu/extensions/patient-parents""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptFilliation","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptbuildingType","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Tipo de Edificio","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptbuildingType","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptbuildingType","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptbuildingType","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""building-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptbuildingType","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"CardInfo","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Informações sobre o cartão do beneficiário relativo a entidade","Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"CardInfo","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"CardInfo","Extension.extension","Extension.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"CardInfo","Extension.extension:CardInfoType","Extension.extension","CardInfoType","","",0,1,"","","","Extension {[CanonicalType[card-type]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"CardInfo","Extension.extension:CardCountry","Extension.extension","CardCountry","","",0,1,"","","","Extension {[CanonicalType[card-country]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"CardInfo","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/coverage-card-info""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"CardInfo","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-value","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","VALOR","Sub-extensão referente ao valor da terapêutica","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -82,6 +302,18 @@
 "med-value","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""med-value""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "med-value","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","decimal {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"foreignPostalCode","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para a Código Postal no estrangeiro","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"foreignPostalCode","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"foreignPostalCode","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"foreignPostalCode","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""foreign-postal-code""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"foreignPostalCode","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "meaning-order","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","MODALIDADE DE PRESCRIÇÃO","Receita com papel (RCP) ou receita sem papel (RSP).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -95,6 +327,18 @@
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude/pe/top/extensions/med-request-modality""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "meaning-order","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"CardInfoType","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Tipo de documento de direito. Exemplo: CESD","Sub-extensão para indicar o tipo de documento de direito","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"CardInfoType","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"CardInfoType","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"CardInfoType","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""card-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"CardInfoType","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
 "presc-type","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","TIPO DE RECEITA","Tipo de prescrição: e.g.: FH, RE, BIO ou OUT.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -107,6 +351,78 @@
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-request-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "presc-type","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"ptOccupationCode","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","profissão","Sub-extensão que corresponde à Profissão","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptOccupationCode","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptOccupationCode","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptOccupationCode","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""code""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptOccupationCode","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptPatientOtherInfo","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","OUTRA INDICAÇÃO","Extensão referente a informações sobre o utente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptPatientOtherInfo","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptPatientOtherInfo","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptPatientOtherInfo","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-patient-info""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptPatientOtherInfo","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptAddress","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptAddress","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptAddress","Extension.extension","Extension.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptaddressType","Extension.extension","ptaddressType","","",0,1,"","","","Extension {[CanonicalType[address-type]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptstreetType","Extension.extension","ptstreetType","","",0,1,"","","","Extension {[CanonicalType[street-type]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptstreet","Extension.extension","ptstreet","","",0,1,"","","","Extension {[CanonicalType[street]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptbuildingType","Extension.extension","ptbuildingType","","",0,1,"","","","Extension {[CanonicalType[building-type]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptdoorNumber","Extension.extension","ptdoorNumber","","",0,1,"","","","Extension {[CanonicalType[door-number]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptdoorSide","Extension.extension","ptdoorSide","","",0,1,"","","","Extension {[CanonicalType[door-side]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptfloor","Extension.extension","ptfloor","","",0,1,"","","","Extension {[CanonicalType[floor]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptplace","Extension.extension","ptplace","","",0,1,"","","","Extension {[CanonicalType[place]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptlocality","Extension.extension","ptlocality","","",0,1,"","","","Extension {[CanonicalType[locality]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptstate","Extension.extension","ptstate","","",0,1,"","","","Extension {[CanonicalType[state]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptparish","Extension.extension","ptparish","","",0,1,"","","","Extension {[CanonicalType[parish]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:foreignPostalCode","Extension.extension","foreignPostalCode","","",0,1,"","","","Extension {[CanonicalType[foreign-postal-code]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:ptpostalCode","Extension.extension","ptpostalCode","","",0,1,"","","","Extension {[CanonicalType[parish]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:foreignDistrict","Extension.extension","foreignDistrict","","",0,1,"","","","Extension {[CanonicalType[foreign-district]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:foreignCity","Extension.extension","foreignCity","","",0,1,"","","","Extension {[CanonicalType[foreign-city]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:foreignAddress","Extension.extension","foreignAddress","","",0,1,"","","","Extension {[CanonicalType[foreign-address]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:foreignRegion","Extension.extension","foreignRegion","","",0,1,"","","","Extension {[CanonicalType[foreign-region]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.extension:foreignCountry","Extension.extension","foreignCountry","","",0,1,"","","","Extension {[CanonicalType[country]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptAddress","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/rnu/extensions/address""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptAddress","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "presc-administration","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","ADMINISTRAÇÃO","Indicar se a prescrição é para administração interna ou SFH; true: administração interna; false: SFH","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -131,6 +447,24 @@
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-prescription-print""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "presc-print","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptOccupation","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Contacto preferencial","Extensão para a profissão do utente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptOccupation","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptOccupation","Extension.extension","Extension.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptOccupation","Extension.extension:ptOccupationCode","Extension.extension","ptOccupationCode","","",0,1,"","","","Extension {[CanonicalType[code]]} {[]}
+","Primitive Type code","A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptOccupation","Extension.extension:ptOccupationStatus","Extension.extension","ptOccupationStatus","","",0,1,"","","","Extension {[CanonicalType[status]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptOccupation","Extension.extension:ptOccupationEducation","Extension.extension","ptOccupationEducation","","",0,1,"","","","Extension {[CanonicalType[education]]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"ptOccupation","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/rnu/extensions/occupation""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptOccupation","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-prescription-duration","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","DURACAO - VALOR E UNIDADE","Indica a duração de tratamento da posologia - Valor e Unidade","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -140,9 +474,45 @@
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
 "med-prescription-duration","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://example.com/fhir/example/StructureDefinition/med-prescription-duration""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""med-prescription-duration""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "med-prescription-duration","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"CardCountry","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","País emissor do documento de direito","SuSub-extensão para indicar o país emissor do documento de direito","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"CardCountry","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"CardCountry","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"CardCountry","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""card-country""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"CardCountry","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"ptdoorNumber","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Número da porta","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptdoorNumber","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptdoorNumber","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptdoorNumber","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""door-number""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptdoorNumber","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"foreignRegion","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para Região no estrangeiro","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"foreignRegion","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"foreignRegion","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"foreignRegion","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""foreign-region""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"foreignRegion","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-cost","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -159,6 +529,78 @@
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/med-cost""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "med-cost","Extension.value[x]","Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"contactPreference","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Contacto preferencial","Extensão para informar se o contacto atual é o preferencial","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"contactPreference","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"contactPreference","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"contactPreference","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/rnu/extensions/preferred-contact""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"contactPreference","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"foreignCountry","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o País Estrangeiro","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"foreignCountry","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"foreignCountry","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"foreignCountry","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""country""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"foreignCountry","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"ptstreet","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Nome da via","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptstreet","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptstreet","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptstreet","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""street""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptstreet","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptdoorSide","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Tipo de lado da porta","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptdoorSide","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptdoorSide","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptdoorSide","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""door-side""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptdoorSide","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptfloor","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para o Andar","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptfloor","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptfloor","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptfloor","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""floor""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptfloor","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptparish","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para a Freguesia","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptparish","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptparish","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptparish","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""parish""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptparish","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-currency","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","MOEDA","Sub-extensão referente a moeda","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -183,6 +625,18 @@ boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/prescription-duplicate""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "prescription-duplicate","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","positiveInt {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptFilliationMother","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Mãe","Sub-extensão para indicar a mãe","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptFilliationMother","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptFilliationMother","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptFilliationMother","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""mother""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptFilliationMother","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
 "med-prescription-legal-diploma","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","CÓDIGO E DESCRIÇÃO DO DIPLOMA","Sub-extensão relativa ao Diploma Legal que estabelece o regime especial ou excecional de comparticipação.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -192,8 +646,56 @@ boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
 "med-prescription-legal-diploma","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://example.com/fhir/example/StructureDefinition/med-prescription-legal-diploma""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""med-prescription-legal-diploma""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "med-prescription-legal-diploma","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
+"ptOccupationStatus","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","profissão","Sub-extensão que corresponde à Situação da Profissão","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptOccupationStatus","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptOccupationStatus","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptOccupationStatus","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""status""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptOccupationStatus","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptOccupationEducation","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","profissão","Sub-extensão para as Habilitações Literárias do utente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptOccupationEducation","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptOccupationEducation","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptOccupationEducation","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""education""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptOccupationEducation","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"ptpostalCode","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","VALOR","Sub-extensão para código postal","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"ptpostalCode","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ptpostalCode","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"ptpostalCode","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""parish""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"ptpostalCode","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+"episodeServiceSpecialty","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","CÓDIGO ESPECIALIDADE CONSULTA","Extensão para indicar o código e a descrição da especialidade médica da consulta ou da prestação","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"episodeServiceSpecialty","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"episodeServiceSpecialty","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"episodeServiceSpecialty","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://spms.min-saude.pt/iop/extensions/episode-service-specialty""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"episodeServiceSpecialty","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"",""
 "med-prescription-dosage-line","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","NÚMERO DE VIAS","Via da receita no caso de ser renovável (1, 2, 3, ...).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -868,9 +1370,21 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "patient-pemh-profile","Patient.contained","Patient.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
-"patient-pemh-profile","Patient.extension","Patient.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"",""
+"patient-pemh-profile","Patient.extension","Patient.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"",""
+"patient-pemh-profile","Patient.extension:ptOccupation","Patient.extension","ptOccupation","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/occupation]]} {[]}
+","Contacto preferencial","Extensão para a profissão do utente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"patient-pemh-profile","Patient.extension:ptFilliation","Patient.extension","ptFilliation","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/patient-parents]]} {[]}
+","Filiação do utente","Extensão Filiação do utente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"patient-pemh-profile","Patient.extension:ptPatientOtherInfo","Patient.extension","ptPatientOtherInfo","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-patient-info]]} {[]}
+","OUTRA INDICAÇÃO","Extensão referente a informações sobre o utente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "patient-pemh-profile","Patient.modifierExtension","Patient.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"",""
@@ -1256,10 +1770,11 @@ This element is labeled as a modifier because once a patient is marked as deceas
 Para informar a morada de cada tipo de address abaixo, além de preencher os elementos consistidos pelas extensions, deverão ser utilizados os elementos do datatype address (como country, district, etc) com os valores preenchidos nos elementos display das extensions correspondentes em seus valueCodeableConcept (e.g.; caso address[0]. extension[0].extension[0].valueCodeableConcept. coding[0].display seja igual a ""Portugal"", address[0]. country também deverá ser igual a ""Portugal"").
 Caso a morada seja preferencial (campo <Preferenci al>), deve ser usado o tipo de endereço ""MA"" (Main Address)
 Podem ser enviadas quantas moradas forem necessárias.","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"patient-pemh-profile","Patient.address.extension","Patient.address.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+"patient-pemh-profile","Patient.address.extension","Patient.address.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"patient-pemh-profile","Patient.address.extension:ptAddress","Patient.address.extension","ptAddress","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/address]]} {[]}
+","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
 "patient-pemh-profile","Patient.address.use","Patient.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old - purpose of this address","The purpose of this address.","This is labeled as ""Is Modifier"" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address","http://hl7.org/fhir/ValueSet/address-use","",,,,"Address.use",0,1,"",""
 "patient-pemh-profile","Patient.address.type","Patient.address.type","","","",0,1,"","","Y","code {[]} {[]}
@@ -1296,13 +1811,20 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 "patient-pemh-profile","Patient.photo","Patient.photo","","","",0,*,"","","","Attachment {[]} {[]}
 ","Image of the patient","Image of the patient.","","Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Patient.photo",0,*,"",""
 "patient-pemh-profile","Patient.contact","Patient.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
-","A contact party (e.g. guardian, partner, friend) for the patient","A contact party (e.g. guardian, partner, friend) for the patient.","Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.","Need to track people you can contact about the patient.","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-pat-1:SHALL at least contain a contact's details or a reference to an organization {name.exists() or telecom.exists() or address.exists() or organization.exists()}"
+","A contact party (e.g. guardian, partner, friend) for the patient","A contact party (e.g. guardian, partner, friend) for the patient.","Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.","Need to track people you can contact about the patient.","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"",""
 "patient-pemh-profile","Patient.contact.id","Patient.contact.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"patient-pemh-profile","Patient.contact.extension","Patient.contact.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"patient-pemh-profile","Patient.contact.extension","Patient.contact.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"",""
+"patient-pemh-profile","Patient.contact.extension:contactObservations","Patient.contact.extension","contactObservations","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/contact-observations]]} {[]}
+","Observações relacionadas com o bloco dos contactos do Utente","Extensão para Observações relacionadas com o bloco dos contactos do Utente","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"patient-pemh-profile","Patient.contact.extension:contactPreference","Patient.contact.extension","contactPreference","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/preferred-contact]]} {[]}
+","Contacto preferencial","Extensão para informar se o contacto atual é o preferencial","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "patient-pemh-profile","Patient.contact.modifierExtension","Patient.contact.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"",""
@@ -1314,6 +1836,40 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","A contact detail for the person","A contact detail for the person, e.g. a telephone number or an email address.","Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.contact.telecom",0,*,"",""
 "patient-pemh-profile","Patient.contact.address","Patient.contact.address","","","",0,1,"","","","Address {[]} {[]}
 ","Address for the contact person","Address for the contact person.","","Need to keep track where the contact person can be contacted per postal mail or visited.","","","","","","","",,,,,"",,,,"Patient.contact.address",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.id","Patient.contact.address.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.extension","Patient.contact.address.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"patient-pemh-profile","Patient.contact.address.extension:ptAddress","Patient.contact.address.extension","ptAddress","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/rnu/extensions/address]]} {[]}
+","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
+"patient-pemh-profile","Patient.contact.address.use","Patient.contact.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","home | work | temp | old - purpose of this address","The purpose of this address.","This is labeled as ""Is Modifier"" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address","http://hl7.org/fhir/ValueSet/address-use","",,,,"Address.use",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.type","Patient.contact.address.type","","","",0,1,"","","Y","code {[]} {[]}
+","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal)","http://hl7.org/fhir/ValueSet/address-type","",,,,"Address.type",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.text","Patient.contact.address.text","","","",0,1,"","","Y","string {[]} {[]}
+","Text representation of the address","A full text representation of the address.","Can provide both a text representation and parts.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.line","Patient.contact.address.line","","","",0,*,"","","Y","string {[]} {[]}
+","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","home | work | temp | old - purpose of this address.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"",""
+"patient-pemh-profile","Patient.contact.address.city","Patient.contact.address.city","","Municpality
+","",0,1,"","","Y","string {[]} {[]}
+","Name of city, town etc.","The name of the city, town, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.district","Patient.contact.address.district","","County
+","",0,1,"","","Y","string {[]} {[]}
+","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.state","Patient.contact.address.state","","Province
+Territory","",0,1,"","","Y","string {[]} {[]}
+","Sub-unit of country (abbreviations ok)","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.postalCode","Patient.contact.address.postalCode","","Zip
+","",0,1,"","","Y","string {[]} {[]}
+","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.country","Patient.contact.address.country","","","",0,1,"","","Y","string {[]} {[]}
+","Country (e.g. can be ISO 3166 2 or 3 letter code)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a full country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"",""
+"patient-pemh-profile","Patient.contact.address.period","Patient.contact.address.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
+  <start value=""2010-03-23""/>
+  <end value=""2010-07-01""/>
+</valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"",""
 "patient-pemh-profile","Patient.contact.gender","Patient.contact.gender","","","",0,1,"","","","code {[]} {[]}
 ","male | female | other | unknown","Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.","","Needed to address the person correctly.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"Patient.contact.gender",0,1,"",""
 "patient-pemh-profile","Patient.contact.organization","Patient.contact.organization","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
@@ -1544,9 +2100,45 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "med-request-profile","MedicationRequest.contained","MedicationRequest.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
-"med-request-profile","MedicationRequest.extension","MedicationRequest.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"",""
+"med-request-profile","MedicationRequest.extension","MedicationRequest.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"",""
+"med-request-profile","MedicationRequest.extension:med-prescription-dosage-instruction","MedicationRequest.extension","med-prescription-dosage-instruction","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction]]} {[]}
+","NÚMERO DE VIAS","Via da receita no caso de ser renovável (1, 2, 3, ...).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:presc-print","MedicationRequest.extension","presc-print","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-print]]} {[]}
+","IMPRESSÃO","Indicar se a receita foi impressa","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:presc-administration","MedicationRequest.extension","presc-administration","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration]]} {[]}
+","ADMINISTRAÇÃO","Indicar se a prescrição é para administração interna ou SFH; true: administração interna; false: SFH","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:presc-transcription","MedicationRequest.extension","presc-transcription","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-transcript]]} {[]}
+","RECEITA MANUSCRITA","Indicar se trata-se de uma transcrição de uma receita manuscrita.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:presc-type","MedicationRequest.extension","presc-type","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-request-type]]} {[]}
+","TIPO DE RECEITA","Tipo de prescrição: e.g.: FH, RE, BIO ou OUT.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:presc-local","MedicationRequest.extension","presc-local","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-local]]} {[]}
+","LOCAL","Referência para um resource que contém informações do local de prescrição","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:med-prescription-framing-dispense","MedicationRequest.extension","med-prescription-framing-dispense","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense]]} {[]}
+","Tipo enquadramento","Extensões referentes ao enquadramento da dispensa","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:med-prescription-cancel-reason","MedicationRequest.extension","med-prescription-cancel-reason","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason]]} {[]}
+","MOTIVO ANULAÇÃO","Motivo de anulação da receita.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"med-request-profile","MedicationRequest.extension:med-cost","MedicationRequest.extension","med-cost","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/med-cost]]} {[]}
+","Custo","Extensão referente ao valor e a moeda da terapêutica","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "med-request-profile","MedicationRequest.modifierExtension","MedicationRequest.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"",""
@@ -1792,9 +2384,17 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "encounter-pemh-profile","Encounter.contained","Encounter.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
-"encounter-pemh-profile","Encounter.extension","Encounter.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"",""
+"encounter-pemh-profile","Encounter.extension","Encounter.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"",""
+"encounter-pemh-profile","Encounter.extension:episodeServiceSpecialty","Encounter.extension","episodeServiceSpecialty","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/episode-service-specialty]]} {[]}
+","CÓDIGO ESPECIALIDADE CONSULTA","Extensão para indicar o código e a descrição da especialidade médica da consulta ou da prestação","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"encounter-pemh-profile","Encounter.extension:nextAppointmentDate","Encounter.extension","nextAppointmentDate","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date]]} {[]}
+","DATA PROXIMA CONSULTA","Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "encounter-pemh-profile","Encounter.modifierExtension","Encounter.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"",""
@@ -2304,9 +2904,13 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "coverage-pemh-profile","Coverage.contained","Coverage.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
-"coverage-pemh-profile","Coverage.extension","Coverage.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"",""
+"coverage-pemh-profile","Coverage.extension","Coverage.extension","","","",0,*,"Y","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"",""
+"coverage-pemh-profile","Coverage.extension:CardInfo","Coverage.extension","CardInfo","","",0,1,"","","","Extension {[CanonicalType[http://spms.min-saude.pt/iop/extensions/coverage-card-info]]} {[]}
+","Informações sobre o cartão do beneficiário relativo a entidade","Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "coverage-pemh-profile","Coverage.modifierExtension","Coverage.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"",""
