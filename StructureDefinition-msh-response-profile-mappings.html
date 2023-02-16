@@ -230,7 +230,7 @@
         
           Active
           
-            as of 2023-02-10
+            as of 2023-02-16
           
         
       </td>
@@ -301,7 +301,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;event</td><td>./payload[classCode="CACT" and moodCode="EVN" and isNormalAct()]/code[isNormalDatatype()]/code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;event</td><td>./payload[classCode=\u0022CACT\u0022 and moodCode=\u0022EVN\u0022 and isNormalAct()]/code[isNormalDatatype()]/code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./codeSystem</td> </tr>
@@ -309,37 +309,37 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>./code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>CV.displayName</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>CD.codingRationale</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;destination</td><td>./communicationFunction[typeCode="RCV"]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;destination</td><td>./communicationFunction[typeCode=\u0022RCV\u0022]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>unique(./entity[determinerCode="INST" and (classCode=("DEV", "PSN", "ORG"]/name[type='ST' and isNormalDatatype()])</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;target</td><td>unique(./entity[determinerCode="INST" and (classCode=("DEV", "PSN", "ORG"]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>unique(./entity[determinerCode=\u0022INST\u0022 and (classCode=(\u0022DEV\u0022, \u0022PSN\u0022, \u0022ORG\u0022]/name[type='ST' and isNormalDatatype()])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;target</td><td>unique(./entity[determinerCode=\u0022INST\u0022 and (classCode=(\u0022DEV\u0022, \u0022PSN\u0022, \u0022ORG\u0022]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endpoint</td><td>./telecom</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;receiver</td><td>Not directly supported.  Could be shared using attentionLine.value with an appropriate keyWordText</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;sender</td><td>Not directly supported.  Could be shared using attentionLine.value with an appropriate keyWordText</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;timestamp</td><td>./creationTime[isNormalDatatype()]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;enterer</td><td>unique(./controlAct[classCode="CACT" and classCode="EVN" and isNormalAct()]/participation[typeCode="ENT" and isNormalParticipation]/role[classCode="ASSIGNED" and isNormalRole()]/player[isNormalEntity() and classCode=("DEV", "PSN") and determinerCode="INST"])</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;author</td><td>unique(./controlAct[classCode="CACT" and classCode="EVN" and isNormalAct()]/participation[isHighest(priorityCode) and typeCode="AUT" and isNormalParticipation]/role[classCode="ASSIGNED" and isNormalRole()]/player[isNormalEntity() and classCode=("DEV", "PSN") and determinerCode="INST"])</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;source</td><td>unique(./communicationFunction[typeCode="SND"])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;enterer</td><td>unique(./controlAct[classCode=\u0022CACT\u0022 and classCode=\u0022EVN\u0022 and isNormalAct()]/participation[typeCode=\u0022ENT\u0022 and isNormalParticipation]/role[classCode=\u0022ASSIGNED\u0022 and isNormalRole()]/player[isNormalEntity() and classCode=(\u0022DEV\u0022, \u0022PSN\u0022) and determinerCode=\u0022INST\u0022])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;author</td><td>unique(./controlAct[classCode=\u0022CACT\u0022 and classCode=\u0022EVN\u0022 and isNormalAct()]/participation[isHighest(priorityCode) and typeCode=\u0022AUT\u0022 and isNormalParticipation]/role[classCode=\u0022ASSIGNED\u0022 and isNormalRole()]/player[isNormalEntity() and classCode=(\u0022DEV\u0022, \u0022PSN\u0022) and determinerCode=\u0022INST\u0022])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;source</td><td>unique(./communicationFunction[typeCode=\u0022SND\u0022])</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>unique(./entity[determinerCode="INST" and classCode="DEV"]/name[type='ST' and isNormalDatatype()])</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;software</td><td>unique(./entity[determinerCode="INST" and classCode="DEV"]/softwareName[isNormalDatatype()])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>unique(./entity[determinerCode=\u0022INST\u0022 and classCode=\u0022DEV\u0022]/name[type='ST' and isNormalDatatype()])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;software</td><td>unique(./entity[determinerCode=\u0022INST\u0022 and classCode=\u0022DEV\u0022]/softwareName[isNormalDatatype()])</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>(Not supported)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact</td><td>unique(./entity[determinerCode="INST" and classCode="DEV"]/scopesRole[normalRole() and classCode="CON" and layer[classCode="PSN"]/telecom[isNormalDatatype()])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact</td><td>unique(./entity[determinerCode=\u0022INST\u0022 and classCode=\u0022DEV\u0022]/scopesRole[normalRole() and classCode=\u0022CON\u0022 and layer[classCode=\u0022PSN\u0022]/telecom[isNormalDatatype()])</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endpoint</td><td>./telecom[isNormalDatatype()]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;responsible</td><td>unique(./controlAct[classCode="CACT" and classCode="EVN" and isNormalAct()]/participation[isHighest(priorityCode) and typeCode="RESP" and isNormalParticipation]/role[classCode="ASSIGNED" and isNormalRole()]/player[isNormalEntity() and classCode="PSN" and determinerCode="INST"] or ./controlAct[classCode="CACT" and classCode="EVN" and isNormalAct()]/participation[isHighest(priorityCode) and typeCode="RESP" and isNormalParticipation]/role[classCode="ASSIGNED" and isNormalRole()]/scoper[isNormalEntity() and classCode="ORG" and determinerCode="INST"])</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reason</td><td>unique(./controlAct[classCode="CACT" and classCode="EVN" and isNormalAct()]/reasonCode[isNormalDatatype()])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;responsible</td><td>unique(./controlAct[classCode=\u0022CACT\u0022 and classCode=\u0022EVN\u0022 and isNormalAct()]/participation[isHighest(priorityCode) and typeCode=\u0022RESP\u0022 and isNormalParticipation]/role[classCode=\u0022ASSIGNED\u0022 and isNormalRole()]/player[isNormalEntity() and classCode=\u0022PSN\u0022 and determinerCode=\u0022INST\u0022] or ./controlAct[classCode=\u0022CACT\u0022 and classCode=\u0022EVN\u0022 and isNormalAct()]/participation[isHighest(priorityCode) and typeCode=\u0022RESP\u0022 and isNormalParticipation]/role[classCode=\u0022ASSIGNED\u0022 and isNormalRole()]/scoper[isNormalEntity() and classCode=\u0022ORG\u0022 and determinerCode=\u0022INST\u0022])</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reason</td><td>unique(./controlAct[classCode=\u0022CACT\u0022 and classCode=\u0022EVN\u0022 and isNormalAct()]/reasonCode[isNormalDatatype()])</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;response</td><td>./conveyedAcknowledgement</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>./acknowledges.id[isNormalDatatype()]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>./typeCode[isNormalDatatype()]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details</td><td>AcknowledgementDetail or Observation[classCode="ALRT" and moodCode="EVN"]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;focus</td><td>unique(./controlAct[classCode="CACT" and classCode="EVN" and isNormalAct()]/participation[typeCode="SUBJ" and isNormalParticipation]/role or ./controlAct[classCode="CACT" and classCode="EVN" and isNormalAct()]/outboundRelationship[typeCode="SBJ" and isNormalActRelatoinship]/target)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details</td><td>AcknowledgementDetail or Observation[classCode=\u0022ALRT\u0022 and moodCode=\u0022EVN\u0022]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;focus</td><td>unique(./controlAct[classCode=\u0022CACT\u0022 and classCode=\u0022EVN\u0022 and isNormalAct()]/participation[typeCode=\u0022SUBJ\u0022 and isNormalParticipation]/role or ./controlAct[classCode=\u0022CACT\u0022 and classCode=\u0022EVN\u0022 and isNormalAct()]/outboundRelationship[typeCode=\u0022SBJ\u0022 and isNormalActRelatoinship]/target)</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>PEMHMessageHeaderResposta</b></td></tr>
@@ -422,7 +422,7 @@
 
       <div class="inner-wrapper">
         <p><a name="l1224">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="xxxhttp://hl7.org/Special/committees/[something]">HL7 TC</a>.  Package pem-h.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 10, 2023 09:10+0000">2023-02-10</span>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="xxxhttp://hl7.org/Special/committees/[something]">HL7 TC</a>.  Package pem-h.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Thu, Feb 16, 2023 19:26+0000">2023-02-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
