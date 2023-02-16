@@ -1,9 +1,9 @@
 ﻿hl7-pt-pem-h : Validation Results
 =========================================
 
-err = 490, warn = 53, info = 26
-IG Publisher Version: 1.2.37 Out of date - current version is ?pub-ver-1?
-Generated Thu Feb 16 21:18:27 UTC 2023. FHIR version 3.0.2 for pem-h.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
+err = 489, warn = 53, info = 27
+IG Publisher Version: 1.2.37
+Generated Thu Feb 16 21:37:18 UTC 2023. FHIR version 3.0.2 for pem-h.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
  Build Errors : 1723 / 16 / 0
  /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 59 / 10 / 36
  /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 5 / 0 / 4
@@ -11,7 +11,7 @@ Generated Thu Feb 16 21:18:27 UTC 2023. FHIR version 3.0.2 for pem-h.fhir.uv.myi
  /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 1 / 0 / 1
  /github/workspace/input/examples/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab : 0 / 0 / 4
  /github/workspace/input/examples/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5 : 3 / 0 / 3
- /github/workspace/input/examples/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1 : 4 / 1 / 2
+ /github/workspace/input/examples/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1 : 3 / 1 / 3
  /github/workspace/input/examples/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
  /github/workspace/input/examples/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
  /github/workspace/input/examples/Patient-3616b380-01be-465a-aa29-906337c6e7a4 : 6 / 1 / 1
@@ -248,17 +248,17 @@ ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716b
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 121, column 6: The link 'mensagem-envio.html' for "Envio de informação" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6: The link 'mensagem-resposta.html' for "Resposta" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'recursos-suporte.html' for "Recursos de suporte / genéricos" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json.html#/html/body/div/div/div/p/a at Line 309, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6: The link 'Intro.html' for "Introdução" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 121, column 6: The link 'mensagem-envio.html' for "Envio de informação" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6: The link 'mensagem-resposta.html' for "Resposta" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'recursos-suporte.html' for "Recursos de suporte / genéricos" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/div/p/a at Line 316, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/div/p/a at Line 320, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 6: The link 'Intro.html' for "Introdução" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 121, column 6: The link 'mensagem-envio.html' for "Envio de informação" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 6: The link 'mensagem-resposta.html' for "Resposta" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'recursos-suporte.html' for "Recursos de suporte / genéricos" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/div/p/a at Line 303, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 6: The link 'Intro.html' for "Introdução" cannot be resolved
 ERROR: /github/workspace/output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'mensagem-envio.html' for "Envio de informação" cannot be resolved
 ERROR: /github/workspace/output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'mensagem-resposta.html' for "Resposta" cannot be resolved
@@ -1902,10 +1902,10 @@ INFORMATION: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationR
 INFORMATION: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest.dispenseRequest.quantity: Code System URI 'https://www.infarmed.pt' is unknown so the code cannot be validated
 == input/examples/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json ==
 ERROR: MessageHeader.destination[0]: Unrecognized property 'receiver'
-ERROR: MessageHeader: Unrecognized property 'eventCoding'
 ERROR: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader: MessageHeader.timestamp: minimum required = 1, but only found 0 (from http://example.com/fhir/example/StructureDefinition/msh-profile|0.1.0-test)
 INFORMATION: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader.meta.tag[0]: Code System URI 'http://spms.min-saude.pt/iop/event-meta-tags' is unknown so the code cannot be validated
 ERROR: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader.meta.tag[0]: The Coding provided (http://spms.min-saude.pt/iop/event-meta-tags#10911) is not in the value set 'Common Tags' (http://hl7.org/fhir/ValueSet/common-tags|3.0.2), and a code is required from this value set.  (error message = Not in value set http://hl7.org/fhir/ValueSet/common-tags)
+INFORMATION: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader.event: Code System URI 'http://spms.min-saude.pt/iop/events' is unknown so the code cannot be validated
 WARNING: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader.meta.profile[1]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == input/examples/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json ==
 == input/examples/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json ==
