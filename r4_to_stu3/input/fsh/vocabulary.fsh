@@ -31,3 +31,22 @@ ValueSet: MedPrescriptionCancelReasonVS
 
 ValueSet: MedPrescriptionFramingDispenseVS
 * include codes from system MeaningOrderCS
+
+ValueSet: MedPrescriptionLegalDiplomaVS
+* include codes from system MeaningOrderCS
+
+ValueSet: MedPrescriptionFramingTypeVS
+* include codes from system MeaningOrderCS
+
+ValueSet: AddressTypeVS
+* include codes from system MeaningOrderCS
+
+ValueSet: episodeServiceSpecialtyVS
+* include codes from system MeaningOrderCS
+
+
+ValueSet: CardInfoTypeVS
+* include codes from system MeaningOrderCS
+
+ValueSet: CardCountryVS
+* include codes from system MeaningOrderCS

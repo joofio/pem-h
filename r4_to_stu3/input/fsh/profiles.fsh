@@ -103,6 +103,23 @@ Description: "Este recurso contém informações da linha da receita."
 * status 1..1
 * status ^short = "A prescrição é criada com status active. Status para a anulação / cancelamento da prescrição: cancelled."
 
+* extension 0..* MS
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+
+
+* extension contains med-prescription-dosage-instruction  named med-prescription-dosage-instruction 0..1 
+* extension contains presc-print named presc-print 0..1
+* extension contains presc-administration named presc-administration 0..1
+* extension contains presc-transcription named presc-transcription 0..1
+* extension contains presc-type named presc-type 0..1
+* extension contains presc-local named presc-local 0..1
+* extension contains med-prescription-framing-dispense named med-prescription-framing-dispense 0..1
+
+* extension contains med-prescription-cancel-reason named med-prescription-cancel-reason 0..1
+* extension contains med-cost named med-cost 0..1
+
 * intent = #order
 * medication[x] only Reference(PEMHMedication)
 * medication[x] ^short = "Referência para o resource que contém informações do fármaco"
@@ -215,9 +232,41 @@ Caso a morada seja preferencial (campo <Preferenci al>), deve ser usado o tipo d
 Podem ser enviadas quantas moradas forem necessárias."
 //extensions TODO
 
+* address.extension 0..* MS
+* address.extension ^slicing.discriminator.type = #value
+* address.extension ^slicing.discriminator.path = "url"
+* address.extension ^slicing.rules = #open
+* address.extension contains ptAddress  named ptAddress 0..1 
+
+
+
+
 * address.text ^short = "Para informar o texto que representa a morada, de uma forma não normalizada, em alternativa ou em complemento da forma normalizada representada pelas extensões do elemento address."
 * address.line ^short = "Para informar a(s) linha(a) que representa(m) a morada, de uma forma não normalizada, em alternativa ou em complemento da forma normalizada representada pelas extensões do elemento address."
 * contact.relationship ^short = "Para informar que o contacto é de emergência (ContactoEmergencia)"
+
+* contact.address.extension 0..* MS
+* contact.address.extension ^slicing.discriminator.type = #value
+* contact.address.extension ^slicing.discriminator.path = "url"
+* contact.address.extension ^slicing.rules = #open
+* contact.address.extension contains ptAddress  named ptAddress 0..1 
+
+* contact.extension 0..* MS
+* contact.extension ^slicing.discriminator.type = #value
+* contact.extension ^slicing.discriminator.path = "url"
+* contact.extension ^slicing.rules = #open
+* contact.extension contains contactObservations  named contactObservations 0..1
+* contact.extension contains contactPreference  named contactPreference 0..1
+
+
+* extension 0..* MS
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains ptOccupation  named ptOccupation 0..1 
+* extension contains ptFilliation  named ptFilliation 0..1
+* extension contains ptPatientOtherInfo  named ptPatientOtherInfo 0..1
+
 
 Profile:     PEMHEncounter
 Id:          encounter-pemh-profile
@@ -234,7 +283,14 @@ e.g.: INT, CE, URG, EMER"
 //* encounter.participant ^short = "Preencher com os profissionais envolvidos."
 //* encounter.participant.individual ^short = "Referência para um resource que contém informações do profissional de saúde"
 //* encounter.serviceProvider ^short = "Referência para um resource que contém informações da consulta de especialidade"
-//extension
+
+* extension 0..* MS
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains episodeServiceSpecialty  named episodeServiceSpecialty 0..1 
+* extension contains nextAppointmentDate  named nextAppointmentDate 0..1
+
 
 Profile:     PEMHCoverage
 Id:          coverage-pemh-profile
@@ -263,6 +319,12 @@ Description: "Recurso utilizado para representar a relação entre beneficiário
 * payor ^short = "Referência para um resource que contém informações da Entidad e Financeira Responsável"
 * period ^short = "Este elemento representa a data de emissão do documento de direito representado pelo \"start\" e a data de validade do documento de direito representado pelo \"end\"."
 //extension
+* extension 0..* MS
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains CardInfo  named CardInfo 0..1 
+
 
 
 
